@@ -18,7 +18,6 @@
   --text-primary: #10162a;
   --text-secondary: #4d5872;
   --text-muted: #78839c;
-  --text-inverse: #ffffff;
 
   --color-primary: #4f46e5;
   --color-primary-hover: #4338ca;
@@ -33,11 +32,9 @@
   --color-danger-subtle: #fee8e8;
   --color-danger-text: #991b1b;
 
-  --color-warning: #f59e0b;
   --color-warning-subtle: #fff3d6;
   --color-warning-text: #92400e;
 
-  --color-info: #0284c7;
   --color-info-subtle: #dff3ff;
 
   --shadow-xs: 0 1px 2px rgba(16, 22, 42, .05);
@@ -76,7 +73,6 @@
   --text-primary: #f5f7ff;
   --text-secondary: #c3cbe0;
   --text-muted: #8d98b3;
-  --text-inverse: #0a0e18;
 
   --color-primary: #6366f1;
   --color-primary-hover: #4f46e5;
@@ -519,6 +515,21 @@ html[dir="rtl"] .hero-actions .btn:hover svg { transform: translateX(-4px) scale
 .chip-active[data-category] { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
 .detail-badge { pointer-events: none; }
 
+/* صف معاملات الـ API: نفس تنسيق الـ select الموجود، بدون أي شكل جديد */
+.api-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-block-start: .7rem; }
+.api-note { font-size: .72rem; font-weight: 700; color: var(--text-muted); }
+.request-url {
+  margin-block-start: .55rem;
+  padding: .35rem .6rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  color: var(--color-primary-text);
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Courier New', monospace;
+  font-size: .72rem;
+  overflow-wrap: anywhere;
+}
+
 .result-count { margin-block-start: .7rem; font-size: .82rem; font-weight: 700; color: var(--text-muted); min-height: 1.4em; }
 
 /* ---------- 10) شبكة المنتجات والبطاقة ---------- */
@@ -819,6 +830,7 @@ html:has(dialog[open]) { overflow: hidden; }
   .hero-art { display: none; }
   .toolbar { flex-direction: column; align-items: stretch; }
   .search-field, .sort-field select { width: 100%; }
+  .api-controls > .sort-field { flex: 1 1 140px; }
   /* 16px يمنع Safari على iOS من تكبير الصفحة عند التركيز على الحقل */
   .search-field input, .sort-field select, .form-row input { font-size: 16px; }
   /* النصوص ثنائية اللغة داخل الأزرار والشارات تلفّ بدل ما تExpand البطاقة */

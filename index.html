@@ -203,6 +203,40 @@
         </button>
       </div>
 
+      <!-- معاملات تُرسل للـ API فعلياً كـ query parameters (تظهر في Network → Payload) -->
+      <div class="api-controls" role="group" aria-label="API query parameters • معاملات الـ API">
+        <label class="sort-field">
+          <span class="sr-only">
+            <span class="bi-en" lang="en">Number of products</span>
+            <span class="bi-ar" lang="ar" dir="rtl">عدد المنتجات</span>
+          </span>
+          <select id="limit-select" title="Sent as ?limit= ... • يُرسل كـ limit">
+            <option value="20">20 products • 20 منتج</option>
+            <option value="10">10 products • 10 منتجات</option>
+            <option value="5">5 products • 5 منتجات</option>
+          </select>
+        </label>
+
+        <label class="sort-field">
+          <span class="sr-only">
+            <span class="bi-en" lang="en">Sort by ID on the server</span>
+            <span class="bi-ar" lang="ar" dir="rtl">ترتيب حسب المعرّف على السيرفر</span>
+          </span>
+          <select id="id-sort-select" title="Sent as ?sort=asc|desc • FakeStoreAPI applies limit before sort">
+            <option value="asc">ID: ascending • تصاعدي</option>
+            <option value="desc">ID: descending • تنازلي</option>
+          </select>
+        </label>
+
+        <span class="api-note">
+          <span class="bi-en" lang="en">Sent to the API</span>
+          <span class="bi-ar" lang="ar" dir="rtl">تُرسل للـ API</span>
+        </span>
+      </div>
+
+      <!-- الرابط الفعلي المطلوب: نفس المعاملات تظهر في DevTools → Network → Payload -->
+      <p class="request-url" id="request-url" aria-live="polite"></p>
+
       <!-- شرائح الفئات: تُبنى من GET /products/categories -->
       <div class="chips" id="category-chips" aria-label="Categories • الفئات"></div>
 
@@ -214,7 +248,7 @@
       <div class="product-grid" id="product-grid"></div>
 
       <div class="state-box" id="state-box" hidden>
-        <div class="state-icon" id="state-icon" aria-hidden="true">!</div>
+        <div class="state-icon" aria-hidden="true">!</div>
         <h3 id="state-title"></h3>
         <p id="state-text"></p>
         <button class="btn btn-primary" id="btn-retry" type="button">

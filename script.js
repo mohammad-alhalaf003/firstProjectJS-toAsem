@@ -1,7 +1,7 @@
 /* ==========================================================================
    StorePulse — script.js
    كل السلوك هنا: طلبات الـ API، اللغة، الثيم، السلة، المفضلة، الدخول، النوافذ،
-   والتفاعلات الصغيرة (مؤشر ماوس مخصص، إمالة البطاقات، شريط التقدم، الإشعارات).
+   والتفاعلات الصغيرة (إمالة البطاقات، شريط التقدم، الإشعارات).
    لا مكتبات خارجية — fetch الأصلية فقط.
    ========================================================================== */
 
@@ -11,6 +11,8 @@
   /* ---------- 1) الثوابت ---------- */
   const BASE_URL = 'https://fakestoreapi.com';
   const TIMEOUT_MS = 15000;
+  // Debounce: ننتظر 300ms بعد آخر حرف قبل الفلترة (ما نعيد الرسم مع كل ضغطة مفتاح).
+  const SEARCH_DEBOUNCE_MS = 300;
   const LANGS = ['both', 'ar', 'en'];
 
   const KEYS = {
@@ -109,7 +111,9 @@
     categories: [],
     category: 'all',
     search: '',
-    sort: 'default',
+    sort: 'default',      // ترتيب محلي إضافي (سعر/تقييم/اسم)
+    limit: 20,            // يُرسل للـ API كـ ?limit=
+    idSort: 'asc',        // يُرسل للـ API كـ ?sort=asc|desc
     favoritesOnly: false,
     favorites: new Set(Array.isArray(savedFavorites) ? savedFavorites : []),
     cart: Array.isArray(savedCart) ? savedCart : [],
@@ -119,7 +123,7 @@
     token: null,        // الـ token في الذاكرة فقط — لا يُحفظ أبداً
     pendingCheckout: false,
     loadToken: 0,
-    currentUrl: BASE_URL + '/products',
+    currentUrl: '',       // يُملأ عند أول طلب ويُستخدم لإعادة المحاولة
     lastFocus: null
   };
 
@@ -184,7 +188,7 @@
   async function apiRequest(url, options) {
     // فحص بسيط: لا نرسل إلا إلى الخادم المسموح.
     if (new URL(url, BASE_URL).origin !== BASE_URL) {
-      return { ok: false, status: 0, data: null, isJson: false, text: '', blocked: true };
+      return { ok: false, status: 0, data: null, text: '', blocked: true };
     }
 
     const controller = new AbortController();
@@ -194,24 +198,23 @@
       const response = await fetch(url, Object.assign({}, options, { signal: controller.signal }));
       const text = await response.text();
       let data = null;
-      let isJson = false;
       if (text) {
-        try { data = JSON.parse(text); isJson = true; } catch (e) { data = text; }
+        try { data = JSON.parse(text); } catch (e) { data = text; }
       }
-      return { ok: response.ok, status: response.status, data: data, isJson: isJson, text: text };
+      return { ok: response.ok, status: response.status, data: data, text: text };
     } catch (err) {
-      return { ok: false, status: 0, data: null, isJson: false, text: '', error: err, networkError: true };
+      return { ok: false, status: 0, data: null, text: '', error: err };
     } finally {
       clearTimeout(timer);
     }
   }
 
   /* ---------- 7) الحالات المرئية ---------- */
-  function showSkeleton(count) {
+  function showSkeleton() {
     const grid = $('product-grid');
     grid.setAttribute('aria-busy', 'true');
     grid.replaceChildren();
-    for (let i = 0; i < (count || 8); i += 1) {
+    for (let i = 0; i < 8; i += 1) {
       grid.append(
         el('div', { cls: 'skeleton-card', attrs: { 'aria-hidden': 'true' } },
           el('div', { cls: 'skeleton-img' }),
@@ -263,13 +266,23 @@
     }
   }
 
+  // يبني الرابط بالمعاملات المطلوبة. URLSearchParams يكتبها في الرابط،
+  // لذلك تظهر في DevTools → Network → Payload (Query String Parameters).
+  function buildProductsUrl() {
+    const base = state.category === 'all'
+      ? BASE_URL + '/products'
+      : BASE_URL + '/products/category/' + encodeURIComponent(state.category);
+    const params = new URLSearchParams({
+      limit: String(state.limit),
+      sort: state.idSort
+    });
+    return base + '?' + params.toString();
+  }
+
   function selectCategory(cat) {
     state.category = cat;
     renderChips();
-    const url = cat === 'all'
-      ? BASE_URL + '/products'
-      : BASE_URL + '/products/category/' + encodeURIComponent(cat);
-    loadProducts(url);
+    loadProducts(buildProductsUrl());
   }
 
   function searchableText(product) {
@@ -405,6 +418,7 @@
   async function loadProducts(url) {
     const token = ++state.loadToken;
     state.currentUrl = url;
+    $('request-url').textContent = 'GET ' + url.replace(BASE_URL, '');
     showSkeleton();
     hideState();
     $('result-count').textContent = '';
@@ -423,8 +437,11 @@
       return;
     }
 
-    // نخزّن كل المنتجات فقط عندما نجلب القائمة الكاملة (لنستخدمها في السلة والتفاصيل).
-    if (url === BASE_URL + '/products') state.products = result.data;
+    // الـ limit قد يرجّع جزءاً من المنتجات فقط، ندمج النتائج في دليل محلي
+    // عشان السلة وتفاصيل الطلب تظل تعرف أسعار كل المنتجات اللي أُضيفت.
+    const catalog = new Map(state.products.map((p) => [p.id, p]));
+    result.data.forEach((p) => catalog.set(p.id, p));
+    state.products = Array.from(catalog.values());
     state.viewProducts = result.data;
     renderProducts();
   }
@@ -842,13 +859,43 @@
   }
 
   function setupControls() {
-    let searchTimer;
-    $('search-input').addEventListener('input', (event) => {
+    const searchInput = $('search-input');
+    let searchTimer = null;
+
+    // الدالة الفعلية للبحث: تقرأ القيمة الحالية وتعيد الرسم مرة واحدة فقط.
+    function runSearch() {
+      searchTimer = null;
+      state.search = searchInput.value.trim().toLowerCase();
+      renderProducts();
+    }
+
+    // كل حرف جديد يلغي المؤقت السابق ويبدأ عدّاد جديد من 300ms.
+    function debounceSearch() {
       clearTimeout(searchTimer);
-      searchTimer = setTimeout(() => {
-        state.search = event.target.value.trim().toLowerCase();
-        renderProducts();
-      }, 120);
+      searchTimer = setTimeout(runSearch, SEARCH_DEBOUNCE_MS);
+    }
+
+    searchInput.addEventListener('input', debounceSearch);
+    searchInput.addEventListener('keydown', (event) => {
+      // Enter ينفّذ البحث فوراً بدل انتظار الـ debounce.
+      if (event.key === 'Enter') {
+        clearTimeout(searchTimer);
+        runSearch();
+      }
+    });
+
+    // هذان التحكّمان يُنفّذان على السيرفر: نغيّر المعامل ونعيد الطلب.
+    $('limit-select').addEventListener('change', (event) => {
+      state.limit = Number(event.target.value);
+      loadProducts(buildProductsUrl());
+    });
+
+    $('id-sort-select').addEventListener('change', (event) => {
+      state.idSort = event.target.value;
+      // الترتيب المحلي يطبّق فوق نتائج الـ API، نرجّعه للافتراضي عشان يظهر ترتيب السيرفر.
+      state.sort = 'default';
+      $('sort-select').value = 'default';
+      loadProducts(buildProductsUrl());
     });
 
     $('sort-select').addEventListener('change', (event) => {
@@ -862,7 +909,9 @@
       renderProducts();
     });
 
-    $('btn-retry').addEventListener('click', () => loadProducts(state.currentUrl));
+    $('btn-retry').addEventListener('click', () => {
+      if (state.currentUrl) loadProducts(state.currentUrl);
+    });
 
     $('btn-checkout').addEventListener('click', placeOrder);
 
@@ -889,7 +938,7 @@
     renderCartBadge();
     renderCartDialog();
     loadCategories();
-    loadProducts(BASE_URL + '/products');
+    loadProducts(buildProductsUrl());
   }
 
   if (document.readyState === 'loading') {
