@@ -1,6 +1,6 @@
 # التقرير النهائي للتدقيق — StorePulse
 
-**التاريخ:** 2026-11-25  
+**التاريخ:** 2026-11-25، آخر تحديث 2026-11-26  
 **المرجع النهائي الوحيد:** `HHRD_FrontEnd_Fundamentals_Requirements_Draft2.pdf`، صفحات 1–18.  
 **النطاق:** تدقيق شامل لكل عناصر PDF: Q1–Q7، G1–G5، M1–M9 بجميع بنودها الفرعية، متطلبات FakeStoreAPI، خريطة التخزين، التسليم، والمراجعة الفردية.  
 **قاعدة الحكم:** أُبلّغ فقط عن نتائج نُفّذت فعلاً. لا توجد نتائج مستنتجة من النية، ولا أدلة مُختلقة، ولا سجل Git مُعاد كتابته.
@@ -25,9 +25,9 @@
 | Q1–Q7 — الكود المقروء | **PASS** | 7/7؛ الأسماء، الدوال الصغيرة، الثوابت، التعليقات، kebab-case، الترتيب، وعدم الإيهام. |
 | G1 — مستودع عام | **PASS** | المستودع عام؛ تحققتُ من HTTP 200 بقراءة فقط، و`origin` يشير إليه. |
 | G2 — عمل داخل clone محلي | **PASS** | `git reflog` يُظهر `clone` من المستودع، وليس ZIP. |
-| G3 — commit/push بعد كل مرحلة | **FAIL** | 3 commits فقط، ولا يوجد commit لكل M1–M9؛ آخرpush قبل M5. |
-| G4 — استخدام `git pull` مرة على الأقل | **FAIL** | لا يوجد أي `pull` أو `fetch` في السجل. |
-| G5 — clone نهائي في مجلد جديد وتشغيله | **NOT TESTED** | لم أنفّذ clone جديداً؛ أي عملية Git كتابة تتطلب موافقتك. |
+| G3 — commit/push بعد كل مرحلة | **FAIL** | وُجد commit نهائي واحد فقط بعد موافقتك، ولا يوجد commit لكل M1–M9؛ لا إعادة كتابة للتاريخ. |
+| G4 — استخدام `git pull` مرة على الأقل | **PASS** | نُفّذ `git pull --rebase origin main` قبل الرفع، والسجل يُظهر `FETCH_HEAD`. |
+| G5 — clone نهائي في مجلد جديد وتشغيله | **NOT TESTED** | لم يُنفّذ clone جديد؛ الرفع تم التحقق منه بـ `git ls-remote`. |
 | M1 — HTML دلالي | **PASS** | 1.1–1.6 كلها PASS. |
 | M2 — أساسيات CSS | **PASS** | 2.1–2.8 كلها PASS. |
 | M3 — التفاعل والثيمات والاستجابة | **PASS** | 3.1–3.5 كلها PASS. |
@@ -39,7 +39,7 @@
 | M9 — Browser Storage | **PASS** | 9.1–9.3 كلها PASS؛ 38/38. |
 | متطلبات FakeStoreAPI | **PASS** | جميع نقاط PDF مُستخدَمة والمفارقات موثّقة. |
 | خريطة التخزين | **PASS** | كل مفتاح في الصندوق الصحيح؛ لا كلمات مرور أو أسرار أو قائمة منتجات كاملة. |
-| التسليم | **PARTIAL** | الملفات/README/الأدلة/الاختبارات PASS؛ سجل الـ commit FAIL وclone نهائي NOT TESTED. |
+| التسليم | **PARTIAL** | الملفات/README/الأدلة/الاختبارات PASS والرفع تم؛ سجل الـ commit لكل مرحلة FAIL وclone نهائي NOT TESTED. |
 | المراجعة الفردية | **NOT TESTED** | المقابلة نفسها لم تجرِ؛ التحضير موجود في القسم 17. |
 | الخصوصية والتخفيض | **PASS** | لا كلمات مرور أو توكنات أو أسماء مستخدمين أو قيم `Authorization` خام في الأدلة. |
 
@@ -65,23 +65,19 @@
 |---|---:|---|---|
 | G1 مستودع عام | **PASS** | فحص قراءة فقط لرابط `origin`: HTTP 200؛ `git remote -v` | المستودع عام وقابل للقراءة دون مصادقة. لم يُعد تعديله. |
 | G2 local clone وليس ZIP | **PASS** | `git reflog`: `clone: from https://...` بتاريخ 2026-11-24؛ `git rev-parse --show-toplevel` | أول سجل للمجلد `clone`، فلا يمكن أن يكون ZIP مُنزَّلاً ثم `git init`. |
-| G3 commit وpush بعد كل مرحلة | **FAIL** | `git log --oneline`: `9e2ab10`, `41c26d7`, `64fd28a` فقط؛ `git status --short` يُظهر تعديلات غير مُودَعة | لا يوجد commit لكل M1–M9. أُبقيت الحقيقة كما هي ولم أنشئ commits بأثر رجعي. |
-| G4 استخدام `git pull` مرة | **FAIL** | `git reflog` لا يحتوي `pull` ولا `fetch` | لم تجرِ أي عملية سحب. |
-| G5 clone نهائي في مجلد جديد وتشغيله | **NOT TESTED** | لا يوجد دليل؛ منع أي clone بدون موافقتك | حتى لو نجح، لا يجوز اختباره الآن لأنه يتطلب كتابة/شبكة. |
+| G3 commit وpush بعد كل مرحلة | **FAIL** | `git log --oneline` يُظهر commitاً نهائياً صادقاً فوق `9e2ab10`, `41c26d7`, `64fd28a` | لا يوجد commit لكل M1–M9، ولم تُعاد كتابة التاريخ. |
+| G4 استخدام `git pull` مرة | **PASS** | `git pull --rebase origin main` أعاد `Current branch main is up to date.` وظهر `FETCH_HEAD` | نُفّذ سحب حقيقي قبل الرفع. |
+| G5 clone نهائي في مجلد جديد وتشغيله | **NOT TESTED** | لا يوجد clone جديد؛ `git ls-remote origin refs/heads/main` يُطابق `HEAD` | الرفع مُتحقَّق منه عن بُعد، لكن clone مستقل لم يُختبر. |
 
-**حالة العمل الحالية (قراءة فقط):**
+**حالة العمل بعد الرفع:**
 
 ```text
- M README.md
- M api.html
- M index.html
- M script.js
- M style.css
-?? HHRD_FrontEnd_Fundamentals_Requirements_Draft2.pdf
-?? evidence/
+git rev-parse HEAD        -> يساوي git ls-remote origin refs/heads/main
+git ls-remote origin main -> نفس commit المحلي بعد الرفع
+git status --short        -> (فارغ قبل تحديث هذا التقرير)
 ```
 
-`HEAD`, `main`, `origin/main` و`origin/HEAD` كلها عند `9e2ab10`. أي أن نسخة Remote تقف قبل M5؛ الكود المُدقَّق محلي وغير مدفوع. **لم أنفّذ `git add` ولا `commit` ولا `push` ولا `pull` ولا `clone`.**
+رفعتُ نسخة واحدة صادقة تضم الكود المُنظَّف والأدلة و`TESTS.md` والـ PDF إلى `origin/main`. لا توجد تعديلات محلية معلّقة، ولا إعادة كتابة لتاريخ Git.
 
 ---
 
@@ -261,7 +257,7 @@
 | اختبار بلوحة المفاتيح فقط | PASS | `evidence/final/runtime-tests.json` 76/76، يشمل focus menu/dialog/grid/pagination/skip link. |
 | متصفحان | PASS | Chrome وEdge عبر CDP؛ Firefox NOT TESTED لغياب driver، لكن شرط "متصفحين" تحقق. |
 | كود مقروء | PASS | القسم 2 أعلاه. |
-| تاريخ commit واضح لكل مرحلة | **FAIL** | 3 commits فقط؛ Remote قبل M5؛ لا إعادة كتابة تاريخ. |
+| تاريخ commit واضح لكل مرحلة | **FAIL** | يوجد commit نهائي مدفوع `3e0cd21`؛ لا يوجد commit لكل مرحلة، ولا إعادة كتابة تاريخ. |
 
 ---
 
@@ -308,7 +304,7 @@
 | استعادة جلسة تلقائية بعد إغلاق متصفح حقيقي | **NOT TESTED** | مُحاكاة عبر إعادة فتح ملف تعريف CDP في M9. |
 | امتلاء فعلي بحجم 5MB | **NOT TESTED** | دوال التخزين مُختبَرة، لكن الحجم الكامل لم يُستنفد. |
 | المقابلة الفردية نفسها | **NOT TESTED** | لم تجرِ بعد؛ التحضير أدناه. |
-| Git commit/push/pull/clone إضافية | **NOT TESTED** | ممنوعة دون موافقتك صراحةً. |
+| Git commit/push/pull إضافية | **PASS** | نُفّذت بعد موافقتك: `add`، `commit`، `pull --rebase`، `push`؛ clone نهائي ما زال **NOT TESTED**. |
 
 ---
 
@@ -343,14 +339,14 @@
 - لا توجد قاعدة بيانات ولا backend؛ `POST /carts` يُنشئ طلباً في ذاكرة التبويب فقط.
 - Debounce محلي ولا يُرسل طلباً لكل حرف؛ الدليل عدد حقيقي.
 - استخدمتُ OpenCode/AI كمساعد لتوليد ومراجعة الكود، ثم طلبتُ الشرح والتعديل؛ لا أدّعي خبرة Postman أو اختبار أجهزة حقيقية.
-- سجل Git كما هو: 3 commits؛ المطلوب هو commit لكل مرحلة بعد موافقتك، لا تزوير تاريخ.
+- سجل Git يحتوي commitاً نهائياً مدفوعاً `3e0cd21` على `origin/main`؛ لا يوجد commit لكل مرحلة، ولم أزوّر التاريخ.
 - لا توجد قيم دخول أو توكنات أو أسماء مستخدمين في الأدلة؛ كلها `[redacted]` أو `tokenPresent/bearerSent`.
 
 ---
 
 ## 18. الخاتمة
 
-التطبيق من حيث **الوظيفة والكود والأدلة** جاهز للمراجعة: Q1–Q7 PASS، M1–M9 PASS عدا M5.2 PARTIAL، خريطة التخزين PASS، متطلبات API PASS، والتسليم التقني PASS باستثناء سجل Git.  
-**ما يمنع اكتمال PDF رسمياً:** G3 FAIL، G4 FAIL، G5 NOT TESTED، وM5.2 PARTIAL. هذه حقائق حالية وليست ملاحظات شكلية.
+التطبيق من حيث **الوظيفة والكود والأدلة** جاهز للمراجعة: Q1–Q7 PASS، M1–M9 PASS عدا M5.2 PARTIAL، خريطة التخزين PASS، متطلبات API PASS، والرفع إلى GitHub تم بنجاح.  
+**ما يمنع اكتمال PDF رسمياً:** G3 FAIL (لا commit لكل مرحلة)، G5 NOT TESTED (لا clone نهائي)، وM5.2 PARTIAL. G4 أصبح PASS بعد تنفيذ `git pull --rebase`. هذه حقائق حالية وليست ملاحظات شكلية.
 
-**توقف هنا بانتظار مراجعتك. لم أنفّذ أي `git add` أو `commit` أو `push` أو `pull` أو `clone`.**
+**توقف هنا بانتظار مراجعتك. نُفّذ `git add` و`commit` و`pull` و`push` بعد موافقتك؛ لم يُنفّذ clone نهائي.**
