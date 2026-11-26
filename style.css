@@ -183,7 +183,8 @@
   --text-secondary: #c3cbe0;
   --text-muted: #8d98b3;
 
-  --color-primary: #6262ef; /* تباين 4.65:1 مع النص الأبيض */
+  --color-primary: #6262ef;
+  /* تباين 4.65:1 مع النص الأبيض */
   --color-primary-hover: #4f46e5;
   --color-primary-subtle: #2d2a66;
   --color-primary-text: #c7d2fe;
@@ -243,15 +244,28 @@
 /* ---------- 2) Reset ---------- */
 /* M2.3: border-box يجعل padding و border داخل العرض المحدد، فلا تنكسر الشبكة عند 320px.
    M2.8: *, *::before, *::after تضمن تطبيقه على العناصر المولّدة أيضاً. */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
+
 /* M3.4: عناصر النظام الأصلية تتبع الثيم المختار لا تفضيل النظام بعد الزيارة الأولى. */
-html[data-theme="light"], html[data-theme="ocean"] { color-scheme: light; }
-html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="light"],
+html[data-theme="ocean"] {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
 
 body {
   min-height: 100vh;
@@ -266,32 +280,57 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { max-width: 100%; display: block; }
-button, input, select { font: inherit; }
-a { color: inherit; }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
 
 /* ---------------------------------------------------------------------------
    أنواع مؤشر الماوس: شكل المؤشر الأصلي يتغيّر حسب نوع العنصر.
    مؤشر المتصفح الأصلي هو الوحيد الظاهر.
    --------------------------------------------------------------------------- */
-html { cursor: default; }
+html {
+  cursor: default;
+}
 
 /* قابل للنقر → يد (pointer) */
-a, button, select, label, summary {
+a,
+button,
+select,
+label,
+summary {
   cursor: pointer;
 }
 
 /* Q7: شريط الإدراج للحقول القابلة للكتابة فقط؛ النصوص الثابتة لا توحي بالتحرير. */
-input[type="text"], input[type="password"], input[type="search"], input[type="number"],
-input[type="url"], textarea {
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="url"],
+textarea {
   cursor: text;
 }
 
 /* صورة تفتح تفاصيل أكبر → عدسة تكبير (zoom-in) */
-.card-media { cursor: zoom-in; }
+.card-media {
+  cursor: zoom-in;
+}
 
 /* M3.1: disabled يظهر بصرياً وسلوكياً، ولا يفقد التركيز أبداً. */
-button:disabled, input:disabled, select:disabled {
+button:disabled,
+input:disabled,
+select:disabled {
   cursor: not-allowed;
   opacity: .6;
   transform: none !important;
@@ -303,6 +342,7 @@ button:disabled, input:disabled, select:disabled {
   outline-offset: var(--space-0187);
   border-radius: var(--radius-xs);
 }
+
 /* الحقول التي أزلنا outline الافتراضي عنها لها بديل واضح:
    .search-field:focus-within و.form-row input:focus يرسمان حلقة box-shadow. */
 
@@ -322,23 +362,41 @@ button:disabled, input:disabled, select:disabled {
   color: var(--text-primary);
   font-weight: 700;
 }
-.skip-link:focus-visible { inset-block-start: var(--space-1); }
+
+.skip-link:focus-visible {
+  inset-block-start: var(--space-1);
+}
 
 .sr-only {
   position: absolute;
-  width: 1px; height: 1px;
-  margin: -1px; padding: 0;
-  overflow: hidden; clip-path: inset(50%);
-  white-space: nowrap; border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
-[hidden] { display: none !important; }
+[hidden] {
+  display: none !important;
+}
 
-:lang(ar) { font-family: var(--font-ar); line-height: var(--line-height-loose); letter-spacing: 0; }
+:lang(ar) {
+  font-family: var(--font-ar);
+  line-height: var(--line-height-loose);
+  letter-spacing: 0;
+}
 
 /* ---------- 3) النظام ثنائي اللغة ---------- */
-html[data-lang="en"] .bi-ar { display: none !important; }
-html[data-lang="ar"] .bi-en { display: none !important; }
+html[data-lang="en"] .bi-ar {
+  display: none !important;
+}
+
+html[data-lang="ar"] .bi-en {
+  display: none !important;
+}
 
 /* M2.8: :not() يمنع نقطة الفصل على العناصر التي تعرض سطرين، و::after يضيف الفاصل. */
 html[data-lang="both"] .bi-en:not(.bi-block)::after {
@@ -347,11 +405,25 @@ html[data-lang="both"] .bi-en:not(.bi-block)::after {
   font-weight: 500;
 }
 
-.bi-block { display: block; }
-html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); color: var(--text-secondary); }
-.bi-ar { unicode-bidi:isolate; }
+.bi-block {
+  display: block;
+}
 
-.btn .bi-en, .btn .bi-ar, .chip .bi-en, .chip .bi-ar { white-space: nowrap; }
+html[data-lang="both"] .bi-ar.bi-block {
+  margin-block-start: var(--space-02);
+  color: var(--text-secondary);
+}
+
+.bi-ar {
+  unicode-bidi: isolate;
+}
+
+.btn .bi-en,
+.btn .bi-ar,
+.chip .bi-en,
+.chip .bi-ar {
+  white-space: nowrap;
+}
 
 /* ---------- 4) الأزرار ---------- */
 .btn {
@@ -361,7 +433,8 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   justify-content: center;
   gap: var(--space-05);
   padding: var(--space-062) var(--space-105);
-  min-height: var(--touch-target); /* M3.3: أقل هدف لمس 44px */
+  min-height: var(--touch-target);
+  /* M3.3: أقل هدف لمس 44px */
   font-size: .875rem;
   font-weight: 700;
   font-family: inherit;
@@ -386,17 +459,60 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   transition: transform var(--normal) ease;
 }
 
-.btn-primary { background: var(--color-primary); color: var(--text-inverse); box-shadow: 0 var(--space-0375) var(--space-1125) var(--shadow-primary-sm); }
-.btn-outline { background: var(--bg-surface); border-color: var(--border-strong); color: var(--text-primary); }
-.btn-danger { background: var(--color-danger-strong); border-color: var(--color-danger-strong); color: var(--text-inverse); }
-.btn-ghost { background: var(--color-transparent); color: var(--text-secondary); }
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  box-shadow: 0 var(--space-0375) var(--space-1125) var(--shadow-primary-sm);
+}
 
-.btn-icon { width: var(--touch-target); height: var(--touch-target); padding: 0; border-radius: var(--radius-md); background: var(--bg-subtle); border-color: var(--border-subtle); color: var(--text-secondary); flex-shrink: 0; }
-.btn-icon svg { transition: transform var(--bounce); }
+.btn-outline {
+  background: var(--bg-surface);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
 
-.btn-sm { padding: var(--space-04) var(--space-08); font-size: .8rem; min-height: var(--touch-target); /* M3.3: 44px */ }
-.btn-lg { padding: var(--space-08) var(--space-14); font-size: .95rem; border-radius: var(--radius-md); }
-.btn-block { width: 100%; }
+.btn-danger {
+  background: var(--color-danger-strong);
+  border-color: var(--color-danger-strong);
+  color: var(--text-inverse);
+}
+
+.btn-ghost {
+  background: var(--color-transparent);
+  color: var(--text-secondary);
+}
+
+.btn-icon {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  padding: 0;
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+  border-color: var(--border-subtle);
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.btn-icon svg {
+  transition: transform var(--bounce);
+}
+
+.btn-sm {
+  padding: var(--space-04) var(--space-08);
+  font-size: .8rem;
+  min-height: var(--touch-target);
+  /* M3.3: 44px */
+}
+
+.btn-lg {
+  padding: var(--space-08) var(--space-14);
+  font-size: .95rem;
+  border-radius: var(--radius-md);
+}
+
+.btn-block {
+  width: 100%;
+}
 
 .link-btn {
   background: none;
@@ -439,21 +555,53 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   gap: var(--space-1);
 }
 
-.brand { display: flex; align-items: center; gap: var(--space-075); text-decoration: none; min-width: var(--touch-target); min-height: var(--touch-target); /* M3.3: هدف لمس 44px */ }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-075);
+  text-decoration: none;
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px */
+}
+
 .brand-logo {
-  width: var(--brand-size); height: var(--brand-size);
-  display: grid; place-items: center;
+  width: var(--brand-size);
+  height: var(--brand-size);
+  display: grid;
+  place-items: center;
   border-radius: var(--radius-art);
   color: var(--text-inverse);
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   box-shadow: 0 var(--space-0437) var(--space-1125) var(--shadow-primary-md);
   transition: transform var(--bounce);
 }
-.brand-text { display: flex; flex-direction: column; min-width: 0; }
-.brand-title { font-weight: 800; font-size: 1.12rem; letter-spacing: -.02em; line-height: var(--line-height-tight); }
-.brand-subtitle { font-size: .72rem; color: var(--text-muted); white-space: nowrap; }
 
-.header-actions { display: flex; align-items: center; gap: var(--space-055); flex-shrink: 0; }
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: 1.12rem;
+  letter-spacing: -.02em;
+  line-height: var(--line-height-tight);
+}
+
+.brand-subtitle {
+  font-size: .72rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-055);
+  flex-shrink: 0;
+}
 
 /* مبدّل اللغة */
 .lang-switch {
@@ -466,9 +614,18 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   background: var(--bg-subtle);
   position: relative;
 }
-.lang-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+
+.lang-switch input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
 .lang-switch label {
-  min-height: var(--touch-target); /* M3.3: هدف لمس 44px على كل الشاشات */
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px على كل الشاشات */
   min-width: var(--touch-target);
   padding-inline: var(--space-055);
   display: inline-flex;
@@ -483,12 +640,39 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   white-space: nowrap;
   transition: background var(--fast), color var(--fast), transform var(--fast);
 }
-.lang-switch input:checked + label { background: var(--color-primary); color: var(--text-inverse); box-shadow: 0 var(--space-0187) var(--space-0625) var(--shadow-primary-sm); }
-.lang-switch input:focus-visible + label { outline: 2px solid var(--border-focus); outline-offset: var(--space-0125); }
-[data-theme="dark"] .lang-switch input:checked + label { background: var(--color-primary); }
-.lang-full { display: none; }
-.lang-short { display: inline; }
-@media (min-width: 62.5rem) { .lang-full { display: inline; } .lang-short { display: none; } }
+
+.lang-switch input:checked+label {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  box-shadow: 0 var(--space-0187) var(--space-0625) var(--shadow-primary-sm);
+}
+
+.lang-switch input:focus-visible+label {
+  outline: 2px solid var(--border-focus);
+  outline-offset: var(--space-0125);
+}
+
+[data-theme="dark"] .lang-switch input:checked+label {
+  background: var(--color-primary);
+}
+
+.lang-full {
+  display: none;
+}
+
+.lang-short {
+  display: inline;
+}
+
+@media (min-width: 62.5rem) {
+  .lang-full {
+    display: inline;
+  }
+
+  .lang-short {
+    display: none;
+  }
+}
 
 /* M3.5: مبدّل الثيمات الثلاثة — نفس نمط مجموعة اللغة، بلا تكرار تنسيق المكوّنات. */
 .theme-switch {
@@ -499,13 +683,22 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   padding: 0;
   margin: 0;
 }
-.theme-switch input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+
+.theme-switch input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
 .theme-switch label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-035);
-  min-height: var(--touch-target); /* M3.3: هدف لمس 44px */
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px */
   padding-inline: var(--space-055);
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
@@ -515,14 +708,38 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   user-select: none;
   transition: background var(--fast), color var(--fast), transform var(--fast);
 }
-.theme-switch label:focus-visible { outline: 2px solid var(--border-focus); outline-offset: var(--space-0125); }
-.theme-switch input:checked + label { background: var(--color-primary); color: var(--text-inverse); }
-.theme-switch input:checked + label svg { stroke: currentColor; }
-.theme-text { display: none; }
-@media (min-width: 62.5rem) { .theme-text { display: inline; } }
+
+.theme-switch label:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: var(--space-0125);
+}
+
+.theme-switch input:checked+label {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+}
+
+.theme-switch input:checked+label svg {
+  stroke: currentColor;
+}
+
+.theme-text {
+  display: none;
+}
+
+@media (min-width: 62.5rem) {
+  .theme-text {
+    display: inline;
+  }
+}
 
 /* M3.3: زر الهامبرغر — ثلاثة أشرطة تتحول إلى علامة إغلاق عند فتح القائمة. */
-.menu-toggle { display: none; flex-direction: column; gap: var(--space-03125); }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: var(--space-03125);
+}
+
 .menu-toggle span {
   display: block;
   width: var(--space-1125);
@@ -531,13 +748,29 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   background: currentColor;
   transition: transform var(--fast), opacity var(--fast);
 }
-.menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(.3125rem) rotate(45deg); }
-.menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-.3125rem) rotate(-45deg); }
-.header-cart { display: flex; align-items: center; }
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(.3125rem) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-.3125rem) rotate(-45deg);
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+}
 
 /* زر السلة */
-.cart-button { position: relative; }
+.cart-button {
+  position: relative;
+}
+
 .cart-count {
   min-width: var(--space-125);
   height: var(--space-125);
@@ -551,7 +784,10 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   font-weight: 800;
   line-height: var(--line-height-tight);
 }
-.cart-count.bump { animation: bump var(--bounce); }
+
+.cart-count.bump {
+  animation: bump var(--bounce);
+}
 
 /* ---------- 7) شريط التقدم والعودة للأعلى ---------- */
 /* M2.2: معرّف فريد → id selector (specificity 1,0,0)؛ الصنف يبقى كخطاف للـ RTL أدناه. */
@@ -568,7 +804,10 @@ html[data-lang="both"] .bi-ar.bi-block { margin-block-start: var(--space-02); co
   transform-origin: left center;
   will-change: transform;
 }
-html[dir="rtl"] .scroll-progress { transform-origin: right center; }
+
+html[dir="rtl"] .scroll-progress {
+  transform-origin: right center;
+}
 
 .back-to-top {
   position: fixed;
@@ -576,8 +815,10 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   inset-block-end: var(--space-14);
   /* M2.7: 95 أعلى من المحتوى العادي لكن أسفل الهيدر/الشريط؛ يظهر فقط عند y > 420. */
   z-index: 95;
-  width: var(--space-3); height: var(--space-3);
-  display: grid; place-items: center;
+  width: var(--space-3);
+  height: var(--space-3);
+  display: grid;
+  place-items: center;
   border-radius: var(--radius-circle);
   border: 1px solid var(--border-strong);
   background: var(--bg-surface);
@@ -588,10 +829,21 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   transform: translateY(.875rem) scale(.9);
   transition: opacity var(--normal), transform var(--bounce), background var(--fast), color var(--fast);
 }
-.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
 
 /* ---------- 8) الهيرو ---------- */
-.main { width: 100%; max-width: var(--max-width); margin-inline: auto; padding-inline: var(--space-15); flex: 1; }
+.main {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-15);
+  flex: 1;
+}
 
 .hero {
   display: grid;
@@ -600,11 +852,28 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   gap: clamp(var(--space-15), 5vw, var(--space-4));
   padding-block: clamp(var(--space-25), 7vw, var(--space-55)) clamp(var(--space-2), 5vw, var(--space-35));
 }
-.hero h1 { font-size: clamp(2.1rem, 5.4vw, 3.7rem); line-height: var(--line-height-tight); letter-spacing: -.035em; font-weight: 800; }
-.hero h1 em { font-style: normal; color: var(--color-primary); }
-.hero h1 .bi-ar { letter-spacing: 0; line-height: var(--line-height-base); }
+
+.hero h1 {
+  font-size: clamp(2.1rem, 5.4vw, 3.7rem);
+  line-height: var(--line-height-tight);
+  letter-spacing: -.035em;
+  font-weight: 800;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+.hero h1 .bi-ar {
+  letter-spacing: 0;
+  line-height: var(--line-height-base);
+}
+
 .eyebrow {
-  display: inline-flex; align-items: center; gap: var(--space-055);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-055);
   max-width: 100%;
   flex-wrap: wrap;
   padding: var(--space-035) var(--space-08);
@@ -615,35 +884,171 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   font-weight: 800;
   margin-block-end: var(--space-11);
 }
-.eyebrow-dot { width: .5rem; height: .5rem; border-radius: var(--radius-circle); background: var(--color-primary); box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 18%, var(--color-transparent)); animation: pulse 2.4s ease-in-out infinite; }
-.hero-lead { max-width: 60ch; margin-block: var(--space-115) var(--space-16); color: var(--text-secondary); font-size: 1.02rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-075); }
-.hero-actions .btn svg { transition: transform var(--fast); }
 
-.hero-stats { display: flex; flex-wrap: wrap; gap: var(--space-18); margin-block-start: var(--space-24); }
-.hero-stats div { display: flex; align-items: baseline; gap: var(--space-045); }
-.hero-stats dt { font-size: 1.5rem; font-weight: 800; color: var(--text-primary); }
-.hero-stats dd { font-size: .82rem; color: var(--text-muted); font-weight: 600; }
+.eyebrow-dot {
+  width: .5rem;
+  height: .5rem;
+  border-radius: var(--radius-circle);
+  background: var(--color-primary);
+  box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 18%, var(--color-transparent));
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.hero-lead {
+  max-width: 60ch;
+  margin-block: var(--space-115) var(--space-16);
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-075);
+}
+
+.hero-actions .btn svg {
+  transition: transform var(--fast);
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-18);
+  margin-block-start: var(--space-24);
+}
+
+.hero-stats div {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-045);
+}
+
+.hero-stats dt {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.hero-stats dd {
+  font-size: .82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
 
 /* M1 إصلاح: هذه الطبقة زخرفية بالكامل (aria-hidden). عند المقاسات 561–1024px يتحول الهيرو لعمود واحد،
    فتصبح دائرة .art-glow بعرض 85% أطول من حاويتها فتغطي أدوات البحث/الترتيب تحتها.
    pointer-events: none يمرّر الضغط لما تحتها دون تغيير أي شيء في الشكل. */
-.hero-art { position: relative; min-height: 20rem; display: grid; place-items: center; pointer-events: none; }
-.art-glow { position: absolute; width: 85%; aspect-ratio: 1; border-radius: var(--radius-circle); background: radial-gradient(circle, color-mix(in srgb, var(--color-primary) 24%, var(--color-transparent)), var(--color-transparent) 68%); filter: blur(.75rem); animation: float 7s ease-in-out infinite; }
-.art-card { position: relative; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-dialog); box-shadow: var(--shadow-lg); }
-.art-card-main { width: min(100%, 21.875rem); padding: var(--space-16); display: grid; gap: var(--space-1); transform: rotate(-3deg); animation: float 6s ease-in-out infinite; }
-.art-line { height: var(--space-0625); border-radius: var(--radius-full); background: var(--bg-muted); }
-.art-line-lg { width: 62%; height: 1rem; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); }
-.art-line-sm { width: 40%; }
-.art-row { display: flex; align-items: center; gap: var(--space-06); }
-.art-dot { width: 1.625rem; height: 1.625rem; border-radius: var(--radius-control); background: var(--color-primary-subtle); flex-shrink: 0; }
-.art-dot.green { background: var(--color-success-subtle); }
-.art-dot.amber { background: var(--color-warning-subtle); }
-.art-pill { height: .5rem; flex: 1; border-radius: var(--radius-full); background: var(--bg-muted); }
-.art-pill.short { flex: .5; }
-.art-card-float { position: absolute; inset-block-start: 8%; inset-inline-end: 0; padding: var(--space-09) var(--space-11); display: flex; align-items: center; gap: var(--space-07); transform: rotate(5deg); box-shadow: var(--shadow-md); }
-.art-card-float .art-line-sm { width: 4.375rem; }
-.art-check { width: 1.875rem; height: 1.875rem; display: grid; place-items: center; border-radius: var(--radius-circle); background: var(--color-success-subtle); color: var(--color-success-text); font-weight: 800; }
+.hero-art {
+  position: relative;
+  min-height: 20rem;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.art-glow {
+  position: absolute;
+  width: 85%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-circle);
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-primary) 24%, var(--color-transparent)), var(--color-transparent) 68%);
+  filter: blur(.75rem);
+  animation: float 7s ease-in-out infinite;
+}
+
+.art-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-dialog);
+  box-shadow: var(--shadow-lg);
+}
+
+.art-card-main {
+  width: min(100%, 21.875rem);
+  padding: var(--space-16);
+  display: grid;
+  gap: var(--space-1);
+  transform: rotate(-3deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.art-line {
+  height: var(--space-0625);
+  border-radius: var(--radius-full);
+  background: var(--bg-muted);
+}
+
+.art-line-lg {
+  width: 62%;
+  height: 1rem;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.art-line-sm {
+  width: 40%;
+}
+
+.art-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-06);
+}
+
+.art-dot {
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: var(--radius-control);
+  background: var(--color-primary-subtle);
+  flex-shrink: 0;
+}
+
+.art-dot.green {
+  background: var(--color-success-subtle);
+}
+
+.art-dot.amber {
+  background: var(--color-warning-subtle);
+}
+
+.art-pill {
+  height: .5rem;
+  flex: 1;
+  border-radius: var(--radius-full);
+  background: var(--bg-muted);
+}
+
+.art-pill.short {
+  flex: .5;
+}
+
+.art-card-float {
+  position: absolute;
+  inset-block-start: 8%;
+  inset-inline-end: 0;
+  padding: var(--space-09) var(--space-11);
+  display: flex;
+  align-items: center;
+  gap: var(--space-07);
+  transform: rotate(5deg);
+  box-shadow: var(--shadow-md);
+}
+
+.art-card-float .art-line-sm {
+  width: 4.375rem;
+}
+
+.art-check {
+  width: 1.875rem;
+  height: 1.875rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  background: var(--color-success-subtle);
+  color: var(--color-success-text);
+  font-weight: 800;
+}
 
 /* ---------- 9) الأدوات والفئات ---------- */
 .controls {
@@ -657,7 +1062,13 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
      scroll-margin-top يضمن أن رابط «ابدأ التسوق» ما يخفيه تحت الهيدر. */
   scroll-margin-top: calc(var(--header-height) + var(--space-1));
 }
-.toolbar { display: flex; flex-wrap: wrap; gap: var(--space-075); align-items: center; }
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-075);
+  align-items: center;
+}
 
 .search-field {
   flex: 1 1 var(--filter-basis);
@@ -672,9 +1083,26 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   color: var(--text-muted);
   transition: border-color var(--fast), box-shadow var(--fast), background var(--fast);
 }
-.search-field:focus-within { border-color: var(--color-primary); background: var(--bg-surface); box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 13%, var(--color-transparent)); }
-.search-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: var(--color-transparent); color: var(--text-primary); font-size: .9rem; }
-.search-field input::placeholder { color: var(--text-muted); }
+
+.search-field:focus-within {
+  border-color: var(--color-primary);
+  background: var(--bg-surface);
+  box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 13%, var(--color-transparent));
+}
+
+.search-field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: var(--color-transparent);
+  color: var(--text-primary);
+  font-size: .9rem;
+}
+
+.search-field input::placeholder {
+  color: var(--text-muted);
+}
 
 .sort-field select {
   min-height: var(--control-height);
@@ -692,7 +1120,8 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   display: inline-flex;
   align-items: center;
   gap: var(--space-045);
-  min-height: var(--touch-target); /* M3.3: 44px هدف لمس */
+  min-height: var(--touch-target);
+  /* M3.3: 44px هدف لمس */
   padding-inline: var(--space-1);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
@@ -703,39 +1132,154 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   white-space: nowrap;
   transition: transform var(--bounce), background var(--fast), border-color var(--fast), color var(--fast), box-shadow var(--fast);
 }
-.chip-active { background: var(--color-primary); border-color: var(--color-primary); color: var(--text-inverse); box-shadow: 0 var(--space-0375) 1rem var(--shadow-primary-sm); }
-.chip-fav svg { transition: transform var(--bounce); }
-.chip-fav[aria-pressed="true"] { background: var(--color-danger-subtle); border-color: var(--color-danger); color: var(--color-danger-text); }
-.chip-fav[aria-pressed="true"] svg { fill: currentColor; }
-.fav-count { min-width: var(--space-125); height: var(--space-125); display: grid; place-items: center; border-radius: var(--radius-full); background: color-mix(in srgb, currentColor 14%, var(--color-transparent)); font-size: .7rem; }
+
+.chip-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--text-inverse);
+  box-shadow: 0 var(--space-0375) 1rem var(--shadow-primary-sm);
+}
+
+.chip-fav svg {
+  transition: transform var(--bounce);
+}
+
+.chip-fav[aria-pressed="true"] {
+  background: var(--color-danger-subtle);
+  border-color: var(--color-danger);
+  color: var(--color-danger-text);
+}
+
+.chip-fav[aria-pressed="true"] svg {
+  fill: currentColor;
+}
+
+.fav-count {
+  min-width: var(--space-125);
+  height: var(--space-125);
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, currentColor 14%, var(--color-transparent));
+  font-size: .7rem;
+}
 
 /* M2.5: flex للشرائح الأفقية؛ flex: 0 0 auto يمنع انكماش النص ثم نمرّرها أفقياً. */
-.chips { display: flex; gap: var(--space-05); overflow-x: auto; padding-block: var(--space-085) var(--space-01); scrollbar-width: none; scroll-snap-type: x proximity; list-style: none; }
-.chips li { flex: 0 0 auto; scroll-snap-align: start; }
-.chips::-webkit-scrollbar { display: none; }
-.chips .chip { scroll-snap-align: start; }
+.chips {
+  display: flex;
+  gap: var(--space-05);
+  overflow-x: auto;
+  padding-block: var(--space-085) var(--space-01);
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  list-style: none;
+}
+
+.chips li {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chips .chip {
+  scroll-snap-align: start;
+}
 
 /* M9: سجل البحث الأخير يظهر كأزرار صغيرة قابلة لإعادة الاستخدام. */
-.recent-searches { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-05); margin-block-start: var(--space-05); }
-.recent-label { font-size: .78rem; color: var(--text-muted); }
-.recent-list { display: flex; flex-wrap: wrap; gap: var(--space-045); margin: 0; padding: 0; list-style: none; }
-.chip-recent { min-height: 2.25rem; padding-inline: var(--space-075); font-size: .76rem; }
+.recent-searches {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-05);
+  margin-block-start: var(--space-05);
+}
+
+.recent-label {
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+
+.recent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-045);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip-recent {
+  min-height: 2.25rem;
+  padding-inline: var(--space-075);
+  font-size: .76rem;
+}
+
 /* الشرائح أزرار قابلة للنقر فعلاً → المؤشر "يد" من قاعدة button أعلاه. */
 
-[data-category="electronics"] { background: var(--color-info-subtle); color: var(--color-info-text); border-color: var(--color-info-border); }
-[data-theme="dark"] [data-category="electronics"] { color: var(--color-info-text-dark); border-color: var(--color-info-border-dark); }
-[data-category="jewelery"] { background: var(--color-warning-subtle); color: var(--color-warning-text); border-color: var(--color-warning-border); }
-[data-category="men's clothing"] { background: var(--color-success-subtle); color: var(--color-success-text); border-color: var(--color-success-border); }
-[data-category="women's clothing"] { background: var(--color-pink-subtle); color: var(--color-pink-text); border-color: var(--color-pink-border); }
-[data-theme="dark"] [data-category="women's clothing"] { background: var(--color-pink-subtle-dark); color: var(--color-pink-text-dark); border-color: var(--color-pink-border-dark); }
+[data-category="electronics"] {
+  background: var(--color-info-subtle);
+  color: var(--color-info-text);
+  border-color: var(--color-info-border);
+}
+
+[data-theme="dark"] [data-category="electronics"] {
+  color: var(--color-info-text-dark);
+  border-color: var(--color-info-border-dark);
+}
+
+[data-category="jewelery"] {
+  background: var(--color-warning-subtle);
+  color: var(--color-warning-text);
+  border-color: var(--color-warning-border);
+}
+
+[data-category="men's clothing"] {
+  background: var(--color-success-subtle);
+  color: var(--color-success-text);
+  border-color: var(--color-success-border);
+}
+
+[data-category="women's clothing"] {
+  background: var(--color-pink-subtle);
+  color: var(--color-pink-text);
+  border-color: var(--color-pink-border);
+}
+
+[data-theme="dark"] [data-category="women's clothing"] {
+  background: var(--color-pink-subtle-dark);
+  color: var(--color-pink-text-dark);
+  border-color: var(--color-pink-border-dark);
+}
 
 /* الشريط المُفعّل يبقى بلون العلامة حتى لو كانت الفئة ملوّنة */
-.chip-active[data-category] { background: var(--color-primary); border-color: var(--color-primary); color: var(--text-inverse); }
-.detail-badge { pointer-events: none; }
+.chip-active[data-category] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--text-inverse);
+}
+
+.detail-badge {
+  pointer-events: none;
+}
 
 /* صف معاملات الـ API: نفس تنسيق الـ select الموجود، بدون أي شكل جديد */
-.api-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-06); margin-block-start: var(--space-07); }
-.api-note { font-size: .72rem; font-weight: 700; color: var(--text-muted); }
+.api-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-06);
+  margin-block-start: var(--space-07);
+}
+
+.api-note {
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
 .request-url {
   margin-block-start: var(--space-055);
   padding: var(--space-035) var(--space-06);
@@ -748,41 +1292,186 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   overflow-wrap: anywhere;
 }
 
-.result-count { margin-block-start: var(--space-07); font-size: .82rem; font-weight: 700; color: var(--text-muted); min-height: 1.4em; }
+.result-count {
+  margin-block-start: var(--space-07);
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-height: 1.4em;
+}
 
 /* ---------- 10) شبكة المنتجات والبطاقة ---------- */
 /* M2.6: grid للشبكة لأننا نحتاج صفوفاً وأعمدة معاً. auto-fill + minmax(14.875rem, 1fr)
    يخلق عموداً جديداً تلقائياً عندما تسمح المساحة، ويمنع بطاقات أضيق من 14.875rem.
    M2.3: 14.875rem و1fr وvar(--space-115) كلها وحدات مرنة؛ لا px للتخطيط. */
-.products-section { padding-block-end: var(--space-4); }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(14.875rem, 1fr)); gap: var(--space-115); }
+.products-section {
+  padding-block-end: var(--space-4);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14.875rem, 1fr));
+  gap: var(--space-115);
+}
 
 /* ---------- 10b) M6: أدوات التصفح والجدول والترقيم ---------- */
-.browse-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-06); margin-block-start: var(--space-07); }
-.control-label { font-size: .78rem; font-weight: 700; color: var(--text-muted); }
-.view-switch { display: flex; gap: var(--space-05); }
-.view-switch .chip[aria-pressed="true"] { background: var(--color-primary); border-color: var(--color-primary); color: var(--text-inverse); }
+.browse-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-06);
+  margin-block-start: var(--space-07);
+  margin-block-end: var(--space-1);
+}
+
+.control-label {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.view-switch {
+  display: flex;
+  gap: var(--space-05);
+}
+
+.view-switch .chip[aria-pressed="true"] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--text-inverse);
+}
 
 /* الحاوية فقط هي التي تتمرّر أفقياً؛ عرض الصفحة يبقى بلا تمرير أفقي. */
-.table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); background: var(--bg-surface); }
-.product-table { width: 100%; min-width: 46rem; border-collapse: collapse; font-size: .82rem; }
-.product-table caption { padding: var(--space-06) var(--space-1); color: var(--text-muted); font-size: .78rem; font-weight: 700; text-align: start; }
-.product-table th, .product-table td { padding: var(--space-06) var(--space-1); border-block-start: 1px solid var(--border-subtle); text-align: start; vertical-align: middle; }
-.product-table thead th { background: var(--bg-subtle); color: var(--text-secondary); font-size: .72rem; text-transform: uppercase; }
-.product-table th[scope="row"] { font-weight: 700; color: var(--text-primary); }
-.table-image { width: 3.25rem; height: 3.25rem; object-fit: contain; border-radius: var(--radius-sm); background: var(--bg-subtle); }
-.table-category { font-size: .76rem; color: var(--text-secondary); }
-.table-actions { display: flex; flex-wrap: wrap; gap: var(--space-04); }
-.table-actions .btn { min-height: var(--touch-target); /* M3.3: هدف لمس 44px */ padding-inline: var(--space-06); font-size: .74rem; }
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+}
 
-.pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-06); margin-block-start: var(--space-11); }
-.page-list { display: flex; flex-wrap: wrap; gap: var(--space-04); list-style: none; padding: 0; margin: 0; }
-.page-btn { min-width: var(--touch-target); min-height: var(--touch-target); /* M3.3: هدف لمس 44px */ padding-inline: var(--space-06); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); background: var(--bg-subtle); color: var(--text-secondary); font-size: .82rem; font-weight: 700; }
-.page-btn[aria-current="page"] { background: var(--color-primary); border-color: var(--color-primary); color: var(--text-inverse); }
-.page-btn:disabled { opacity: .5; cursor:not-allowed; }
-.page-ellipsis { align-self: center; padding-inline: var(--space-03); color: var(--text-muted); }
-.btn:disabled { opacity: .5; cursor:not-allowed; }
-.page-status { margin-block-start: var(--space-06); text-align: center; font-size: .8rem; font-weight: 700; color: var(--text-muted); min-height: 1.4em; }
+.product-table {
+  width: 100%;
+  min-width: 46rem;
+  border-collapse: collapse;
+  font-size: .82rem;
+}
+
+.product-table caption {
+  padding: var(--space-06) var(--space-1);
+  color: var(--text-muted);
+  font-size: .78rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.product-table th,
+.product-table td {
+  padding: var(--space-06) var(--space-1);
+  border-block-start: 1px solid var(--border-subtle);
+  text-align: start;
+  vertical-align: middle;
+}
+
+.product-table thead th {
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: .72rem;
+  text-transform: uppercase;
+}
+
+.product-table th[scope="row"] {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.table-image {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+}
+
+.table-category {
+  font-size: .76rem;
+  color: var(--text-secondary);
+}
+
+.table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-04);
+}
+
+.table-actions .btn {
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px */
+  padding-inline: var(--space-06);
+  font-size: .74rem;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-06);
+  margin-block-start: var(--space-11);
+}
+
+.page-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-04);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-btn {
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px */
+  padding-inline: var(--space-06);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.page-btn[aria-current="page"] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--text-inverse);
+}
+
+.page-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.page-ellipsis {
+  align-self: center;
+  padding-inline: var(--space-03);
+  color: var(--text-muted);
+}
+
+.btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.page-status {
+  margin-block-start: var(--space-06);
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-height: 1.4em;
+}
 
 .card {
   --rx: 0deg;
@@ -813,9 +1502,28 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   width: 100%;
   padding: 0;
 }
-.card-media img { width: 100%; height: 100%; object-fit: contain; padding: var(--space-12); transition: transform var(--normal) cubic-bezier(.2,.8,.2,1); }
-.card-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, var(--color-transparent) 30%, var(--shimmer-light-strong) 50%, var(--color-transparent) 70%); transform: translateX(-130%); transition: transform var(--normal) ease; pointer-events: none; }
-[data-theme="dark"] .card-media::after { background: linear-gradient(110deg, var(--color-transparent) 30%, var(--shimmer-dark) 50%, var(--color-transparent) 70%); }
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: var(--space-12);
+  transition: transform var(--normal) cubic-bezier(.2, .8, .2, 1);
+}
+
+.card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, var(--color-transparent) 30%, var(--shimmer-light-strong) 50%, var(--color-transparent) 70%);
+  transform: translateX(-130%);
+  transition: transform var(--normal) ease;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .card-media::after {
+  background: linear-gradient(110deg, var(--color-transparent) 30%, var(--shimmer-dark) 50%, var(--color-transparent) 70%);
+}
 
 .card-badge {
   position: absolute;
@@ -840,8 +1548,11 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   inset-inline-end: var(--space-06);
   /* M2.7: 3 أعلى من شارة الفئة (2) لأن الزر تفاعلي ويجب أن يستقبل الضغط دائماً. */
   z-index: 3;
-  width: var(--touch-target); height: var(--touch-target); /* M3.3: 44px هدف لمس */
-  display: grid; place-items: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  /* M3.3: 44px هدف لمس */
+  display: grid;
+  place-items: center;
   border-radius: var(--radius-circle);
   border: 1px solid var(--border-subtle);
   background: color-mix(in srgb, var(--bg-surface) 88%, var(--color-transparent));
@@ -850,40 +1561,180 @@ html[dir="rtl"] .scroll-progress { transform-origin: right center; }
   backdrop-filter: blur(var(--space-0375));
   transition: transform var(--bounce), color var(--fast), background var(--fast), border-color var(--fast);
 }
-.btn-fav[aria-pressed="true"] { color: var(--color-danger); background: var(--color-danger-subtle); border-color: var(--color-danger); }
-.btn-fav[aria-pressed="true"] svg { fill: currentColor; animation: heartPop 420ms var(--bounce); }
 
-.card-body { padding: var(--space-1) var(--space-105) var(--space-11); display: flex; flex-direction: column; gap: var(--space-055); }
+.btn-fav[aria-pressed="true"] {
+  color: var(--color-danger);
+  background: var(--color-danger-subtle);
+  border-color: var(--color-danger);
+}
+
+.btn-fav[aria-pressed="true"] svg {
+  fill: currentColor;
+  animation: heartPop 420ms var(--bounce);
+}
+
+.card-body {
+  padding: var(--space-1) var(--space-105) var(--space-11);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-055);
+}
+
 /* M2.8: line-clamp بسطرين يمنع العناوين الطويلة من تمديد البطاقة أو كسر الشبكة. */
-.card-title { font-size: .96rem; font-weight: 800; line-height: var(--line-height-tight); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.8em; }
-.card-desc { font-size: .78rem; color: var(--text-muted); line-height: var(--line-height-base); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card-title {
+  font-size: .96rem;
+  font-weight: 800;
+  line-height: var(--line-height-tight);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8em;
+}
 
-.rating { display: flex; align-items: center; gap: var(--space-04); font-size: .76rem; color: var(--text-secondary); font-weight: 700; }
-.rating svg { color: var(--color-rating); fill: var(--color-rating); }
-.rating .rate { color: var(--text-primary); }
+.card-desc {
+  font-size: .78rem;
+  color: var(--text-muted);
+  line-height: var(--line-height-base);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-04);
+  font-size: .76rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.rating svg {
+  color: var(--color-rating);
+  fill: var(--color-rating);
+}
+
+.rating .rate {
+  color: var(--text-primary);
+}
 
 /* M2.5: flex في تذييل البطاقة لأن السعر على اليسار والزر على اليمين مع محاذاة رأسية. */
-.card-footer { display: flex; align-items: center; justify-content: space-between; gap: var(--space-06); margin-block-start: var(--space-03); }
-.price { font-size: 1.18rem; font-weight: 800; color: var(--text-primary); letter-spacing: -.02em; }
-.add-btn { min-height: var(--touch-target); /* M3.3: هدف لمس 44px */ padding: var(--space-045) var(--space-08); font-size: .8rem; }
-.add-btn svg { transition: transform var(--bounce); }
-.add-btn.btn-added-state { background: var(--color-success-strong); border-color: var(--color-success-strong); color: var(--text-inverse); animation: bump var(--bounce); }
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-06);
+  margin-block-start: var(--space-03);
+}
+
+.price {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -.02em;
+}
+
+.add-btn {
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px */
+  padding: var(--space-045) var(--space-08);
+  font-size: .8rem;
+}
+
+.add-btn svg {
+  transition: transform var(--bounce);
+}
+
+.add-btn.btn-added-state {
+  background: var(--color-success-strong);
+  border-color: var(--color-success-strong);
+  color: var(--text-inverse);
+  animation: bump var(--bounce);
+}
 
 /* ---------- 11) حالات التحميل / الخطأ ---------- */
-.skeleton-card { border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); background: var(--bg-surface); overflow: hidden; }
-.skeleton-line, .skeleton-img { position: relative; overflow: hidden; background: var(--bg-subtle); }
-.skeleton-img { aspect-ratio: 1.22; }
-.skeleton-line { height: .6875rem; margin: var(--space-085) var(--space-1) 0; border-radius: var(--radius-full); }
-.skeleton-line.short { width: 55%; }
-.skeleton-line.tall { height: 1.375rem; width: 70%; margin-block-start: var(--space-14); }
-.skeleton-line + .skeleton-line { margin-block-start: var(--space-055); }
-/* M3.2: تحميل مرئي عبر @keyframes shimmer + spin؛ وكلاهما يتوقف صراحةً مع prefers-reduced-motion. */
-.skeleton-img::after, .skeleton-line::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, var(--color-transparent), color-mix(in srgb, var(--bg-surface) 85%, var(--color-transparent)), var(--color-transparent)); animation: shimmer 1.5s infinite; }
+.skeleton-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  overflow: hidden;
+}
 
-.state-box { text-align: center; padding: var(--space-3) var(--space-125); border: var(--space-0125) dashed var(--border-strong); border-radius: var(--radius-lg); background: var(--bg-surface); }
-.state-icon { width: 3.375rem; height: 3.375rem; margin: 0 auto var(--space-1); display: grid; place-items: center; border-radius: var(--radius-circle); background: var(--color-warning-subtle); color: var(--color-warning-text); font-size: 1.5rem; font-weight: 800; }
-.state-box h3 { font-size: 1.1rem; margin-block-end: var(--space-04); }
-.state-box p { color: var(--text-secondary); margin-block-end: var(--space-1); font-size: .9rem; }
+.skeleton-line,
+.skeleton-img {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-subtle);
+}
+
+.skeleton-img {
+  aspect-ratio: 1.22;
+}
+
+.skeleton-line {
+  height: .6875rem;
+  margin: var(--space-085) var(--space-1) 0;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-line.short {
+  width: 55%;
+}
+
+.skeleton-line.tall {
+  height: 1.375rem;
+  width: 70%;
+  margin-block-start: var(--space-14);
+}
+
+.skeleton-line+.skeleton-line {
+  margin-block-start: var(--space-055);
+}
+
+/* M3.2: تحميل مرئي عبر @keyframes shimmer + spin؛ وكلاهما يتوقف صراحةً مع prefers-reduced-motion. */
+.skeleton-img::after,
+.skeleton-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, var(--color-transparent), color-mix(in srgb, var(--bg-surface) 85%, var(--color-transparent)), var(--color-transparent));
+  animation: shimmer 1.5s infinite;
+}
+
+.state-box {
+  text-align: center;
+  padding: var(--space-3) var(--space-125);
+  border: var(--space-0125) dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+}
+
+.state-icon {
+  width: 3.375rem;
+  height: 3.375rem;
+  margin: 0 auto var(--space-1);
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  background: var(--color-warning-subtle);
+  color: var(--color-warning-text);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.state-box h3 {
+  font-size: 1.1rem;
+  margin-block-end: var(--space-04);
+}
+
+.state-box p {
+  color: var(--text-secondary);
+  margin-block-end: var(--space-1);
+  font-size: .9rem;
+}
 
 /* ---------- 12) النوافذ ---------- */
 dialog {
@@ -897,13 +1748,33 @@ dialog {
   overflow: visible;
   margin: auto;
 }
-dialog::backdrop { background: var(--color-backdrop); -webkit-backdrop-filter: blur(.3125rem); backdrop-filter: blur(.3125rem); }
-dialog[open] { animation: dialogIn 300ms cubic-bezier(.16, 1, .3, 1) both; }
-dialog[open]::backdrop { animation: fadeIn 220ms ease both; }
-html:has(dialog[open]) { overflow: hidden; }
 
-.dialog-product { width: min(var(--dialog-product), calc(100% - var(--space-2))); }
-.dialog-confirm { width: min(var(--dialog-confirm), calc(100% - var(--space-2))); }
+dialog::backdrop {
+  background: var(--color-backdrop);
+  -webkit-backdrop-filter: blur(.3125rem);
+  backdrop-filter: blur(.3125rem);
+}
+
+dialog[open] {
+  animation: dialogIn 300ms cubic-bezier(.16, 1, .3, 1) both;
+}
+
+dialog[open]::backdrop {
+  animation: fadeIn 220ms ease both;
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.dialog-product {
+  width: min(var(--dialog-product), calc(100% - var(--space-2)));
+}
+
+.dialog-confirm {
+  width: min(var(--dialog-confirm), calc(100% - var(--space-2)));
+}
+
 .dialog-card {
   position: relative;
   max-height: calc(100dvh - var(--space-2));
@@ -914,82 +1785,417 @@ html:has(dialog[open]) { overflow: hidden; }
   padding: clamp(var(--space-125), 3vw, var(--space-2));
   box-shadow: var(--shadow-xl);
 }
+
 /* M2.7: z-index 5 داخل الحوار فقط؛ الحوار نفسه في top layer لذلك لا ينافس طبقات الصفحة. */
-.dialog-close { position: absolute; inset-block-start: 1rem; inset-inline-end: 1rem; z-index: 5; }
-.dialog-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-1); padding-inline-end: var(--space-3); margin-block-end: var(--space-09); }
-.dialog-head h2 { font-size: 1.35rem; font-weight: 800; }
-.dialog-lead { color: var(--text-secondary); font-size: .88rem; margin-block-end: var(--space-11); }
-.dialog-actions { display: grid; gap: var(--space-06); margin-block-start: var(--space-11); }
+.dialog-close {
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-end: 1rem;
+  z-index: 5;
+}
+
+.dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1);
+  padding-inline-end: var(--space-3);
+  margin-block-end: var(--space-09);
+}
+
+.dialog-head h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.dialog-lead {
+  color: var(--text-secondary);
+  font-size: .88rem;
+  margin-block-end: var(--space-11);
+}
+
+.dialog-actions {
+  display: grid;
+  gap: var(--space-06);
+  margin-block-start: var(--space-11);
+}
 
 /* تفاصيل المنتج */
-.product-detail { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); gap: clamp(var(--space-1), 3vw, var(--space-2)); }
+.product-detail {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
+  gap: clamp(var(--space-1), 3vw, var(--space-2));
+}
+
 /* min-width:0 يمنع الصورة/original width من توسيع العمود على الموبايل */
-.product-detail > * { min-width: 0; }
-.detail-media { background: var(--bg-subtle); border-radius: var(--radius-lg); display: grid; place-items: center; padding: var(--space-15); aspect-ratio: 1; min-width: 0; }
-.detail-media img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform var(--normal) var(--bounce); }
-.detail-info { display: flex; flex-direction: column; gap: var(--space-08); padding-inline-end: var(--space-2); }
-.detail-info h2 { font-size: 1.45rem; line-height: var(--line-height-tight); }
-.detail-price { font-size: 2rem; font-weight: 800; color: var(--color-primary-text); }
-.detail-desc { color: var(--text-secondary); font-size: .9rem; }
-.detail-meta { display: flex; flex-wrap: wrap; gap: var(--space-05); margin-block-start: auto; }
-.detail-meta .chip { pointer-events: none; }
+.product-detail>* {
+  min-width: 0;
+}
+
+.detail-media {
+  background: var(--bg-subtle);
+  border-radius: var(--radius-lg);
+  display: grid;
+  place-items: center;
+  padding: var(--space-15);
+  aspect-ratio: 1;
+  min-width: 0;
+}
+
+.detail-media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform var(--normal) var(--bounce);
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-08);
+  padding-inline-end: var(--space-2);
+}
+
+.detail-info h2 {
+  font-size: 1.45rem;
+  line-height: var(--line-height-tight);
+}
+
+.detail-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-primary-text);
+}
+
+.detail-desc {
+  color: var(--text-secondary);
+  font-size: .9rem;
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-05);
+  margin-block-start: auto;
+}
+
+.detail-meta .chip {
+  pointer-events: none;
+}
 
 /* السلة */
-.cart-items { display: grid; gap: var(--space-065); max-height: 44dvh; overflow-y: auto; padding-inline-end: var(--space-02); }
-.cart-row { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) auto; align-items: center; gap: var(--space-08); padding: var(--space-06); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); background: var(--bg-subtle); }
-.cart-thumb { width: 3.5rem; height: 3.5rem; object-fit: contain; background: var(--bg-surface); border-radius: var(--radius-sm); padding: var(--space-035); }
-.cart-row-info { min-width: 0; }
-.cart-row-title { font-size: .82rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.cart-row-price { font-size: .78rem; color: var(--text-muted); }
-.cart-row-actions { display: flex; align-items: center; gap: var(--space-045); }
-.qty-btn { width: var(--touch-target); height: var(--touch-target); /* M3.3: 44px هدف لمس */ display: grid; place-items: center; border-radius: var(--radius-control); border: 1px solid var(--border-strong); background: var(--bg-surface); color: var(--text-primary); font-weight: 800; transition: transform var(--fast), background var(--fast), color var(--fast); }
-.qty-value { min-width: var(--space-125); text-align: center; font-size: .85rem; font-weight: 800; }
-.remove-btn { width: var(--touch-target); height: var(--touch-target); /* M3.3: 44px هدف لمس */ display: grid; place-items: center; border: 0; border-radius: var(--radius-control); background: var(--color-transparent); color: var(--text-muted); transition: color var(--fast), background var(--fast), transform var(--fast); }
+.cart-items {
+  display: grid;
+  gap: var(--space-065);
+  max-height: 44dvh;
+  overflow-y: auto;
+  padding-inline-end: var(--space-02);
+}
 
-.cart-empty { text-align: center; padding: var(--space-25) var(--space-1); color: var(--text-secondary); }
-.cart-empty svg { width: var(--control-height); height: var(--control-height); margin: 0 auto var(--space-08); color: var(--text-muted); }
+.cart-row {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-08);
+  padding: var(--space-06);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+}
 
-.cart-summary { display: flex; align-items: center; justify-content: space-between; margin-block-start: var(--space-1); padding-block-start: var(--space-1); border-block-start: 1px solid var(--border-subtle); font-weight: 700; }
-.cart-summary strong { font-size: 1.35rem; color: var(--color-primary-text); }
-.simulation-note { font-size: .74rem; color: var(--text-muted); margin-block-start: var(--space-05); }
+.cart-thumb {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  background: var(--bg-surface);
+  border-radius: var(--radius-sm);
+  padding: var(--space-035);
+}
 
-.btn-spinner { display: none; width: 1rem; height: 1rem; border: var(--space-0125) solid var(--spinner-track); border-top-color: var(--text-inverse); border-radius: var(--radius-circle); animation: spin .7s linear infinite; }
-.btn.is-loading .btn-spinner { display: block; }
-.btn.is-loading { pointer-events: none; opacity: .8; }
+.cart-row-info {
+  min-width: 0;
+}
 
-.orders-details { margin-block-start: var(--space-1); border-block-start: 1px solid var(--border-subtle); padding-block-start: var(--space-08); }
-.orders-details summary { cursor: pointer; font-size: .84rem; font-weight: 700; color: var(--text-secondary); }
-.orders-details summary::marker { color: var(--color-primary); }
-.order-item { display: flex; justify-content: space-between; gap: var(--space-075); padding: var(--space-055) 0; border-block-end: 1px dashed var(--border-subtle); font-size: .78rem; }
+.cart-row-title {
+  font-size: .82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-row-price {
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+
+.cart-row-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-045);
+}
+
+.qty-btn {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  /* M3.3: 44px هدف لمس */
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-weight: 800;
+  transition: transform var(--fast), background var(--fast), color var(--fast);
+}
+
+.qty-value {
+  min-width: var(--space-125);
+  text-align: center;
+  font-size: .85rem;
+  font-weight: 800;
+}
+
+.remove-btn {
+  width: var(--touch-target);
+  height: var(--touch-target);
+  /* M3.3: 44px هدف لمس */
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: var(--color-transparent);
+  color: var(--text-muted);
+  transition: color var(--fast), background var(--fast), transform var(--fast);
+}
+
+.cart-empty {
+  text-align: center;
+  padding: var(--space-25) var(--space-1);
+  color: var(--text-secondary);
+}
+
+.cart-empty svg {
+  width: var(--control-height);
+  height: var(--control-height);
+  margin: 0 auto var(--space-08);
+  color: var(--text-muted);
+}
+
+.cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: var(--space-1);
+  padding-block-start: var(--space-1);
+  border-block-start: 1px solid var(--border-subtle);
+  font-weight: 700;
+}
+
+.cart-summary strong {
+  font-size: 1.35rem;
+  color: var(--color-primary-text);
+}
+
+.simulation-note {
+  font-size: .74rem;
+  color: var(--text-muted);
+  margin-block-start: var(--space-05);
+}
+
+.btn-spinner {
+  display: none;
+  width: 1rem;
+  height: 1rem;
+  border: var(--space-0125) solid var(--spinner-track);
+  border-top-color: var(--text-inverse);
+  border-radius: var(--radius-circle);
+  animation: spin .7s linear infinite;
+}
+
+.btn.is-loading .btn-spinner {
+  display: block;
+}
+
+.btn.is-loading {
+  pointer-events: none;
+  opacity: .8;
+}
+
+.orders-details {
+  margin-block-start: var(--space-1);
+  border-block-start: 1px solid var(--border-subtle);
+  padding-block-start: var(--space-08);
+}
+
+.orders-details summary {
+  cursor: pointer;
+  font-size: .84rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.orders-details summary::marker {
+  color: var(--color-primary);
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-075);
+  padding: var(--space-055) 0;
+  border-block-end: 1px dashed var(--border-subtle);
+  font-size: .78rem;
+}
+
 /* M2.8: structural pseudo-class حقيقي؛ يزيل الحدّ فقط من آخر عنصر في السلة. */
-.order-item:last-child { border: 0; }
-.order-item span { color: var(--text-muted); }
-.order-item strong { color: var(--text-primary); }
+.order-item:last-child {
+  border: 0;
+}
+
+.order-item span {
+  color: var(--text-muted);
+}
+
+.order-item strong {
+  color: var(--text-primary);
+}
 
 /* تسجيل الدخول */
-.form-row { display: grid; gap: var(--space-035); margin-block-end: var(--space-085); }
-.form-row label { font-size: .8rem; font-weight: 700; color: var(--text-secondary); }
-.form-row input, .form-row textarea, .form-row select { min-height: var(--control-height); padding-inline: var(--space-085); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: var(--bg-subtle); color: var(--text-primary); outline: 0; transition: border-color var(--fast), background var(--fast), box-shadow var(--fast); }
-.form-row textarea { padding-block: var(--space-06); resize: vertical; min-height: 4.5rem; }
-.form-row input:focus, .form-row textarea:focus, .form-row select:focus { border-color: var(--color-primary); background: var(--bg-surface); box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 12%, var(--color-transparent)); }
-.form-row input[aria-invalid="true"], .form-row textarea[aria-invalid="true"], .form-row select[aria-invalid="true"] { border-color: var(--color-danger); background: var(--color-danger-subtle); }
-.form-error { padding: var(--space-06) var(--space-075); border-radius: var(--radius-sm); background: var(--color-danger-subtle); color: var(--color-danger-text); font-size: .8rem; margin-block: var(--space-05) var(--space-08); }
-.write-result { padding: var(--space-06) var(--space-075); border-radius: var(--radius-sm); background: var(--color-success-subtle); color: var(--color-success-text); font-size: .82rem; font-weight: 700; margin-block: var(--space-05) var(--space-08); }
+.form-row {
+  display: grid;
+  gap: var(--space-035);
+  margin-block-end: var(--space-085);
+}
+
+.form-row label {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  min-height: var(--control-height);
+  padding-inline: var(--space-085);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  outline: 0;
+  transition: border-color var(--fast), background var(--fast), box-shadow var(--fast);
+}
+
+.form-row textarea {
+  padding-block: var(--space-06);
+  resize: vertical;
+  min-height: 4.5rem;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  border-color: var(--color-primary);
+  background: var(--bg-surface);
+  box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 12%, var(--color-transparent));
+}
+
+.form-row input[aria-invalid="true"],
+.form-row textarea[aria-invalid="true"],
+.form-row select[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  background: var(--color-danger-subtle);
+}
+
+.form-error {
+  padding: var(--space-06) var(--space-075);
+  border-radius: var(--radius-sm);
+  background: var(--color-danger-subtle);
+  color: var(--color-danger-text);
+  font-size: .8rem;
+  margin-block: var(--space-05) var(--space-08);
+}
+
+.write-result {
+  padding: var(--space-06) var(--space-075);
+  border-radius: var(--radius-sm);
+  background: var(--color-success-subtle);
+  color: var(--color-success-text);
+  font-size: .82rem;
+  font-weight: 700;
+  margin-block: var(--space-05) var(--space-08);
+}
 
 /* M8: نموذج المنتج وأزرار الإدارة داخل البطاقة */
-.dialog-form { width: min(var(--dialog-form), calc(100% - var(--space-2))); }
-.card-manage { display: flex; flex-wrap: wrap; gap: var(--space-045); margin-block-start: var(--space-06); }
-.btn-xs { min-height: 2.25rem; padding-inline: var(--space-075); font-size: .74rem; }
-.table-actions { white-space: nowrap; }
-.table-actions .btn { margin-inline-end: var(--space-035); }
-.session-flag { color: var(--color-warning-text); font-size: .7rem; font-weight: 800; }
+.dialog-form {
+  width: min(var(--dialog-form), calc(100% - var(--space-2)));
+}
+
+.card-manage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-045);
+  margin-block-start: var(--space-06);
+}
+
+.btn-xs {
+  min-height: 2.25rem;
+  padding-inline: var(--space-075);
+  font-size: .74rem;
+}
+
+.table-actions {
+  white-space: nowrap;
+}
+
+.table-actions .btn {
+  margin-inline-end: var(--space-035);
+}
+
+.session-flag {
+  color: var(--color-warning-text);
+  font-size: .7rem;
+  font-weight: 800;
+}
 
 /* نجاح الطلب */
-.order-card { text-align: center; }
-.success-mark { width: var(--success-mark-size); height: var(--success-mark-size); margin: var(--space-03) auto var(--space-1); display: grid; place-items: center; border-radius: var(--radius-circle); background: var(--color-success-subtle); color: var(--color-success-text); font-size: 2rem; font-weight: 800; animation: popIn 500ms var(--bounce); }
-.order-summary { display: grid; gap: var(--space-05); text-align: start; padding: var(--space-1); border-radius: var(--radius-md); background: var(--bg-subtle); }
-.order-summary div { display: flex; justify-content: space-between; font-size: .84rem; }
-.order-summary span { color: var(--text-muted); }
+.order-card {
+  text-align: center;
+}
+
+.success-mark {
+  width: var(--success-mark-size);
+  height: var(--success-mark-size);
+  margin: var(--space-03) auto var(--space-1);
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  background: var(--color-success-subtle);
+  color: var(--color-success-text);
+  font-size: 2rem;
+  font-weight: 800;
+  animation: popIn 500ms var(--bounce);
+}
+
+.order-summary {
+  display: grid;
+  gap: var(--space-05);
+  text-align: start;
+  padding: var(--space-1);
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+}
+
+.order-summary div {
+  display: flex;
+  justify-content: space-between;
+  font-size: .84rem;
+}
+
+.order-summary span {
+  color: var(--text-muted);
+}
 
 /* ---------- 13) الإشعارات ---------- */
 .toast-container {
@@ -1004,6 +2210,7 @@ html:has(dialog[open]) { overflow: hidden; }
   width: min(var(--dialog-narrow), calc(100% - var(--space-2)));
   pointer-events: none;
 }
+
 .toast {
   pointer-events: auto;
   display: flex;
@@ -1019,61 +2226,306 @@ html:has(dialog[open]) { overflow: hidden; }
   font-weight: 600;
   animation: toastIn 320ms var(--bounce) both;
 }
-.toast.error { border-inline-start-color: var(--color-danger); }
-.toast.info { border-inline-start-color: var(--color-primary); }
-.toast-icon { width: 1.625rem; height: 1.625rem; flex-shrink: 0; display: grid; place-items: center; border-radius: var(--radius-circle); background: var(--color-success-subtle); color: var(--color-success-text); font-weight: 800; }
-.toast.error .toast-icon { background: var(--color-danger-subtle); color: var(--color-danger-text); }
-.toast.info .toast-icon { background: var(--color-primary-subtle); color: var(--color-primary-text); }
-.toast-leaving { animation: toastOut 240ms ease forwards; }
+
+.toast.error {
+  border-inline-start-color: var(--color-danger);
+}
+
+.toast.info {
+  border-inline-start-color: var(--color-primary);
+}
+
+.toast-icon {
+  width: 1.625rem;
+  height: 1.625rem;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  background: var(--color-success-subtle);
+  color: var(--color-success-text);
+  font-weight: 800;
+}
+
+.toast.error .toast-icon {
+  background: var(--color-danger-subtle);
+  color: var(--color-danger-text);
+}
+
+.toast.info .toast-icon {
+  background: var(--color-primary-subtle);
+  color: var(--color-primary-text);
+}
+
+.toast-leaving {
+  animation: toastOut 240ms ease forwards;
+}
 
 /* ---------- 14) التذييل ---------- */
-.footer { border-block-start: 1px solid var(--border-subtle); background: var(--bg-surface); margin-block-start: auto; }
-.footer-inner { width: 100%; max-width: var(--max-width); margin-inline: auto; padding: var(--space-2) var(--space-15); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-1); color: var(--text-muted); font-size: .82rem; }
-.footer-links { display: flex; gap: var(--space-12); list-style: none; }
-.footer a { display: inline-flex; align-items: center; min-height: var(--touch-target); /* M3.3: هدف لمس 44px */ text-decoration: none; font-weight: 700; color: var(--text-secondary); position: relative; }
-.footer a::after { content: ""; position: absolute; inset-block-end: calc(var(--space-0187) * -1); inset-inline-start: 0; width: 100%; height: var(--space-0125); background: var(--color-primary); transform: scaleX(0); transform-origin: start; transition: transform var(--normal); }
+.footer {
+  border-block-start: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  margin-block-start: auto;
+}
+
+.footer-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: var(--space-2) var(--space-15);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1);
+  color: var(--text-muted);
+  font-size: .82rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-12);
+  list-style: none;
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  /* M3.3: هدف لمس 44px */
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+.footer a::after {
+  content: "";
+  position: absolute;
+  inset-block-end: calc(var(--space-0187) * -1);
+  inset-inline-start: 0;
+  width: 100%;
+  height: var(--space-0125);
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: start;
+  transition: transform var(--normal);
+}
 
 /* ---------- 15) الحركات ---------- */
-@keyframes bump { 0%,100% { transform: scale(1); } 45% { transform: scale(1.22); } }
-@keyframes pulse { 0%,100% { box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 18%, var(--color-transparent)); } 50% { box-shadow: 0 0 0 .5rem color-mix(in srgb, var(--color-primary) 6%, var(--color-transparent)); } }
-@keyframes float { 0%,100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-.75rem) rotate(-1deg); } }
-@keyframes cardIn { from { opacity: 0; transform: translateY(1rem) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
-@keyframes heartPop { 0% { transform: scale(1); } 55% { transform: scale(1.35) rotate(-12deg); } 100% { transform: scale(1); } }
-@keyframes shimmer { to { transform: translateX(100%); } }
-@keyframes dialogIn { from { opacity: 0; transform: translateY(var(--space-1125)) scale(.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes popIn { from { opacity: 0; transform: scale(.5) rotate(-20deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
-@keyframes spin { to { transform: rotate(360deg); } }
-@keyframes toastIn { from { opacity: 0; transform: translateX(1.75rem); } to { opacity: 1; transform: translateX(0); } }
-@keyframes toastOut { to { opacity: 0; transform: translateX(1.75rem); } }
+@keyframes bump {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.22);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-primary) 18%, var(--color-transparent));
+  }
+
+  50% {
+    box-shadow: 0 0 0 .5rem color-mix(in srgb, var(--color-primary) 6%, var(--color-transparent));
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-.75rem) rotate(-1deg);
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) scale(.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heartPop {
+  0% {
+    transform: scale(1);
+  }
+
+  55% {
+    transform: scale(1.35) rotate(-12deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes dialogIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--space-1125)) scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(.5) rotate(-20deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(1.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toastOut {
+  to {
+    opacity: 0;
+    transform: translateX(1.75rem);
+  }
+}
 
 /* ---------- 16) التجاوب ---------- */
 @media (max-width: 64rem) {
-  :root { --header-height: var(--success-mark-size); }
-  .hero { grid-template-columns: 1fr; }
-  .hero-art { min-height: 15rem; }
-  .art-card-main { transform: none; }
-  .header-container { padding-inline: var(--space-11); }
+  :root {
+    --header-height: var(--success-mark-size);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-art {
+    min-height: 15rem;
+  }
+
+  .art-card-main {
+    transform: none;
+  }
+
+  .header-container {
+    padding-inline: var(--space-11);
+  }
 }
 
 @media (max-width: 48rem) {
-  :root { --header-height: 3.875rem; }
-  .main { padding-inline: var(--space-1); }
-  .brand-subtitle { display: none; }
-  .controls { padding: var(--space-09); }
-  .btn { min-height: var(--touch-target); }
-  .btn-icon { width: var(--touch-target); height: var(--touch-target); }
-  .lang-switch label { min-height: var(--touch-target); min-width: var(--touch-target); }
-  .chip { min-height: var(--touch-target); }
-  .search-field, .sort-field select { min-height: var(--touch-target); }
-  .product-grid { grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); gap: var(--space-085); }
-  .product-detail { grid-template-columns: minmax(0, 1fr); }
-  .detail-info { padding-inline-end: var(--space-25); }
-  .toast-container { inset-inline-end: 1rem; }
+  :root {
+    --header-height: 3.875rem;
+  }
+
+  .main {
+    padding-inline: var(--space-1);
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .controls {
+    padding: var(--space-09);
+  }
+
+  .btn {
+    min-height: var(--touch-target);
+  }
+
+  .btn-icon {
+    width: var(--touch-target);
+    height: var(--touch-target);
+  }
+
+  .lang-switch label {
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+  }
+
+  .chip {
+    min-height: var(--touch-target);
+  }
+
+  .search-field,
+  .sort-field select {
+    min-height: var(--touch-target);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+    gap: var(--space-085);
+  }
+
+  .product-detail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .detail-info {
+    padding-inline-end: var(--space-25);
+  }
+
+  .toast-container {
+    inset-inline-end: 1rem;
+  }
 
   /* M3.3: content-driven breakpoint عند 768px — القائمة تتحول إلى لوحة منسدلة.
      الهيدر يبقى sticky (M2.7) لأننا لم نغيّر position، بل غيّرنا اتجاه العناصر فقط. */
-  .menu-toggle { display: inline-flex; }
+  .menu-toggle {
+    display: inline-flex;
+  }
+
   .header-actions {
     display: none;
     position: absolute;
@@ -1087,148 +2539,491 @@ html:has(dialog[open]) { overflow: hidden; }
     border-block-end: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-md);
   }
-  .menu-toggle[aria-expanded="true"] + .header-actions { display: flex; }
+
+  .menu-toggle[aria-expanded="true"]+.header-actions {
+    display: flex;
+  }
+
   /* M3.3: لوحة القائمة جزء من الهيدر (z-index 100). الإشعارات (200) تُخفض وتُعطّل للنقر
      أثناء فتحها حتى لا تحجب الثيم/الدخول على الشاشات الضيقة. */
-  body.menu-open .toast-container { z-index: 90; }
-  body.menu-open .toast { pointer-events: none; }
-  .header-actions > * { width: 100%; }
-  .header-actions .header-api-link { display: inline-flex; justify-content: center; }
-  .lang-switch, .theme-switch { justify-content: space-between; }
-  .lang-switch label, .theme-switch label { flex: 1 1 auto; min-height: var(--touch-target); min-width: var(--touch-target); }
-  .theme-text { display: inline; }
+  body.menu-open .toast-container {
+    z-index: 90;
+  }
+
+  body.menu-open .toast {
+    pointer-events: none;
+  }
+
+  .header-actions>* {
+    width: 100%;
+  }
+
+  .header-actions .header-api-link {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .lang-switch,
+  .theme-switch {
+    justify-content: space-between;
+  }
+
+  .lang-switch label,
+  .theme-switch label {
+    flex: 1 1 auto;
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+  }
+
+  .theme-text {
+    display: inline;
+  }
 }
 
 @media (max-width: 35rem) {
-  :root { --header-height: 3.625rem; }
-  .header-container { padding-inline: var(--space-06); gap: var(--space-04); }
-  .brand-logo { width: 2.25rem; height: 2.25rem; }
-  .brand-logo svg { width: var(--space-1125); height: var(--space-1125); }
-  .brand-text { display: none; }
-  /* M3.3: حتى أصغر شاشة، أهداف اللمس لا تنزل عن 44px (2.75rem). */
-  .lang-switch label { min-width: var(--touch-target); min-height: var(--touch-target); padding-inline: var(--space-035); font-size: .7rem; }
-  .btn-icon { width: var(--touch-target); height: var(--touch-target); }
-  /* زر الدخول يصير أيقونة فقط، واسمه يبقى مقروءاً لقارئ الشاشة */
-  .header-login { width: var(--touch-target); min-height: var(--touch-target); padding: 0; }
-  .header-login #login-label {
-    position: absolute; width: 1px; height: 1px;
-    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  :root {
+    --header-height: 3.625rem;
   }
-  .cart-button { min-height: var(--touch-target); padding: var(--space-035) var(--space-05); }
-  .hero { padding-block-start: var(--space-2); }
-  .hero h1 { font-size: 2.05rem; }
-  .hero-stats { gap: var(--space-1); }
-  .hero-art { display: none; }
-  .toolbar { flex-direction: column; align-items: stretch; }
-  .search-field, .sort-field select { width: 100%; }
-  .api-controls > .sort-field { flex: 1 1 8.75rem; }
+
+  .header-container {
+    padding-inline: var(--space-06);
+    gap: var(--space-04);
+  }
+
+  .brand-logo {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .brand-logo svg {
+    width: var(--space-1125);
+    height: var(--space-1125);
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  /* M3.3: حتى أصغر شاشة، أهداف اللمس لا تنزل عن 44px (2.75rem). */
+  .lang-switch label {
+    min-width: var(--touch-target);
+    min-height: var(--touch-target);
+    padding-inline: var(--space-035);
+    font-size: .7rem;
+  }
+
+  .btn-icon {
+    width: var(--touch-target);
+    height: var(--touch-target);
+  }
+
+  /* زر الدخول يصير أيقونة فقط، واسمه يبقى مقروءاً لقارئ الشاشة */
+  .header-login {
+    width: var(--touch-target);
+    min-height: var(--touch-target);
+    padding: 0;
+  }
+
+  .header-login #login-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .cart-button {
+    min-height: var(--touch-target);
+    padding: var(--space-035) var(--space-05);
+  }
+
+  .hero {
+    padding-block-start: var(--space-2);
+  }
+
+  .hero h1 {
+    font-size: 2.05rem;
+  }
+
+  .hero-stats {
+    gap: var(--space-1);
+  }
+
+  .hero-art {
+    display: none;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-field,
+  .sort-field select {
+    width: 100%;
+  }
+
+  .api-controls>.sort-field {
+    flex: 1 1 8.75rem;
+  }
+
   /* 1rem (يساوي 16px افتراضياً) يمنع Safari على iOS من تكبير الصفحة عند التركيز على الحقل */
-  .search-field input, .sort-field select, .form-row input { font-size: 1rem; }
+  .search-field input,
+  .sort-field select,
+  .form-row input {
+    font-size: 1rem;
+  }
+
   /* النصوص ثنائية اللغة داخل الأزرار والشارات تلفّ بدل ما تExpand البطاقة */
-  .btn { white-space: normal; }
-  .btn .bi-en, .btn .bi-ar, .detail-badge .bi-en, .detail-badge .bi-ar { white-space: normal; }
-  .product-grid { grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: var(--space-065); }
-  .card-body { padding: var(--space-08); }
-  .card-title { font-size: .85rem; }
-  .price { font-size: 1rem; }
-  .add-btn { padding: var(--space-04) var(--space-055); font-size: .72rem; }
-  .btn-text { display: none; }
-  dialog { width: 100%; max-width: 100%; margin-block: auto 0; max-height: 94dvh; }
-  .dialog-card { max-height: 94dvh; padding: var(--space-11); border-radius: var(--radius-dialog) var(--radius-dialog) 0 0; }
-  .dialog-head h2 { font-size: 1.15rem; }
-  .detail-media { padding: var(--space-1); }
-  .toast-container { inset-block-start: calc(var(--header-height) + .5rem); }
-  .footer-inner { padding: var(--space-15) var(--space-1); }
+  .btn {
+    white-space: normal;
+  }
+
+  .btn .bi-en,
+  .btn .bi-ar,
+  .detail-badge .bi-en,
+  .detail-badge .bi-ar {
+    white-space: normal;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: var(--space-065);
+  }
+
+  .card-body {
+    padding: var(--space-08);
+  }
+
+  .card-title {
+    font-size: .85rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .add-btn {
+    padding: var(--space-04) var(--space-055);
+    font-size: .72rem;
+  }
+
+  .btn-text {
+    display: none;
+  }
+
+  dialog {
+    width: 100%;
+    max-width: 100%;
+    margin-block: auto 0;
+    max-height: 94dvh;
+  }
+
+  .dialog-card {
+    max-height: 94dvh;
+    padding: var(--space-11);
+    border-radius: var(--radius-dialog) var(--radius-dialog) 0 0;
+  }
+
+  .dialog-head h2 {
+    font-size: 1.15rem;
+  }
+
+  .detail-media {
+    padding: var(--space-1);
+  }
+
+  .toast-container {
+    inset-block-start: calc(var(--header-height) + .5rem);
+  }
+
+  .footer-inner {
+    padding: var(--space-15) var(--space-1);
+  }
 }
 
 /* جوالات صغيرة جداً: عمودان مريحان بدل ازدحام السعر والزر */
 @media (max-width: 25rem) {
-  .card-media img { padding: var(--space-06); }
-  .card-body { padding: var(--space-07); gap: var(--space-04); }
-  .card-title { font-size: .8rem; min-height: 2.6em; }
-  .card-desc { font-size: .72rem; -webkit-line-clamp: 2; }
-  .rating { font-size: .7rem; }
-  .card-footer { flex-direction: column; align-items: stretch; gap: var(--space-045); }
-  .price { font-size: 1.05rem; }
-  .add-btn { width: 100%; min-height: var(--touch-target); }
-  .hero-stats { gap: var(--space-08); }
-  .hero-stats dt { font-size: 1.3rem; }
+  .card-media img {
+    padding: var(--space-06);
+  }
+
+  .card-body {
+    padding: var(--space-07);
+    gap: var(--space-04);
+  }
+
+  .card-title {
+    font-size: .8rem;
+    min-height: 2.6em;
+  }
+
+  .card-desc {
+    font-size: .72rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .rating {
+    font-size: .7rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-045);
+  }
+
+  .price {
+    font-size: 1.05rem;
+  }
+
+  .add-btn {
+    width: 100%;
+    min-height: var(--touch-target);
+  }
+
+  .hero-stats {
+    gap: var(--space-08);
+  }
+
+  .hero-stats dt {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 23.75rem) {
-  .header-container { gap: var(--space-03); }
-  .lang-switch label { min-width: 1.875rem; }
+  .header-container {
+    gap: var(--space-03);
+  }
+
+  .lang-switch label {
+    min-width: 1.875rem;
+  }
+
   /* M2.6: حتى أصغر شاشة تظل القاعدة مرنة؛ min() يضمن ألا يتجاوز العمود العرض المتاح. */
-  .product-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.75rem), 1fr)); gap: var(--space-05); }
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.75rem), 1fr));
+    gap: var(--space-05);
+  }
 }
 
 /* M3.3: شاشات اللمس — أهداف لمس لا تقل عن 44px (2.75rem).
    حالات hover انتقلت إلى كتلة (hover: hover) أدناه، فلا يبقى شيء عالق هنا. */
-@media (hover: none), (pointer: coarse) {
-  .btn, .chip, .lang-switch label, .theme-switch label, .menu-toggle,
-  .header-login, .cart-button, .btn-icon, .btn-fav,
-  .qty-btn, .remove-btn, .add-btn, .sort-field select {
+@media (hover: none),
+(pointer: coarse) {
+
+  .btn,
+  .chip,
+  .lang-switch label,
+  .theme-switch label,
+  .menu-toggle,
+  .header-login,
+  .cart-button,
+  .btn-icon,
+  .btn-fav,
+  .qty-btn,
+  .remove-btn,
+  .add-btn,
+  .sort-field select {
     min-height: var(--touch-target);
     min-width: var(--touch-target);
   }
-  .search-field { min-height: var(--touch-target); }
-  .card-footer .add-btn { min-width: var(--touch-target); }
+
+  .search-field {
+    min-height: var(--touch-target);
+  }
+
+  .card-footer .add-btn {
+    min-width: var(--touch-target);
+  }
 }
 
-html[dir="rtl"] .footer a::after { transform-origin: right; }
+html[dir="rtl"] .footer a::after {
+  transform-origin: right;
+}
 
 /* ---------- 17) حالات hover فقط حيث توجد مؤشرات حقيقية ---------- */
 /* M3.1: كل قواعد :hover محصورة هنا؛ على الأجهزة بلا hover لا تُطبّق إطلاقاً،
    فلا يبقى تأثير عالق بعد اللمس. focus-visible وactive يعملان في كل الأجهزة. */
 @media (hover:hover) and (pointer: fine) {
-  .btn:hover::before { transform: translateX(120%); }
-  .btn:hover { transform: translateY(-var(--space-0125)); }
-  .btn-primary:hover { background: var(--color-primary-hover); box-shadow: 0 var(--space-0625) 1.625rem var(--shadow-primary-md); }
-  .btn-outline:hover { background: var(--bg-subtle); border-color: var(--color-primary); color: var(--color-primary-text); }
-  .btn-danger:hover { background: color-mix(in srgb, var(--color-danger) 82%, var(--color-shade)); border-color: var(--color-danger); }
-  .btn-ghost:hover { background: var(--bg-subtle); color: var(--text-primary); }
-  .btn-icon:hover { background: var(--bg-muted); color: var(--color-primary); }
-  .btn-icon:hover svg { transform: rotate(18deg) scale(1.12); }
-  .link-btn:hover { color: var(--color-primary); }
-  .brand:hover .brand-logo { transform: rotate(-8deg) scale(1.07); }
-  .lang-switch label:hover { color: var(--text-primary); background: var(--bg-muted); transform: translateY(-.0625rem); }
-  .back-to-top:hover { background: var(--color-primary); color: var(--text-inverse); transform: translateY(-.25rem); }
-  .hero-actions .btn:hover svg { transform: translateX(.25rem); }
-  html[dir="rtl"] .hero-actions .btn:hover svg { transform: translateX(-.25rem) scaleX(-1); }
-  .sort-field select:hover { border-color: var(--color-primary); background: var(--bg-surface); }
-  .chip:hover { transform: translateY(calc(var(--space-0187) * -1)) scale(1.03); border-color: var(--color-primary); color: var(--color-primary-text); box-shadow: var(--shadow-sm); }
-  .chip-active:hover { color: var(--text-inverse); }
-  .chip-fav:hover svg { transform: scale(1.2) rotate(-8deg); }
-  .card:hover { --lift: -.5rem; border-color: var(--border-strong); box-shadow: var(--shadow-lg); }
-  .card:hover .card-media img { transform: scale(1.08) rotate(-2deg); }
-  .card:hover .card-media::after { transform: translateX(130%); }
-  .btn-fav:hover { transform: scale(1.14) rotate(-10deg); color: var(--color-danger-strong); border-color: var(--color-danger-strong); }
-  .add-btn:hover svg { transform: rotate(90deg) scale(1.15); }
-  .detail-media:hover img { transform: scale(1.07) rotate(2deg); }
-  .qty-btn:hover { background: var(--color-primary); color: var(--text-inverse); transform: scale(1.1); }
-  .remove-btn:hover { color: var(--color-danger); background: var(--color-danger-subtle); transform: rotate(90deg); }
-  .footer a:hover { color: var(--color-primary-text); }
-  .footer a:hover::after { transform: scaleX(1); }
-  html[dir="rtl"] .card:hover .card-media img { transform: scale(1.08) rotate(2deg); }
-  html[dir="rtl"] .btn:hover { transform: translateY(-var(--space-0125)); }
+  .btn:hover::before {
+    transform: translateX(120%);
+  }
+
+  .btn:hover {
+    transform: translateY(-var(--space-0125));
+  }
+
+  .btn-primary:hover {
+    background: var(--color-primary-hover);
+    box-shadow: 0 var(--space-0625) 1.625rem var(--shadow-primary-md);
+  }
+
+  .btn-outline:hover {
+    background: var(--bg-subtle);
+    border-color: var(--color-primary);
+    color: var(--color-primary-text);
+  }
+
+  .btn-danger:hover {
+    background: color-mix(in srgb, var(--color-danger) 82%, var(--color-shade));
+    border-color: var(--color-danger);
+  }
+
+  .btn-ghost:hover {
+    background: var(--bg-subtle);
+    color: var(--text-primary);
+  }
+
+  .btn-icon:hover {
+    background: var(--bg-muted);
+    color: var(--color-primary);
+  }
+
+  .btn-icon:hover svg {
+    transform: rotate(18deg) scale(1.12);
+  }
+
+  .link-btn:hover {
+    color: var(--color-primary);
+  }
+
+  .brand:hover .brand-logo {
+    transform: rotate(-8deg) scale(1.07);
+  }
+
+  .lang-switch label:hover {
+    color: var(--text-primary);
+    background: var(--bg-muted);
+    transform: translateY(-.0625rem);
+  }
+
+  .back-to-top:hover {
+    background: var(--color-primary);
+    color: var(--text-inverse);
+    transform: translateY(-.25rem);
+  }
+
+  .hero-actions .btn:hover svg {
+    transform: translateX(.25rem);
+  }
+
+  html[dir="rtl"] .hero-actions .btn:hover svg {
+    transform: translateX(-.25rem) scaleX(-1);
+  }
+
+  .sort-field select:hover {
+    border-color: var(--color-primary);
+    background: var(--bg-surface);
+  }
+
+  .chip:hover {
+    transform: translateY(calc(var(--space-0187) * -1)) scale(1.03);
+    border-color: var(--color-primary);
+    color: var(--color-primary-text);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .chip-active:hover {
+    color: var(--text-inverse);
+  }
+
+  .chip-fav:hover svg {
+    transform: scale(1.2) rotate(-8deg);
+  }
+
+  .card:hover {
+    --lift: -.5rem;
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .card:hover .card-media img {
+    transform: scale(1.08) rotate(-2deg);
+  }
+
+  .card:hover .card-media::after {
+    transform: translateX(130%);
+  }
+
+  .btn-fav:hover {
+    transform: scale(1.14) rotate(-10deg);
+    color: var(--color-danger-strong);
+    border-color: var(--color-danger-strong);
+  }
+
+  .add-btn:hover svg {
+    transform: rotate(90deg) scale(1.15);
+  }
+
+  .detail-media:hover img {
+    transform: scale(1.07) rotate(2deg);
+  }
+
+  .qty-btn:hover {
+    background: var(--color-primary);
+    color: var(--text-inverse);
+    transform: scale(1.1);
+  }
+
+  .remove-btn:hover {
+    color: var(--color-danger);
+    background: var(--color-danger-subtle);
+    transform: rotate(90deg);
+  }
+
+  .footer a:hover {
+    color: var(--color-primary-text);
+  }
+
+  .footer a:hover::after {
+    transform: scaleX(1);
+  }
+
+  html[dir="rtl"] .card:hover .card-media img {
+    transform: scale(1.08) rotate(2deg);
+  }
+
+  html[dir="rtl"] .btn:hover {
+    transform: translateY(-var(--space-0125));
+  }
 }
 
 /* M3.1: active يعطي ردّ فعل فوري على كل الأنظمة. جاء بعد hover لذلك يفوز عند الضغط. */
-.chip:active, .lang-switch label:active, .theme-switch label:active,
-.menu-toggle:active, .qty-btn:active, .remove-btn:active { transform: scale(.96); }
-.btn:active { transform: translateY(0) scale(.97); }
+.chip:active,
+.lang-switch label:active,
+.theme-switch label:active,
+.menu-toggle:active,
+.qty-btn:active,
+.remove-btn:active {
+  transform: scale(.96);
+}
+
+.btn:active {
+  transform: translateY(0) scale(.97);
+}
 
 /* M3.2: احترام صريح لتقليل الحركة في عناصر التحميل تحديداً */
 @media (prefers-reduced-motion: reduce) {
-  .skeleton-img::after, .skeleton-line::after, .btn-spinner {
+
+  .skeleton-img::after,
+  .skeleton-line::after,
+  .btn-spinner {
     animation: none !important;
   }
-  .btn-spinner { border-top-color: var(--color-primary); }
+
+  .btn-spinner {
+    border-top-color: var(--color-primary);
+  }
 }
 
 /* تقليل الحركة لمن يفعّله في النظام */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
