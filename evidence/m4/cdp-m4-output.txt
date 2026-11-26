@@ -1,0 +1,107 @@
+﻿{
+  "320": {
+    "loadedCards": 20,
+    "listenersBefore": {
+      "gridClick": 1,
+      "gridPointerMove": 1,
+      "cardListeners": 0,
+      "detailAddListeners": 0,
+      "total": 93
+    },
+    "cardsAfterRerender": 20,
+    "listenersAfter": {
+      "gridClick": 1,
+      "gridPointerMove": 1,
+      "cardListeners": 0,
+      "detailAddListeners": 0,
+      "total": 93
+    },
+    "favoriteBeforeClick": 0,
+    "favoriteClicked": true,
+    "favoriteCountAfterOneClick": 1,
+    "cartBeforeClick": 0,
+    "addClicked": true,
+    "cartCountAfterOneClick": 1,
+    "detailsClicked": true,
+    "detail": {
+      "open": true,
+      "views": 1
+    },
+    "favoriteClickedAgain": true,
+    "favoriteCountAfterSecondClick": 0,
+    "listenersFinal": {
+      "gridClick": 1,
+      "gridPointerMove": 1,
+      "cardListeners": 0,
+      "detailAddListeners": 1,
+      "total": 94
+    },
+    "errors": [],
+    "checks": {
+      "loadedTwentyCards": true,
+      "oneGridClickListener": true,
+      "noCardListeners": true,
+      "listenerCountsStableAcrossRerenders": true,
+      "onlyDetailButtonAdded": true,
+      "favoriteFiresOnce": true,
+      "cartFiresOnce": true,
+      "detailFiresOnce": true,
+      "noErrors": true
+    },
+    "status": "PASS"
+  },
+  "1280": {
+    "loadedCards": 20,
+    "listenersBefore": {
+      "gridClick": 1,
+      "gridPointerMove": 1,
+      "cardListeners": 0,
+      "detailAddListeners": 0,
+      "total": 93
+    },
+    "cardsAfterRerender": 20,
+    "listenersAfter": {
+      "gridClick": 1,
+      "gridPointerMove": 1,
+      "cardListeners": 0,
+      "detailAddListeners": 0,
+      "total": 93
+    },
+    "favoriteBeforeClick": 0,
+    "favoriteClicked": true,
+    "favoriteCountAfterOneClick": 1,
+    "cartBeforeClick": 1,
+    "addClicked": true,
+    "cartCountAfterOneClick": 2,
+    "detailsClicked": true,
+    "detail": {
+      "open": true,
+      "views": 1
+    },
+    "favoriteClickedAgain": true,
+    "favoriteCountAfterSecondClick": 0,
+    "listenersFinal": {
+      "gridClick": 1,
+      "gridPointerMove": 1,
+      "cardListeners": 0,
+      "detailAddListeners": 1,
+      "total": 94
+    },
+    "errors": [],
+    "checks": {
+      "loadedTwentyCards": true,
+      "oneGridClickListener": true,
+      "noCardListeners": true,
+      "listenerCountsStableAcrossRerenders": true,
+      "onlyDetailButtonAdded": true,
+      "favoriteFiresOnce": true,
+      "cartFiresOnce": true,
+      "detailFiresOnce": true,
+      "noErrors": true
+    },
+    "status": "PASS"
+  }
+}
+
+M4 runtime delegation test: PASS
+

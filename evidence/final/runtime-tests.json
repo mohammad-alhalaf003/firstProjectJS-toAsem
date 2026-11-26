@@ -1,0 +1,977 @@
+{
+  "totals": {
+    "pass": 76,
+    "fail": 0
+  },
+  "failures": [],
+  "results": [
+    {
+      "name": "chrome: clean load has no page errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 320px light no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "light",
+        "width": 320,
+        "scrollWidth": 305,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 320px light touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 320px light text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 16.76,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 7.11,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.17,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 6.29,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 320px dark no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "dark",
+        "width": 320,
+        "scrollWidth": 305,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 320px dark touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 320px dark text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 18.03,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 10.91,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 6.14,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 4.65,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 320px ocean no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "width": 320,
+        "scrollWidth": 305,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 320px ocean touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 320px ocean text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 13.34,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 6.84,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.46,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 5.47,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 768px light no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "light",
+        "width": 768,
+        "scrollWidth": 753,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 768px light touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 768px light text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 16.76,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 7.11,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.17,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 6.29,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 768px dark no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "dark",
+        "width": 768,
+        "scrollWidth": 753,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 768px dark touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 768px dark text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 18.03,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 10.91,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 6.14,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 4.65,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 768px ocean no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "width": 768,
+        "scrollWidth": 753,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 768px ocean touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 768px ocean text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 13.34,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 6.84,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.46,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 5.47,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 1280px light no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "light",
+        "width": 1280,
+        "scrollWidth": 1265,
+        "overflow": false,
+        "interactiveCount": 18,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 1280px light touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 1280px light text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 16.76,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 7.11,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.17,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 6.29,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 1280px dark no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "dark",
+        "width": 1280,
+        "scrollWidth": 1265,
+        "overflow": false,
+        "interactiveCount": 18,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 1280px dark touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 1280px dark text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 18.03,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 10.91,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 6.14,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 4.65,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: 1280px ocean no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "width": 1280,
+        "scrollWidth": 1265,
+        "overflow": false,
+        "interactiveCount": 18,
+        "small": []
+      }
+    },
+    {
+      "name": "chrome: 1280px ocean touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "chrome: 1280px ocean text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 13.34,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 6.84,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.46,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 5.47,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "chrome: keyboard reaches hamburger at 320px",
+      "status": "PASS",
+      "detail": {
+        "found": true,
+        "steps": 3,
+        "active": {
+          "id": "menu-toggle",
+          "tag": "BUTTON",
+          "cls": "btn btn-icon menu-toggle"
+        }
+      }
+    },
+    {
+      "name": "chrome: hamburger opens with Enter",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "chrome: keyboard reaches search input",
+      "status": "PASS",
+      "detail": {
+        "found": true,
+        "steps": 10,
+        "active": {
+          "id": "search-input",
+          "tag": "INPUT",
+          "cls": ""
+        }
+      }
+    },
+    {
+      "name": "chrome: keyboard typing and Enter filter products",
+      "status": "PASS",
+      "detail": {
+        "value": "bag",
+        "count": "1 products1 منتج",
+        "focus": "search-input"
+      }
+    },
+    {
+      "name": "chrome: keyboard focus has visible outline or search-field ring",
+      "status": "PASS",
+      "detail": {
+        "id": "search-input",
+        "outlineStyle": "none",
+        "outlineWidth": "0px",
+        "searchFieldShadow": "color(srgb 0.309804 0.27451 0.898039 / 0.13) 0px 0px 0px 4px",
+        "parentFocused": true
+      }
+    },
+    {
+      "name": "chrome: keyboard reaches add-product button",
+      "status": "PASS",
+      "detail": {
+        "found": true,
+        "steps": 12,
+        "active": {
+          "id": "btn-add-product",
+          "tag": "BUTTON",
+          "cls": "btn btn-primary btn-sm"
+        }
+      }
+    },
+    {
+      "name": "chrome: Enter opens the product dialog",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "chrome: Escape closes the product dialog",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "chrome: ARIA landmarks, labels and table headers present",
+      "status": "PASS",
+      "detail": {
+        "headerNav": true,
+        "paginationNav": true,
+        "viewPressed": true,
+        "tableCaption": true,
+        "tableScopedHeaders": 6,
+        "dialogLabelled": true,
+        "iconLabels": true
+      }
+    },
+    {
+      "name": "chrome: no unhandled errors after keyboard and responsive tests",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: clean load has no page errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 320px light no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "light",
+        "width": 320,
+        "scrollWidth": 305,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 320px light touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 320px light text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 16.76,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 7.11,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.17,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 6.29,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 320px dark no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "dark",
+        "width": 320,
+        "scrollWidth": 305,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 320px dark touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 320px dark text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 18.03,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 10.91,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 6.14,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 4.65,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 320px ocean no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "width": 320,
+        "scrollWidth": 305,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 320px ocean touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 320px ocean text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 13.34,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 6.84,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.46,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 5.47,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 768px light no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "light",
+        "width": 768,
+        "scrollWidth": 753,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 768px light touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 768px light text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 16.76,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 7.11,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.17,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 6.29,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 768px dark no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "dark",
+        "width": 768,
+        "scrollWidth": 753,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 768px dark touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 768px dark text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 18.03,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 10.91,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 6.14,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 4.65,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 768px ocean no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "width": 768,
+        "scrollWidth": 753,
+        "overflow": false,
+        "interactiveCount": 5,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 768px ocean touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 768px ocean text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 13.34,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 6.84,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.46,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 5.47,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 1280px light no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "light",
+        "width": 1280,
+        "scrollWidth": 1265,
+        "overflow": false,
+        "interactiveCount": 18,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 1280px light touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 1280px light text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 16.76,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 7.11,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.17,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 6.29,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 1280px dark no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "dark",
+        "width": 1280,
+        "scrollWidth": 1265,
+        "overflow": false,
+        "interactiveCount": 18,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 1280px dark touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 1280px dark text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 18.03,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 10.91,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 6.14,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 4.65,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: 1280px ocean no horizontal overflow",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "width": 1280,
+        "scrollWidth": 1265,
+        "overflow": false,
+        "interactiveCount": 18,
+        "small": []
+      }
+    },
+    {
+      "name": "edge: 1280px ocean touch targets >=44px",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "edge: 1280px ocean text contrast >=4.5:1",
+      "status": "PASS",
+      "detail": [
+        {
+          "pair": "--text-primary on --bg-page",
+          "ratio": 13.34,
+          "pass": true
+        },
+        {
+          "pair": "--text-secondary on --bg-surface",
+          "ratio": 6.84,
+          "pass": true
+        },
+        {
+          "pair": "--text-muted on --bg-surface",
+          "ratio": 5.46,
+          "pass": true
+        },
+        {
+          "pair": "--text-inverse on --color-primary",
+          "ratio": 5.47,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "edge: keyboard reaches hamburger at 320px",
+      "status": "PASS",
+      "detail": {
+        "found": true,
+        "steps": 3,
+        "active": {
+          "id": "menu-toggle",
+          "tag": "BUTTON",
+          "cls": "btn btn-icon menu-toggle"
+        }
+      }
+    },
+    {
+      "name": "edge: hamburger opens with Enter",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "edge: keyboard reaches search input",
+      "status": "PASS",
+      "detail": {
+        "found": true,
+        "steps": 10,
+        "active": {
+          "id": "search-input",
+          "tag": "INPUT",
+          "cls": ""
+        }
+      }
+    },
+    {
+      "name": "edge: keyboard typing and Enter filter products",
+      "status": "PASS",
+      "detail": {
+        "value": "bag",
+        "count": "1 products1 منتج",
+        "focus": "search-input"
+      }
+    },
+    {
+      "name": "edge: keyboard focus has visible outline or search-field ring",
+      "status": "PASS",
+      "detail": {
+        "id": "search-input",
+        "outlineStyle": "none",
+        "outlineWidth": "0px",
+        "searchFieldShadow": "color(srgb 0.309804 0.27451 0.898039 / 0.13) 0px 0px 0px 4px",
+        "parentFocused": true
+      }
+    },
+    {
+      "name": "edge: keyboard reaches add-product button",
+      "status": "PASS",
+      "detail": {
+        "found": true,
+        "steps": 12,
+        "active": {
+          "id": "btn-add-product",
+          "tag": "BUTTON",
+          "cls": "btn btn-primary btn-sm"
+        }
+      }
+    },
+    {
+      "name": "edge: Enter opens the product dialog",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "edge: Escape closes the product dialog",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "edge: ARIA landmarks, labels and table headers present",
+      "status": "PASS",
+      "detail": {
+        "headerNav": true,
+        "paginationNav": true,
+        "viewPressed": true,
+        "tableCaption": true,
+        "tableScopedHeaders": 6,
+        "dialogLabelled": true,
+        "iconLabels": true
+      }
+    },
+    {
+      "name": "edge: no unhandled errors after keyboard and responsive tests",
+      "status": "PASS",
+      "detail": []
+    }
+  ]
+}

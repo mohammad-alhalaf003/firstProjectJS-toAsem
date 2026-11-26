@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-11-26T08:10:10.289Z",
+  "environment": {
+    "browser": "Google Chrome headless via CDP",
+    "viewport": "1280×900",
+    "data": "5000 synthetic products generated in Browser Console; image is a 1×1 data URI so Network is not distorted",
+    "caveat": "console.time measures JavaScript DOM construction; visualMs is a double-requestAnimationFrame upper bound until the next paint, not a Lighthouse paint metric."
+  },
+  "generated": {
+    "count": 5000,
+    "firstId": 100000,
+    "lastId": 104999
+  },
+  "measurements": {
+    "all5000": {
+      "jsMs": 214.9,
+      "visualMs": 13523.9,
+      "rendered": {
+        "requested": 5000,
+        "rendered": 5000
+      },
+      "cards": 5000,
+      "pageCount": 1,
+      "status": "Showing 1–5000 of 5000عرض 1–5000 من 5000",
+      "current": "1"
+    },
+    "page20": {
+      "jsMs": 13.6,
+      "visualMs": 422,
+      "rendered": {
+        "requested": 5000,
+        "rendered": 20
+      },
+      "cards": 20,
+      "pageCount": 4,
+      "status": "Showing 1–20 of 5000عرض 1–20 من 5000",
+      "current": "1"
+    }
+  },
+  "consoleTimings": [
+    {
+      "label": "m6-render-all-5000",
+      "raw": "m6-render-all-5000: 214.694091796875 ms"
+    },
+    {
+      "label": "m6-render-page-20",
+      "raw": "m6-render-page-20: 13.06201171875 ms"
+    }
+  ],
+  "comparison": {
+    "jsTimesFaster": 15.8,
+    "visualTimesFaster": 32.05
+  },
+  "restored": {
+    "cards": 20,
+    "status": "Showing 1–20 of 20عرض 1–20 من 20",
+    "perPage": "20",
+    "lsPageSize": null,
+    "fakeTitles": 0,
+    "errs": []
+  },
+  "consoleErrors": [],
+  "screenshots": [
+    "stress-5000.png",
+    "stress-page20.png"
+  ],
+  "checks": {
+    "all5000Rendered": true,
+    "page20Rendered": true,
+    "noFakeDataLeft": true,
+    "consoleClean": true
+  }
+}

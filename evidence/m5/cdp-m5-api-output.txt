@@ -1,0 +1,250 @@
+﻿[
+  {
+    "label": "GET /products?limit=5&sort=desc",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 85,
+    "preview": {
+      "arrayLength": 5,
+      "firstItemKeys": [
+        "id",
+        "title",
+        "price",
+        "description",
+        "category",
+        "image",
+        "rating"
+      ]
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {
+      "limit": "5",
+      "sort": "desc"
+    },
+    "path": "/products"
+  },
+  {
+    "label": "GET /products/1",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 88,
+    "preview": {
+      "objectKeys": [
+        "id",
+        "title",
+        "price",
+        "description",
+        "category",
+        "image",
+        "rating"
+      ],
+      "sampleTitle": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "sampleCategory": "men's clothing",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {},
+    "path": "/products/1"
+  },
+  {
+    "label": "GET /products/9999 (missing id)",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 86,
+    "preview": {
+      "textLength": 0
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {},
+    "path": "/products/9999"
+  },
+  {
+    "label": "GET /products/categories",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 86,
+    "preview": {
+      "arrayLength": 4,
+      "firstItemKeys": []
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {},
+    "path": "/products/categories"
+  },
+  {
+    "label": "GET /products/category/jewelery?limit=3&sort=asc",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 104,
+    "preview": {
+      "arrayLength": 3,
+      "firstItemKeys": [
+        "id",
+        "title",
+        "price",
+        "description",
+        "category",
+        "image",
+        "rating"
+      ]
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {
+      "limit": "3",
+      "sort": "asc"
+    },
+    "path": "/products/category/jewelery"
+  },
+  {
+    "label": "GET /products/category/unknown (empty)",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 105,
+    "preview": {
+      "arrayLength": 0,
+      "firstItemKeys": []
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {},
+    "path": "/products/category/unknown"
+  },
+  {
+    "label": "GET /users?limit=2",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 200,
+    "preview": {
+      "arrayLength": 2,
+      "firstItemKeys": [
+        "address",
+        "id",
+        "email",
+        "username",
+        "password",
+        "name",
+        "phone",
+        "__v"
+      ]
+    },
+    "method": "GET",
+    "networkStatus": 200,
+    "query": {
+      "limit": "2"
+    },
+    "path": "/users"
+  },
+  {
+    "label": "POST /auth/login (invalid credentials)",
+    "status": 401,
+    "contentType": "text/html; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 346,
+    "preview": {
+      "textLength": 33
+    },
+    "method": "POST",
+    "networkStatus": 401,
+    "query": {},
+    "path": "/auth/login"
+  },
+  {
+    "label": "POST /auth/login (valid credentials, redacted)",
+    "status": 201,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "[redacted]"
+    ],
+    "ms": 360,
+    "preview": {
+      "objectKeys": [
+        "token"
+      ],
+      "sampleTitle": null,
+      "sampleCategory": null,
+      "rating": null
+    },
+    "method": "POST",
+    "networkStatus": 201,
+    "query": {},
+    "path": "/auth/login"
+  },
+  {
+    "label": "POST /carts",
+    "status": 201,
+    "contentType": "application/json; charset=utf-8",
+    "cors": null,
+    "networkCors": [
+      "access-control-allow-origin",
+      "*"
+    ],
+    "ms": 181,
+    "preview": {
+      "objectKeys": [
+        "id",
+        "userId",
+        "date",
+        "products"
+      ],
+      "sampleTitle": null,
+      "sampleCategory": null,
+      "rating": null
+    },
+    "method": "POST",
+    "networkStatus": 201,
+    "query": {},
+    "path": "/carts"
+  }
+]
+
+Saved C:\projects\firstProjectJS-toAsem\evidence\m5\api-probe.json
+

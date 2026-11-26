@@ -1,0 +1,120 @@
+[
+  {
+    "browser": "chrome",
+    "errors": [],
+    "console": [
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "dark"
+        ]
+      },
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "dark"
+        ]
+      },
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "ocean"
+        ]
+      },
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "ocean"
+        ]
+      },
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Search stats (debounce) — input events: 3, filter runs: 1"
+        ]
+      },
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 2"
+        ]
+      },
+      {
+        "tab": "chrome",
+        "type": "info",
+        "args": [
+          "[StorePulse] Search stats (Enter) — input events: 4, filter runs: 3"
+        ]
+      }
+    ]
+  },
+  {
+    "browser": "edge",
+    "errors": [],
+    "console": [
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "dark"
+        ]
+      },
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "dark"
+        ]
+      },
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "ocean"
+        ]
+      },
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Ready with theme",
+          "ocean"
+        ]
+      },
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Search stats (debounce) — input events: 3, filter runs: 1"
+        ]
+      },
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 2"
+        ]
+      },
+      {
+        "tab": "edge",
+        "type": "info",
+        "args": [
+          "[StorePulse] Search stats (Enter) — input events: 4, filter runs: 3"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,293 @@
+{
+  "note": "Shapes and lengths only; no token or password values are recorded.",
+  "snapshots": [
+    {
+      "width": 320,
+      "label": "before-writes",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 320,
+      "label": "after-add",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 320,
+      "label": "after-login",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        },
+        "storepulse_token": {
+          "kind": "string",
+          "length": 138
+        },
+        "storepulse_username": {
+          "kind": "string",
+          "length": 7
+        }
+      }
+    },
+    {
+      "width": 320,
+      "label": "after-logout",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 320,
+      "label": "after-checkout",
+      "localStorage": {
+        "storepulse_cart": {
+          "kind": "array(0)",
+          "length": 2
+        }
+      },
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        },
+        "storepulse_token": {
+          "kind": "string",
+          "length": 138
+        },
+        "storepulse_username": {
+          "kind": "string",
+          "length": 7
+        }
+      }
+    },
+    {
+      "width": 768,
+      "label": "before-writes",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 768,
+      "label": "after-add",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 768,
+      "label": "after-login",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        },
+        "storepulse_token": {
+          "kind": "string",
+          "length": 138
+        },
+        "storepulse_username": {
+          "kind": "string",
+          "length": 7
+        }
+      }
+    },
+    {
+      "width": 768,
+      "label": "after-logout",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 768,
+      "label": "after-checkout",
+      "localStorage": {
+        "storepulse_cart": {
+          "kind": "array(0)",
+          "length": 2
+        }
+      },
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        },
+        "storepulse_token": {
+          "kind": "string",
+          "length": 138
+        },
+        "storepulse_username": {
+          "kind": "string",
+          "length": 7
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "label": "before-writes",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "label": "after-add",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "label": "after-login",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        },
+        "storepulse_token": {
+          "kind": "string",
+          "length": 138
+        },
+        "storepulse_username": {
+          "kind": "string",
+          "length": 7
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "label": "after-logout",
+      "localStorage": {},
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "label": "after-checkout",
+      "localStorage": {
+        "storepulse_cart": {
+          "kind": "array(0)",
+          "length": 2
+        }
+      },
+      "sessionStorage": {
+        "storepulse_current_page": {
+          "kind": "number",
+          "length": 1
+        },
+        "storepulse_filters": {
+          "kind": "object",
+          "length": 73
+        },
+        "storepulse_token": {
+          "kind": "string",
+          "length": 138
+        },
+        "storepulse_username": {
+          "kind": "string",
+          "length": 7
+        }
+      }
+    }
+  ]
+}

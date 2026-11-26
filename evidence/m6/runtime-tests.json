@@ -1,0 +1,1217 @@
+{
+  "generatedAt": "2026-11-26T08:09:48.506Z",
+  "results": [
+    {
+      "name": "W320 initial 20 cards",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "20",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 initial range + first/last disabled",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "20",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 per page 5 resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–5 of 20عرض 1–5 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 page size in localStorage",
+      "status": "PASS",
+      "detail": "5"
+    },
+    {
+      "name": "W320 next → page 2",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 6–10 of 20عرض 6–10 من 20",
+        "result": "20 products20 منتج",
+        "current": "2",
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 page in sessionStorage",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "name": "W320 middle/last page 4",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 16–20 of 20عرض 16–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "4",
+        "prevDisabled": false,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 previous → page 3",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 11–15 of 20عرض 11–15 من 20",
+        "result": "20 products20 منتج",
+        "current": "3",
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 search resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 1,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "result": "1 products1 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 local sort resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 20عرض 1–5 من 20",
+          "result": "20 products20 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "prices": [
+          999.99,
+          695,
+          599,
+          168,
+          114
+        ]
+      }
+    },
+    {
+      "name": "W320 category resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 6عرض 1–5 من 6",
+          "result": "6 in this category6 منتج في هذه الفئة",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "chipUrl": "GET /products/category/electronics?limit=20&sort=asc"
+      }
+    },
+    {
+      "name": "W320 API limit resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–5 of 5عرض 1–5 من 5",
+        "result": "5 products5 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 server ID sort resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 5عرض 1–5 من 5",
+          "result": "5 products5 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": true,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "sortUrl": "GET /products?limit=5&sort=desc"
+      }
+    },
+    {
+      "name": "W320 favorites filter resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 1,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "result": "1 products1 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 table view shares same 5 items",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 0,
+          "rows": 5,
+          "gridHidden": true,
+          "tableHidden": false,
+          "status": "Showing 1–5 of 20عرض 1–5 من 20",
+          "result": "20 products20 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "false",
+          "tablePressed": "true",
+          "perPage": "5",
+          "errs": []
+        },
+        "tableShape": {
+          "caption": true,
+          "colScopes": 6,
+          "rowScopes": 5,
+          "firstCells": 6,
+          "hasImage": true,
+          "hasRating": true,
+          "overflowX": "auto",
+          "wrapScroll": 736,
+          "wrapClient": 271,
+          "pageScroll": 305,
+          "inner": 320
+        }
+      }
+    },
+    {
+      "name": "W320 real table semantics",
+      "status": "PASS",
+      "detail": {
+        "caption": true,
+        "colScopes": 6,
+        "rowScopes": 5,
+        "firstCells": 6,
+        "hasImage": true,
+        "hasRating": true,
+        "overflowX": "auto",
+        "wrapScroll": 736,
+        "wrapClient": 271,
+        "pageScroll": 305,
+        "inner": 320
+      }
+    },
+    {
+      "name": "W320 no page-level horizontal scroll",
+      "status": "PASS",
+      "detail": {
+        "caption": true,
+        "colScopes": 6,
+        "rowScopes": 5,
+        "firstCells": 6,
+        "hasImage": true,
+        "hasRating": true,
+        "overflowX": "auto",
+        "wrapScroll": 736,
+        "wrapClient": 271,
+        "pageScroll": 305,
+        "inner": 320
+      }
+    },
+    {
+      "name": "W320 view stored in localStorage",
+      "status": "PASS",
+      "detail": "\"table\""
+    },
+    {
+      "name": "W320 details/favorite/cart work in table",
+      "status": "PASS",
+      "detail": {
+        "detailOpen": true,
+        "rowFav": "true",
+        "cartBefore": 0,
+        "cartAfter": 1
+      }
+    },
+    {
+      "name": "W320 storage restore after reload",
+      "status": "PASS",
+      "detail": {
+        "perPage": "5",
+        "current": "2",
+        "rows": 5,
+        "tablePressed": "true",
+        "ls": "5",
+        "ss": "2",
+        "view": "\"table\""
+      }
+    },
+    {
+      "name": "W320 empty state without errors",
+      "status": "PASS",
+      "detail": {
+        "cards": 0,
+        "rows": 0,
+        "gridHidden": true,
+        "tableHidden": true,
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "result": "0 products0 منتج",
+        "current": null,
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": true,
+        "stateHidden": false,
+        "gridPressed": "false",
+        "tablePressed": "true",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 console clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "W768 initial 20 cards",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "20",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 initial range + first/last disabled",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "20",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 per page 5 resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–5 of 20عرض 1–5 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 page size in localStorage",
+      "status": "PASS",
+      "detail": "5"
+    },
+    {
+      "name": "W768 next → page 2",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 6–10 of 20عرض 6–10 من 20",
+        "result": "20 products20 منتج",
+        "current": "2",
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 page in sessionStorage",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "name": "W768 middle/last page 4",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 16–20 of 20عرض 16–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "4",
+        "prevDisabled": false,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 previous → page 3",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 11–15 of 20عرض 11–15 من 20",
+        "result": "20 products20 منتج",
+        "current": "3",
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 search resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 1,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "result": "1 products1 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 local sort resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 20عرض 1–5 من 20",
+          "result": "20 products20 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "prices": [
+          999.99,
+          695,
+          599,
+          168,
+          114
+        ]
+      }
+    },
+    {
+      "name": "W768 category resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 6عرض 1–5 من 6",
+          "result": "6 in this category6 منتج في هذه الفئة",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "chipUrl": "GET /products/category/electronics?limit=20&sort=asc"
+      }
+    },
+    {
+      "name": "W768 API limit resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–5 of 5عرض 1–5 من 5",
+        "result": "5 products5 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 server ID sort resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 5عرض 1–5 من 5",
+          "result": "5 products5 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": true,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "sortUrl": "GET /products?limit=5&sort=desc"
+      }
+    },
+    {
+      "name": "W768 favorites filter resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 1,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "result": "1 products1 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 table view shares same 5 items",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 0,
+          "rows": 5,
+          "gridHidden": true,
+          "tableHidden": false,
+          "status": "Showing 1–5 of 20عرض 1–5 من 20",
+          "result": "20 products20 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "false",
+          "tablePressed": "true",
+          "perPage": "5",
+          "errs": []
+        },
+        "tableShape": {
+          "caption": true,
+          "colScopes": 6,
+          "rowScopes": 5,
+          "firstCells": 6,
+          "hasImage": true,
+          "hasRating": true,
+          "overflowX": "auto",
+          "wrapScroll": 736,
+          "wrapClient": 719,
+          "pageScroll": 753,
+          "inner": 768
+        }
+      }
+    },
+    {
+      "name": "W768 real table semantics",
+      "status": "PASS",
+      "detail": {
+        "caption": true,
+        "colScopes": 6,
+        "rowScopes": 5,
+        "firstCells": 6,
+        "hasImage": true,
+        "hasRating": true,
+        "overflowX": "auto",
+        "wrapScroll": 736,
+        "wrapClient": 719,
+        "pageScroll": 753,
+        "inner": 768
+      }
+    },
+    {
+      "name": "W768 no page-level horizontal scroll",
+      "status": "PASS",
+      "detail": {
+        "caption": true,
+        "colScopes": 6,
+        "rowScopes": 5,
+        "firstCells": 6,
+        "hasImage": true,
+        "hasRating": true,
+        "overflowX": "auto",
+        "wrapScroll": 736,
+        "wrapClient": 719,
+        "pageScroll": 753,
+        "inner": 768
+      }
+    },
+    {
+      "name": "W768 view stored in localStorage",
+      "status": "PASS",
+      "detail": "\"table\""
+    },
+    {
+      "name": "W768 details/favorite/cart work in table",
+      "status": "PASS",
+      "detail": {
+        "detailOpen": true,
+        "rowFav": "true",
+        "cartBefore": 0,
+        "cartAfter": 1
+      }
+    },
+    {
+      "name": "W768 storage restore after reload",
+      "status": "PASS",
+      "detail": {
+        "perPage": "5",
+        "current": "2",
+        "rows": 5,
+        "tablePressed": "true",
+        "ls": "5",
+        "ss": "2",
+        "view": "\"table\""
+      }
+    },
+    {
+      "name": "W768 empty state without errors",
+      "status": "PASS",
+      "detail": {
+        "cards": 0,
+        "rows": 0,
+        "gridHidden": true,
+        "tableHidden": true,
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "result": "0 products0 منتج",
+        "current": null,
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": true,
+        "stateHidden": false,
+        "gridPressed": "false",
+        "tablePressed": "true",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 console clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "W1280 initial 20 cards",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "20",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 initial range + first/last disabled",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "20",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 per page 5 resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–5 of 20عرض 1–5 من 20",
+        "result": "20 products20 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 page size in localStorage",
+      "status": "PASS",
+      "detail": "5"
+    },
+    {
+      "name": "W1280 next → page 2",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 6–10 of 20عرض 6–10 من 20",
+        "result": "20 products20 منتج",
+        "current": "2",
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 page in sessionStorage",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "name": "W1280 middle/last page 4",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 16–20 of 20عرض 16–20 من 20",
+        "result": "20 products20 منتج",
+        "current": "4",
+        "prevDisabled": false,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 previous → page 3",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 11–15 of 20عرض 11–15 من 20",
+        "result": "20 products20 منتج",
+        "current": "3",
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 search resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 1,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "result": "1 products1 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 local sort resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 20عرض 1–5 من 20",
+          "result": "20 products20 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "prices": [
+          999.99,
+          695,
+          599,
+          168,
+          114
+        ]
+      }
+    },
+    {
+      "name": "W1280 category resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 6عرض 1–5 من 6",
+          "result": "6 in this category6 منتج في هذه الفئة",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "chipUrl": "GET /products/category/electronics?limit=20&sort=asc"
+      }
+    },
+    {
+      "name": "W1280 API limit resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 5,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–5 of 5عرض 1–5 من 5",
+        "result": "5 products5 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 server ID sort resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 5,
+          "rows": 0,
+          "gridHidden": false,
+          "tableHidden": true,
+          "status": "Showing 1–5 of 5عرض 1–5 من 5",
+          "result": "5 products5 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": true,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "true",
+          "tablePressed": "false",
+          "perPage": "5",
+          "errs": []
+        },
+        "sortUrl": "GET /products?limit=5&sort=desc"
+      }
+    },
+    {
+      "name": "W1280 favorites filter resets to page 1",
+      "status": "PASS",
+      "detail": {
+        "cards": 1,
+        "rows": 0,
+        "gridHidden": false,
+        "tableHidden": true,
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "result": "1 products1 منتج",
+        "current": "1",
+        "prevDisabled": true,
+        "nextDisabled": true,
+        "navHidden": false,
+        "stateHidden": true,
+        "gridPressed": "true",
+        "tablePressed": "false",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 table view shares same 5 items",
+      "status": "PASS",
+      "detail": {
+        "s": {
+          "cards": 0,
+          "rows": 5,
+          "gridHidden": true,
+          "tableHidden": false,
+          "status": "Showing 1–5 of 20عرض 1–5 من 20",
+          "result": "20 products20 منتج",
+          "current": "1",
+          "prevDisabled": true,
+          "nextDisabled": false,
+          "navHidden": false,
+          "stateHidden": true,
+          "gridPressed": "false",
+          "tablePressed": "true",
+          "perPage": "5",
+          "errs": []
+        },
+        "tableShape": {
+          "caption": true,
+          "colScopes": 6,
+          "rowScopes": 5,
+          "firstCells": 6,
+          "hasImage": true,
+          "hasRating": true,
+          "overflowX": "auto",
+          "wrapScroll": 1190,
+          "wrapClient": 1190,
+          "pageScroll": 1265,
+          "inner": 1280
+        }
+      }
+    },
+    {
+      "name": "W1280 real table semantics",
+      "status": "PASS",
+      "detail": {
+        "caption": true,
+        "colScopes": 6,
+        "rowScopes": 5,
+        "firstCells": 6,
+        "hasImage": true,
+        "hasRating": true,
+        "overflowX": "auto",
+        "wrapScroll": 1190,
+        "wrapClient": 1190,
+        "pageScroll": 1265,
+        "inner": 1280
+      }
+    },
+    {
+      "name": "W1280 no page-level horizontal scroll",
+      "status": "PASS",
+      "detail": {
+        "caption": true,
+        "colScopes": 6,
+        "rowScopes": 5,
+        "firstCells": 6,
+        "hasImage": true,
+        "hasRating": true,
+        "overflowX": "auto",
+        "wrapScroll": 1190,
+        "wrapClient": 1190,
+        "pageScroll": 1265,
+        "inner": 1280
+      }
+    },
+    {
+      "name": "W1280 view stored in localStorage",
+      "status": "PASS",
+      "detail": "\"table\""
+    },
+    {
+      "name": "W1280 details/favorite/cart work in table",
+      "status": "PASS",
+      "detail": {
+        "detailOpen": true,
+        "rowFav": "true",
+        "cartBefore": 0,
+        "cartAfter": 1
+      }
+    },
+    {
+      "name": "W1280 storage restore after reload",
+      "status": "PASS",
+      "detail": {
+        "perPage": "5",
+        "current": "2",
+        "rows": 5,
+        "tablePressed": "true",
+        "ls": "5",
+        "ss": "2",
+        "view": "\"table\""
+      }
+    },
+    {
+      "name": "W1280 empty state without errors",
+      "status": "PASS",
+      "detail": {
+        "cards": 0,
+        "rows": 0,
+        "gridHidden": true,
+        "tableHidden": true,
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "result": "0 products0 منتج",
+        "current": null,
+        "prevDisabled": false,
+        "nextDisabled": false,
+        "navHidden": true,
+        "stateHidden": false,
+        "gridPressed": "false",
+        "tablePressed": "true",
+        "perPage": "5",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 console clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "no console API errors",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "summary": {
+    "pass": 67,
+    "fail": 0
+  }
+}

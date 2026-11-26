@@ -1,0 +1,195 @@
+﻿[
+  {
+    "name": "4.1 const/let",
+    "status": "PASS",
+    "detail": "const=271 let=18"
+  },
+  {
+    "name": "4.1 data types",
+    "status": "PASS",
+    "detail": "number/string/array/set/map/json"
+  },
+  {
+    "name": "4.1 template literals",
+    "status": "PASS",
+    "detail": "backticks=160"
+  },
+  {
+    "name": "4.1 strict equality",
+    "status": "PASS",
+    "detail": "=== count=122"
+  },
+  {
+    "name": "4.1 if + ternary",
+    "status": "PASS",
+    "detail": "both used"
+  },
+  {
+    "name": "4.1 for...of",
+    "status": "PASS",
+    "detail": "for...of=3"
+  },
+  {
+    "name": "4.1 forEach",
+    "status": "PASS",
+    "detail": "forEach=24"
+  },
+  {
+    "name": "4.2 declarations",
+    "status": "PASS",
+    "detail": "declarations=147"
+  },
+  {
+    "name": "4.2 function expressions",
+    "status": "PASS",
+    "detail": "expressions=3"
+  },
+  {
+    "name": "4.2 arrow functions",
+    "status": "PASS",
+    "detail": "arrows=133"
+  },
+  {
+    "name": "4.2 default parameters",
+    "status": "PASS",
+    "detail": "defaults in createNode/createBilingual/toast/renderCartBadge/apiRequest"
+  },
+  {
+    "name": "4.2 return values",
+    "status": "PASS",
+    "detail": "returns=121"
+  },
+  {
+    "name": "4.2 callbacks",
+    "status": "PASS",
+    "detail": "listeners=61"
+  },
+  {
+    "name": "4.3 map/filter/find/some/includes/reduce",
+    "status": "PASS",
+    "detail": "all six used"
+  },
+  {
+    "name": "4.3 spread",
+    "status": "PASS",
+    "detail": "spread/rest=11"
+  },
+  {
+    "name": "4.3 destructuring",
+    "status": "PASS",
+    "detail": "destructuring=3"
+  },
+  {
+    "name": "4.4 Array.sort comparator",
+    "status": "PASS",
+    "detail": "named comparators for price/rating/title"
+  },
+  {
+    "name": "4.4 server sort preserved",
+    "status": "PASS",
+    "detail": "?sort= in URL"
+  },
+  {
+    "name": "4.4 no mutation of source",
+    "status": "PASS",
+    "detail": "sort on copy"
+  },
+  {
+    "name": "4.5 querySelector(All)",
+    "status": "PASS",
+    "detail": "both used"
+  },
+  {
+    "name": "4.5 createElement/append/textContent",
+    "status": "PASS",
+    "detail": "used"
+  },
+  {
+    "name": "4.5 no innerHTML with data",
+    "status": "PASS",
+    "detail": "innerHTML occurrences in comments only=3"
+  },
+  {
+    "name": "4.5 classList + dataset",
+    "status": "PASS",
+    "detail": "both used"
+  },
+  {
+    "name": "4.5 product template kept",
+    "status": "PASS",
+    "detail": "template cloned"
+  },
+  {
+    "name": "4.6 click/input/submit/keydown",
+    "status": "PASS",
+    "detail": "all four event types"
+  },
+  {
+    "name": "4.6 preventDefault",
+    "status": "PASS",
+    "detail": "submit handled"
+  },
+  {
+    "name": "4.6 Escape",
+    "status": "PASS",
+    "detail": "Escape closes menu"
+  },
+  {
+    "name": "4.6 grid delegation",
+    "status": "PASS",
+    "detail": "one listener + data-action/dataset.id/closest"
+  },
+  {
+    "name": "4.6 no per-card listeners",
+    "status": "PASS",
+    "detail": "cards have no listeners"
+  },
+  {
+    "name": "4.7 one state object",
+    "status": "PASS",
+    "detail": "single state"
+  },
+  {
+    "name": "4.7 render function",
+    "status": "PASS",
+    "detail": "clear render functions"
+  },
+  {
+    "name": "4.7 try/catch/finally",
+    "status": "PASS",
+    "detail": "all present"
+  },
+  {
+    "name": "4.7 response.ok",
+    "status": "PASS",
+    "detail": "checked"
+  },
+  {
+    "name": "4.7 console.*",
+    "status": "PASS",
+    "detail": "log/info/warn/error used"
+  },
+  {
+    "name": "Q1 no single-letter names",
+    "status": "PASS",
+    "detail": "found: none"
+  },
+  {
+    "name": "Q4 one-line comment per function",
+    "status": "PASS",
+    "detail": "undocumented: none"
+  },
+  {
+    "name": "Q6 file order",
+    "status": "PASS",
+    "detail": "constants ΓåÆ helpers ΓåÆ state ΓåÆ render ΓåÆ events ΓåÆ startup"
+  },
+  {
+    "name": "Q7 no misleading TODO/FIXME",
+    "status": "PASS",
+    "detail": "no vague notes"
+  }
+]
+
+38/38 checks passed
+

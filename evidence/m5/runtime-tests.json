@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-11-26T08:09:10.183Z",
+  "tool": "Google Chrome headless via CDP (Runtime.evaluate, Network, Fetch, Slow 3G emulation)",
+  "results": [
+    {
+      "name": "5.5 details fetched from GET /products/{id}",
+      "status": "PASS",
+      "details": {
+        "detailUrls": [
+          "https://fakestoreapi.com/products/1"
+        ],
+        "detailInfo": {
+          "open": true,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": "$109.95",
+          "busy": false
+        },
+        "independent": {
+          "status": 200,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": 109.95
+        },
+        "networkStatus": 200
+      }
+    },
+    {
+      "name": "5.4 path + query params in Network",
+      "status": "PASS",
+      "details": {
+        "categoryUrl": "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "path": "/products/category/electronics",
+        "query": {
+          "limit": "20",
+          "sort": "asc"
+        }
+      }
+    },
+    {
+      "name": "5.3 Slow 3G grid loading then cleanup",
+      "status": "PASS",
+      "details": {
+        "slowGridLoading": {
+          "busy": "true",
+          "skeletons": 8,
+          "cards": 0
+        },
+        "slowGridDone": {
+          "busy": false,
+          "cards": 20,
+          "stateHidden": true
+        }
+      }
+    },
+    {
+      "name": "5.3 + 5.5 Slow 3G detail loading then cleanup",
+      "status": "PASS",
+      "details": {
+        "slowDetailLoading": {
+          "busy": "true",
+          "skeletons": 2
+        },
+        "slowDetailDone": {
+          "busy": false,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+        },
+        "detailUrls": [
+          "https://fakestoreapi.com/products/1"
+        ]
+      }
+    },
+    {
+      "name": "5.3 network interruption + retry",
+      "status": "PASS",
+      "details": {
+        "failedState": {
+          "title": "Could not load products.تعذّر تحميل المنتجات.",
+          "retryVisible": true,
+          "busy": false,
+          "cards": 0
+        },
+        "retriedState": {
+          "busy": false,
+          "cards": 20,
+          "stateHidden": true
+        },
+        "retryUrl": "https://fakestoreapi.com/products?limit=20&sort=asc"
+      }
+    },
+    {
+      "name": "5.5 detail error + retry",
+      "status": "PASS",
+      "details": {
+        "detailFailed": {
+          "text": "Could not load detailsتعذّر تحميل التفاصيلCheck your connection and try again.تحقق من اتصالك ثم أعد المحاولة.Retryإعادة المحاولة",
+          "retry": true,
+          "busy": false
+        },
+        "detailRetried": {
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "busy": false
+        }
+      }
+    },
+    {
+      "name": "5.5 missing id / empty response",
+      "status": "PASS",
+      "details": {
+        "emptyDetail": {
+          "text": "No product for this idلا يوجد منتج بهذا المعرّفThe API returned an empty response.أعاد الـ API استجابة فارغة.Retryإعادة المحاولة",
+          "busy": false
+        }
+      }
+    },
+    {
+      "name": "5.3 empty list state",
+      "status": "PASS",
+      "details": {
+        "emptyGrid": {
+          "title": "Nothing hereلا يوجد شيء هنا",
+          "cards": 0,
+          "busy": false
+        }
+      }
+    },
+    {
+      "name": "Console clean",
+      "status": "PASS",
+      "details": {
+        "consoleErrors": [],
+        "exceptions": []
+      }
+    }
+  ],
+  "screenshots": [
+    "network-category.png",
+    "loading-grid-3g.png",
+    "loading-details-3g.png",
+    "error-grid.png",
+    "error-details.png",
+    "empty-grid.png"
+  ]
+}

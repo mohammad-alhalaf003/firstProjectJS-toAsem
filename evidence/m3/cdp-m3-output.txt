@@ -1,0 +1,342 @@
+﻿{
+  "widths": {
+    "320": {
+      "meta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "headerSticky": "sticky",
+      "stickyAfterScroll": {
+        "scrollY": 1200,
+        "top": 0
+      },
+      "overflow": {
+        "scrollWidth": 305,
+        "innerWidth": 320
+      },
+      "menu": {
+        "toggleVisible": true,
+        "opened": {
+          "expanded": "true",
+          "panel": "flex",
+          "bodyClass": true,
+          "scrollWidth": 305,
+          "innerWidth": 320
+        },
+        "closedByToggle": "false",
+        "closedByEscape": "false",
+        "closedByOutside": "false"
+      },
+      "touchTargets": {
+        "checked": 21,
+        "bad": []
+      },
+      "focusVisible": {
+        "tag": "A",
+        "visible": true,
+        "outline": "2px"
+      },
+      "states": {
+        "hoverTransform": "none",
+        "activeTransform": "matrix(0.972369, 0, 0, 0.972369, 0, 0)",
+        "disabled": {
+          "cursor": "not-allowed",
+          "opacity": "0.5"
+        }
+      },
+      "themes": [
+        {
+          "theme": "light",
+          "stored": "light",
+          "meta": "#4f46e5",
+          "primary": "#4f46e5",
+          "surface": "rgb(255, 255, 255)",
+          "checked": "light"
+        },
+        {
+          "theme": "dark",
+          "stored": "dark",
+          "meta": "#0a0e18",
+          "primary": "#6262ef",
+          "surface": "rgb(18, 24, 39)",
+          "checked": "dark"
+        },
+        {
+          "theme": "ocean",
+          "stored": "ocean",
+          "meta": "#0f766e",
+          "primary": "#0f766e",
+          "surface": "rgb(255, 255, 255)",
+          "checked": "ocean"
+        }
+      ],
+      "contrast": {
+        "light": {
+          "text": 17.95,
+          "button": 6.29
+        },
+        "dark": {
+          "text": 16.56,
+          "button": 4.65
+        },
+        "ocean": {
+          "text": 14.53,
+          "button": 5.47
+        }
+      }
+    },
+    "768": {
+      "meta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "headerSticky": "sticky",
+      "stickyAfterScroll": {
+        "scrollY": 1200,
+        "top": 0
+      },
+      "overflow": {
+        "scrollWidth": 753,
+        "innerWidth": 768
+      },
+      "menu": {
+        "toggleVisible": true,
+        "opened": {
+          "expanded": "true",
+          "panel": "flex",
+          "bodyClass": true,
+          "scrollWidth": 753,
+          "innerWidth": 768
+        },
+        "closedByToggle": "false",
+        "closedByEscape": "false",
+        "closedByOutside": "false"
+      },
+      "touchTargets": {
+        "checked": 21,
+        "bad": []
+      },
+      "focusVisible": {
+        "tag": "A",
+        "visible": true,
+        "outline": "2px"
+      },
+      "states": {
+        "hoverTransform": "none",
+        "activeTransform": "matrix(0.979113, 0, 0, 0.979113, 0, 0)",
+        "disabled": {
+          "cursor": "not-allowed",
+          "opacity": "0.5"
+        }
+      },
+      "themes": [
+        {
+          "theme": "light",
+          "stored": "light",
+          "meta": "#4f46e5",
+          "primary": "#4f46e5",
+          "surface": "rgb(255, 255, 255)",
+          "checked": "light"
+        },
+        {
+          "theme": "dark",
+          "stored": "dark",
+          "meta": "#0a0e18",
+          "primary": "#6262ef",
+          "surface": "rgb(18, 24, 39)",
+          "checked": "dark"
+        },
+        {
+          "theme": "ocean",
+          "stored": "ocean",
+          "meta": "#0f766e",
+          "primary": "#0f766e",
+          "surface": "rgb(255, 255, 255)",
+          "checked": "ocean"
+        }
+      ],
+      "contrast": {
+        "light": {
+          "text": 17.95,
+          "button": 6.29
+        },
+        "dark": {
+          "text": 16.56,
+          "button": 4.65
+        },
+        "ocean": {
+          "text": 14.53,
+          "button": 5.47
+        }
+      }
+    },
+    "1280": {
+      "meta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "headerSticky": "sticky",
+      "stickyAfterScroll": {
+        "scrollY": 1200,
+        "top": 0
+      },
+      "overflow": {
+        "scrollWidth": 1265,
+        "innerWidth": 1280
+      },
+      "menu": {
+        "toggleVisible": false,
+        "panelWide": "flex"
+      },
+      "touchTargets": {
+        "checked": 21,
+        "bad": []
+      },
+      "focusVisible": {
+        "tag": "A",
+        "visible": true,
+        "outline": "2px"
+      },
+      "states": {
+        "hoverTransform": "none",
+        "activeTransform": "matrix(0.97238, 0, 0, 0.97238, 0, 0)",
+        "disabled": {
+          "cursor": "not-allowed",
+          "opacity": "0.5"
+        }
+      },
+      "themes": [
+        {
+          "theme": "light",
+          "stored": "light",
+          "meta": "#4f46e5",
+          "primary": "#4f46e5",
+          "surface": "rgb(255, 255, 255)",
+          "checked": "light"
+        },
+        {
+          "theme": "dark",
+          "stored": "dark",
+          "meta": "#0a0e18",
+          "primary": "#6262ef",
+          "surface": "rgb(18, 24, 39)",
+          "checked": "dark"
+        },
+        {
+          "theme": "ocean",
+          "stored": "ocean",
+          "meta": "#0f766e",
+          "primary": "#0f766e",
+          "surface": "rgb(255, 255, 255)",
+          "checked": "ocean"
+        }
+      ],
+      "contrast": {
+        "light": {
+          "text": 17.95,
+          "button": 6.29
+        },
+        "dark": {
+          "text": 16.56,
+          "button": 4.65
+        },
+        "ocean": {
+          "text": 14.53,
+          "button": 5.47
+        }
+      }
+    }
+  },
+  "static": {
+    "transitionDurations": [
+      150,
+      220,
+      240
+    ],
+    "hoverRulesTotal": 31,
+    "hoverOutsideMedia": [
+      "@media (hover:hover) and (pointer: fine) {",
+      ".btn:hover::before { transform: translateX(120%); }",
+      ".btn:hover { transform: translateY(-var(--space-0125)); }",
+      ".btn-primary:hover { background: var(--color-primary-hover); box-shado",
+      ".btn-outline:hover { background: var(--bg-subtle); border-color: var(-",
+      ".btn-danger:hover { background: color-mix(in srgb, var(--color-danger)",
+      ".btn-ghost:hover { background: var(--bg-subtle); color: var(--text-pri",
+      ".btn-icon:hover { background: var(--bg-muted); color: var(--color-prim",
+      ".btn-icon:hover svg { transform: rotate(18deg) scale(1.12); }",
+      ".link-btn:hover { color: var(--color-primary); }",
+      ".brand:hover .brand-logo { transform: rotate(-8deg) scale(1.07); }",
+      ".lang-switch label:hover { color: var(--text-primary); background: var",
+      ".back-to-top:hover { background: var(--color-primary); color: var(--te",
+      ".hero-actions .btn:hover svg { transform: translateX(.25rem); }",
+      "html[dir=\"rtl\"] .hero-actions .btn:hover svg { transform: translateX(-",
+      ".sort-field select:hover { border-color: var(--color-primary); backgro",
+      ".chip:hover { transform: translateY(calc(var(--space-0187) * -1)) scal",
+      ".chip-active:hover { color: var(--text-inverse); }",
+      ".chip-fav:hover svg { transform: scale(1.2) rotate(-8deg); }",
+      ".card:hover { --lift: -.5rem; border-color: var(--border-strong); box-",
+      ".card:hover .card-media img { transform: scale(1.08) rotate(-2deg); }",
+      ".card:hover .card-media::after { transform: translateX(130%); }",
+      ".btn-fav:hover { transform: scale(1.14) rotate(-10deg); color: var(--c",
+      ".add-btn:hover svg { transform: rotate(90deg) scale(1.15); }",
+      ".detail-media:hover img { transform: scale(1.07) rotate(2deg); }",
+      ".qty-btn:hover { background: var(--color-primary); color: var(--text-i",
+      ".remove-btn:hover { color: var(--color-danger); background: var(--colo",
+      ".footer a:hover { color: var(--color-primary-text); }",
+      ".footer a:hover::after { transform: scaleX(1); }",
+      "html[dir=\"rtl\"] .card:hover .card-media img { transform: scale(1.08) r",
+      "html[dir=\"rtl\"] .btn:hover { transform: translateY(-var(--space-0125))"
+    ],
+    "keyframes": [
+      "shimmer",
+      "bump",
+      "pulse",
+      "float",
+      "cardIn",
+      "heartPop",
+      "shimmer",
+      "dialogIn",
+      "fadeIn",
+      "popIn",
+      "spin",
+      "toastIn",
+      "toastOut"
+    ],
+    "focusVisibleRule": true,
+    "reducedMotionBlocks": 2,
+    "tokens": {
+      "fast": 150,
+      "normal": 240,
+      "bounce": 220
+    }
+  },
+  "firstVisit": {
+    "dark": {
+      "theme": "dark",
+      "stored": null,
+      "keys": [],
+      "pref": true
+    },
+    "light": {
+      "theme": "light",
+      "stored": null,
+      "keys": [],
+      "pref": false
+    },
+    "savedOceanAfterReload": "ocean"
+  },
+  "motion": {
+    "reduced": {
+      "pseudoAnimation": "none",
+      "pseudoDuration": "0s",
+      "spinnerAnimation": "none"
+    },
+    "normal": {
+      "pseudoAnimation": "shimmer",
+      "pseudoDuration": "1.5s"
+    }
+  },
+  "hover": {
+    "touch": {
+      "hoverFine": false,
+      "hoverNone": true,
+      "coarse": true,
+      "btnMinHeight": "44px"
+    },
+    "mouse": {
+      "hoverFine": true
+    }
+  }
+}
+

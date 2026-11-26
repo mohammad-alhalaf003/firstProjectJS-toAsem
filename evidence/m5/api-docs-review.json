@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-11-25T17:36:42.039Z",
+  "sources": [
+    "https://fakestoreapi.com/docs",
+    "https://fakestoreapi.com/docs-data",
+    "api.html"
+  ],
+  "specVersion": "old-version-production",
+  "apiHtmlEndpoints": 22,
+  "officialSpecEndpoints": 16,
+  "missingFromOfficialSpec": [
+    {
+      "method": "GET",
+      "path": "/products/categories",
+      "inOfficialSpec": false
+    },
+    {
+      "method": "GET",
+      "path": "/products/category/{category}",
+      "inOfficialSpec": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/products/{id}",
+      "inOfficialSpec": false
+    },
+    {
+      "method": "GET",
+      "path": "/carts/user/{userId}",
+      "inOfficialSpec": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/carts/{id}",
+      "inOfficialSpec": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/users/{id}",
+      "inOfficialSpec": false
+    }
+  ],
+  "allOfficial": [
+    "DELETE /carts/{id}",
+    "DELETE /products/{id}",
+    "DELETE /users/{id}",
+    "GET /carts",
+    "GET /carts/{id}",
+    "GET /products",
+    "GET /products/{id}",
+    "GET /users",
+    "GET /users/{id}",
+    "POST /auth/login",
+    "POST /carts",
+    "POST /products",
+    "POST /users",
+    "PUT /carts/{id}",
+    "PUT /products/{id}",
+    "PUT /users/{id}"
+  ],
+  "endpointsUsedByApp": [
+    "GET /products",
+    "GET /products/{id}",
+    "GET /products/categories",
+    "GET /products/category/{category}",
+    "GET /users",
+    "POST /products",
+    "PUT /products/{id}",
+    "DELETE /products/{id}",
+    "POST /auth/login",
+    "POST /carts"
+  ]
+}

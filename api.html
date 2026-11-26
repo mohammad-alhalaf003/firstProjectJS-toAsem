@@ -111,7 +111,7 @@
     - index.html gives elements their class names / ids (class="btn btn-primary", id="btn-checkout"). We style them here.
     - script.js never writes colours. It only ADDS or REMOVES class names, and the CSS reacts:
       .hidden (display none), .collapsed (filter panel closed), .active (selected button/page), .chip-active,
-      .bookmarked, .header-hidden (header slid away), .bump, .btn-added-state, .toast-leaving, [data-theme] on <html>,
+      .bookmarked, .bump, .btn-added-state, .toast-leaving, [data-theme] on <html>,
       body.filters-open. This split (JS decides state, CSS draws it) keeps both files simple.
    
    READING ORDER: (1) variables + reset  (2) header  (3) buttons  (4) search/filters  (5) product grid  (6) loaders/states
@@ -130,7 +130,7 @@
     - index.html يعطي العناصر أسماء class و id (مثل class="btn btn-primary"). ونحن ننسّقها هنا.
     - script.js لا يكتب ألوانًا أبدًا. هو فقط يضيف أو يحذف أسماء classes والـ CSS يستجيب:
       .hidden (إخفاء)، .collapsed (لوحة الفلاتر مغلقة)، .active (زر/صفحة مختارة)، .chip-active، .bookmarked،
-      .header-hidden (الهيدر اختفى)، .bump، .btn-added-state، .toast-leaving، [data-theme] على <html>، body.filters-open.
+.bump، .btn-added-state، .toast-leaving، [data-theme] على <html>، body.filters-open.
       هذا التقسيم (JS يقرر الحالة و CSS يرسمها) يجعل الملفين أبسط.
    
    ترتيب القراءة: (1) المتغيرات والـ reset  (2) الهيدر  (3) الأزرار  (4) البحث والفلاتر  (5) شبكة المنتجات  (6) الـ loaders والحالات
@@ -380,17 +380,14 @@ body {
 }
 
 /* ======================================================================
-   EN: HEADER (sticky + hide on scroll)
-   UX: the header stays reachable (sticky) but slides away when you scroll DOWN to give more reading room, and returns when you scroll UP.
-   script.js toggles the class .header-hidden for that.
-   AR: الهيدر (ثابت + يختفي عند التمرير)
-   تجربة المستخدم: يبقى الهيدر في المتناول (sticky) لكنه ينزلق للأعلى عند التمرير للأسفل ليعطي مساحة قراءة، ويعود عند التمرير للأعلى.
-   الـ script.js يبدّل الـ class المسمى .header-hidden لهذا الغرض.
+   EN: HEADER (sticky, always visible)
+   UX: the header stays reachable at the top of the viewport at all widths. No class is toggled by script.js.
+   AR: الهيدر (ثابت دائماً)
+   تجربة المستخدم: يبقى الهيدر ظاهراً في أعلى الصفحة عند كل المقاسات، ولا يبدّل السكربت أي class له.
    ====================================================================== */
 
 /* EN: position: sticky = behaves normally (takes space in the page) until you scroll past top: 0, then sticks there. Better than fixed
    because it does not need a spacer. z-index 100 keeps it above page content. backdrop-filter: blur frosts what is behind it.
-   will-change: transform warns the browser we animate transform, so it prepares a GPU layer (smoother, but use sparingly).
    AR: position: sticky = يتصرف عاديًا (يأخذ مكانه) حتى تتجاوز top: 0 فيلتصق هناك. أفضل من fixed لأنه لا يحتاج مساحة بديلة.
    الـ z-index 100 يبقيه فوق المحتوى. و backdrop-filter: blur يضبّب ما خلفه كالزجاج.
    will-change: transform ينبّه المتصفح أننا سنحرك transform فيجهز طبقة GPU (حركة أنعم، لكن لا تكثر منها). */
@@ -1949,7 +1946,7 @@ console.log(response.status, products);</code></pre>
               <tr>
                 <th scope="row"><span class="status-chip status-2xx">201</span></th>
                 <td><span class="bi-en" lang="en">Created</span><span class="bi-ar" lang="ar" dir="rtl">تم الإنشاء</span></td>
-                <td><span class="bi-en bi-block" lang="en">Standard for a created item. FakeStoreAPI usually answers 200 instead.</span><span class="bi-ar bi-block" lang="ar" dir="rtl">المعتاد عند إنشاء عنصر. لكن FakeStoreAPI تجيب غالباً بـ 200.</span></td>
+                <td><span class="bi-en bi-block" lang="en">Standard for a created item. Verified: FakeStoreAPI POST answers 201, including /auth/login.</span><span class="bi-ar bi-block" lang="ar" dir="rtl">المعتاد عند إنشاء عنصر. تحقّقنا فعلياً: POST في FakeStoreAPI يجيب بـ 201، بما فيه /auth/login.</span></td>
               </tr>
               <tr>
                 <th scope="row"><span class="status-chip status-4xx">400</span></th>
@@ -2085,10 +2082,10 @@ console.log(response.status, products);</code></pre>
    */
   const BASE_URL = 'https://fakestoreapi.com';
 
-  // EN: localStorage keys. The theme key is shared with the shop page so both pages stay in sync.
-  // AR: مفاتيح localStorage. مفتاح الثيم مشترك مع صفحة المتجر لتبقى الصفحتان متطابقتين.
-  const LANG_KEY = 'storepulse_api_lang';
+  // EN: The only storage key this documentation page may use is the shared theme (storage map M9).
+  // AR: المفتاح الوحيد المسموح لهذه الصفحة هو الثيم المشترك مع المتجر وفق خريطة التخزين M9.
   const THEME_KEY = 'storepulse_theme';
+  const LEGACY_LANG_KEY = 'storepulse_api_lang'; // EN: removed on load; AR: يُحذف عند التحميل لأنه خارج الخريطة.
 
   // EN: The three language modes the switcher allows. Anything else is ignored.
   // AR: أوضاع اللغة الثلاثة التي يسمح بها المبدّل. أي قيمة أخرى تُتجاهل.
@@ -2130,6 +2127,9 @@ console.log(response.status, products);</code></pre>
     },
     set(key, value) {
       try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* ignore */ }
+    },
+    remove(key) {
+      try { localStorage.removeItem(key); } catch (e) { /* ignore */ }
     }
   };
 
@@ -2160,12 +2160,12 @@ console.log(response.status, products);</code></pre>
     return mode;
   }
 
-  // EN: Apply the saved language immediately. The script is `defer`red, so the HTML already exists, and this
-  //     happens before the cards are built and before the first paint is finished in most browsers.
-  //     (CSP forbids inline scripts, so this is as early as we can legally get.)
-  // AR: نطبّق اللغة المحفوظة فوراً. السكربت مؤجَّل (defer) لذا الـ HTML موجود، وهذا يحدث قبل بناء البطاقات
-  //     وقبل اكتمال أول رسم في معظم المتصفحات. (سياسة CSP تمنع السكربتات المضمّنة فهذا أبكر وقت مسموح.)
-  applyLang(store.get(LANG_KEY));
+  // EN: Language is not in the M9 storage map, so this page always starts in bilingual mode and removes
+  //     the old key if it exists. The script is deferred, so the HTML is ready before we apply it.
+  // AR: اللغة ليست في خريطة M9، لذلك تبدأ الصفحة دائماً بالوضع ثنائي اللغة ويُحذف المفتاح القديم إن وُجد.
+  //     السكربت مؤجَّل لذا الـ HTML جاهز قبل تطبيق ذلك.
+  store.remove(LEGACY_LANG_KEY);
+  applyLang('both');
 
   /* ======================================================================
    * SECTION 4: The DATA (one array describes the whole page)
@@ -3096,8 +3096,9 @@ console.log(response.status, products);</code></pre>
       showResponse(result, { status: response.status, latency, url, method: ep.method, text });
     } catch (err) {
       if (err.name === 'AbortError' && !timedOut) return; // EN: replaced by a newer request; AR: استُبدل بطلب أحدث
-      const message = timedOut ? 'Timeout: no answer after 15 seconds.' : `Network error: ${err.message}`;
-      const messageAr = timedOut ? 'انتهت المهلة: لا إجابة بعد 15 ثانية.' : `خطأ في الشبكة: ${err.message}`;
+      const seconds = TIMEOUT_MS / 1000;
+      const message = timedOut ? `Timeout: no answer after ${seconds} seconds.` : `Network error: ${err.message}`;
+      const messageAr = timedOut ? `انتهت المهلة: لا إجابة بعد ${seconds} ثانية.` : `خطأ في الشبكة: ${err.message}`;
       result.replaceChildren(
         el('div', { cls: 'result-meta' }, el('span', { cls: 'status-chip status-err' }, bi('Failed', 'فشل'))),
         el('p', { cls: 'result-note' }, bi(message, messageAr, true)));
@@ -3217,7 +3218,7 @@ console.log(response.status, products);</code></pre>
   function setupLang() {
     document.querySelectorAll('input[name="api-lang"]').forEach((radio) => {
       radio.addEventListener('change', () => {
-        if (radio.checked) store.set(LANG_KEY, applyLang(radio.value));
+        if (radio.checked) applyLang(radio.value); // EN: no storage write — outside the map; AR: بلا حفظ لأنه خارج الخريطة.
       });
     });
   }

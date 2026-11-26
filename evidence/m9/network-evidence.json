@@ -1,0 +1,2981 @@
+{
+  "note": "Credential values and Authorization headers are redacted; bearerSent is a boolean.",
+  "requests": [
+    {
+      "requestId": "20540.45",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253229.969582,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jQdNYmldiRNRkPyvgJvxQDgivI9%2BuQJBwYbb9tFYNKzxBpW8t9BzFL9MXPELmwGeLTyM11Ko4n6Roq66mVAmNLyR2EfM%2FEvL6YTi9k6vDX87r1D6Y5KKpBHpfqsU1jonbBzY\"}]}",
+          "cf-ray": "a6076d1fdfaff47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.46",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253229.970395,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=W4uW0JdImViFmFdPhoeuj47pzzffLnEhLUdzC%2Flwstobuz8k337F2hUDQqI4ch7ANXsQ06iK3rI7vYak5mdc3acaXUk9VLmV97oQ5iFGTPWtXcaG46cmNG4vtRmCrdW0KGKF\"}]}",
+          "cf-ray": "a6076d1fdfb2f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.47",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376026,
+      "response": null
+    },
+    {
+      "requestId": "20540.48",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376126,
+      "response": null
+    },
+    {
+      "requestId": "20540.49",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376158,
+      "response": null
+    },
+    {
+      "requestId": "20540.50",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376182,
+      "response": null
+    },
+    {
+      "requestId": "20540.51",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376219,
+      "response": null
+    },
+    {
+      "requestId": "20540.52",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376251,
+      "response": null
+    },
+    {
+      "requestId": "20540.53",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376283,
+      "response": null
+    },
+    {
+      "requestId": "20540.54",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.376319,
+      "response": null
+    },
+    {
+      "requestId": "20540.115",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.569241,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Qoaay9md%2B2V84Gop2LkXw3EM4Fwdykmg5fGGTY%2FcqUKpJUdbNKceCKjyYxYtmEzwA%2Bnq0zJfjaiD%2FolzQzk00WWhaKrGhN7Y%2BIsGnCTxV5pL5p1YJ%2FfuCMHRllEjPWwOct9L\"}]}",
+          "cf-ray": "a6076d2259b0f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.116",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.56951,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZMUC0M8XA0cz%2BnFMhrtEH9u7mE49TJ6S61rhUKFJm3fE0i2Drj4hha5HztIFSrNr2DcZMUVhTRCYAb%2B%2Fzd2iwW52B2K3v8lVKK%2B8FCdzK8XwmEf1bpIN3YMBIo%2BObwYmSjiV\"}]}",
+          "cf-ray": "a6076d2259b4f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.129",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.712227,
+      "response": null
+    },
+    {
+      "requestId": "20540.130",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.71236,
+      "response": null
+    },
+    {
+      "requestId": "20540.131",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.712439,
+      "response": null
+    },
+    {
+      "requestId": "20540.132",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.712488,
+      "response": null
+    },
+    {
+      "requestId": "20540.133",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.712525,
+      "response": null
+    },
+    {
+      "requestId": "20540.134",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.712557,
+      "response": null
+    },
+    {
+      "requestId": "20540.135",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.712594,
+      "response": null
+    },
+    {
+      "requestId": "20540.136",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.71264,
+      "response": null
+    },
+    {
+      "requestId": "20540.185",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.92468,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ik3ME3vhAgKajZgq5orn2FY7aztiRn8efUL6joZg2HCWNIbLeKCdwVa%2Bu5QS7azTBSV7rEpRafZup7Oc7F1ai4xFQV8dmHoeizcwB3U1NNE42SwY15NGgOvoyn9vUjq7rB6U\"}]}",
+          "cf-ray": "a6076d248bcff47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.186",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253230.92499,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=yqNMw%2BSNbXrMC1XX8B%2BLfmbj94KBrr9gsw8Icf7ky6iTDuR%2FTkWbAsQpwscBGEq1O%2BkSCL%2B%2FRo3aCUQrImkafbRBluGcVmkbqtiNZinFZbuWQ8EW6L91UGqgIEV1ki8xrxuF\"}]}",
+          "cf-ray": "a6076d248bd1f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.199",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088604,
+      "response": null
+    },
+    {
+      "requestId": "20540.200",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.08869,
+      "response": null
+    },
+    {
+      "requestId": "20540.201",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088719,
+      "response": null
+    },
+    {
+      "requestId": "20540.202",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088744,
+      "response": null
+    },
+    {
+      "requestId": "20540.203",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088779,
+      "response": null
+    },
+    {
+      "requestId": "20540.204",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088813,
+      "response": null
+    },
+    {
+      "requestId": "20540.205",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088851,
+      "response": null
+    },
+    {
+      "requestId": "20540.206",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.088886,
+      "response": null
+    },
+    {
+      "requestId": "20540.255",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.244137,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wAvaKiAattLspk2ZNwK6%2FopxYXSdPFpcu4vqmkzDXVcr7v%2Bk5JphdzXcXC2GDAQaRdJt%2BhABW4WHW0gjSokv1pwFBwbXWYbkojYGKmNlCLxpzVOxtWs79%2BcDIuY1Dy6Nfa%2FO\"}]}",
+          "cf-ray": "a6076d268d59f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.256",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.244468,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8j4IUDdrc2J3PadJxpwpLDIjA5dpwIHQFJA4vAMIm4QwCt6EX%2BKjRIxqgBc9Z%2BUXDEbSwWlfkf2tXD3ZG8hRThg4jU3%2BT3%2Fpv1CZyCtNOnxarhLeCbPrYeQ7i0UW%2FNHYI7Xo\"}]}",
+          "cf-ray": "a6076d268d60f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.269",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.392563,
+      "response": null
+    },
+    {
+      "requestId": "20540.270",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.392659,
+      "response": null
+    },
+    {
+      "requestId": "20540.271",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.3927,
+      "response": null
+    },
+    {
+      "requestId": "20540.272",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.392725,
+      "response": null
+    },
+    {
+      "requestId": "20540.273",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.39275,
+      "response": null
+    },
+    {
+      "requestId": "20540.274",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.392782,
+      "response": null
+    },
+    {
+      "requestId": "20540.275",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.392816,
+      "response": null
+    },
+    {
+      "requestId": "20540.276",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.392851,
+      "response": null
+    },
+    {
+      "requestId": "20540.325",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.53278,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=twMDz8Rvccze2SFfw9OMXNQL%2BSnGYi1PolD9LDcUduEFGsUe5tZfee2jSzK5zhP90juuttnldV8dhudgQz7gNNk%2F5%2Fa7oF1D4nTvWq3TtL7ZVkQK62mUdh%2B%2FOgy3xhrfWA0s\"}]}",
+          "cf-ray": "a6076d285f00f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.326",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.533055,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8rn8Eb4dgQ8FZ0N0i%2FR7InhVVuM7zAgFeqo9QG0jKgfhf3EZUDe5tuzoeqpKJsKcyTgm4xreQdsmyTJelqSwG1rugzVzQLxWWABaRhY8M1fNP2BgxuIinTVIDJDn22nc7%2F3r\"}]}",
+          "cf-ray": "a6076d285f04f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.339",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.668755,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"42b8b-1a115677480\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FDM0WVo%2Ba52iu1eAWFhHU5j9iczBQVkOMjUTKVPwCPqiSLXAMCBibyUnsT69kABddogTPsYimL6omUyfVzob11%2FiZPJ7fB6n6iAzWCWBLzRkOWAEi%2FO4JARZ79L7cFA4YtJJ\"}]}",
+          "cf-ray": "a6076d293e8965dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "273291",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:44 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.340",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.668838,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"36c4d-1a11567c2a0\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=L4wO9jofThkH75XMvRMBCz0kap6k3ENFokhtbjJloz9Kt8AksJHQrpqerj5bAtuccSiB971maEAFp%2F4UuiENDbMvgNcgP07OSNWlMwLloE5IiHAXR47blOzncVq3b0c4thUK\"}]}",
+          "cf-ray": "a6076d293e8d65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "224333",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:04 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.341",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.668884,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4de57-1a115679f78\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qNJD%2F3pu9AFKqe56eqPF35LtgXpbxQGMTxfFRoTCiCBVhddb2LvT6QQhwG%2BZxR0e5s9lDAgMWAH%2BNj9QWY5m3d5NTr2zhZaJ%2BMki8SzPYbCr4lCWLvc0V6khFOo72tbrQtAH\"}]}",
+          "cf-ray": "a6076d293e9165dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "319063",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:55 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.342",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.668943,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4ab53-1a11567ab30\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2tD5Biq3LH8NS%2FacUGAmQGbdB5nTYnisuOnfIjfldrFYoSxYqhtTcrmsJIkXhjiOzjMYJT5kGtWDJv2hblz9iR%2B8SrscGJ98UjQvDjf5ih2v23zN0d%2BXDYqC%2BG7iKQtxOI%2F2\"}]}",
+          "cf-ray": "a6076d293e9265dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "306003",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:58 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.343",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.668978,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"2b2f2-1a115679b90\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HXAxVb4mt8y2ItsdAqPIA57pLgheSkH%2F8sjbw%2BOwtsAYp%2F%2BWMupzLUWiMOtZ6Q6nr1ilt49B64yC4K5%2BCzHClcBOanaI4ipLsC7onYxJQKT48T45Yts2uRAfVKRFOKxpLAFU\"}]}",
+          "cf-ray": "a6076d293e9565dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "176882",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:54 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.344",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.669002,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"1e165-1a11567c688\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tTXk%2FPfhjuGjdPjj3BjgEEZD5Ba8OoVqlUqTy%2FTs5ZqVDvGZPaHAGuUEKvgAnEZcAHHMKSqdPE6h2TfDhLZU9ZtpSQ1DhwK%2Bovt7Zs5KXKlewBxZJMQ3x3Luy%2BexiyIc1SND\"}]}",
+          "cf-ray": "a6076d293e9665dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "123237",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:05 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.345",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.669035,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"53a46-1a11567b300\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PvMhegYGZGVLUBX8y972Znlrubxt8wEjabywlr7rjGkBob3GiPzGBSGRWymBqrceEqa%2F7Hh4Cs8Ym%2BCd9Lrb%2FW3x7VcJ72oMChLuguDtiZ8RyJerjzY1%2Fu8e4H8M8z8rVRuj\"}]}",
+          "cf-ray": "a6076d293e9865dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "342598",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:00 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.346",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253231.669071,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"2f70f-1a11567ed98\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hiqyyfSOKuXOhNtRC79cLl1xwzcfCmlpbLXT5vx8gjT%2BbYuatoRj9Q2oLm0CvdHus2WlddwMMICgK2QheX3P%2BcjKxXTfqs1CzrLZeIraUdUDLyvFkz5ZAsLrdtr2IUAl%2FyBt\"}]}",
+          "cf-ray": "a6076d293e9a65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "194319",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:15 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.329",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253232.64489,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"417a4-1a11567a748\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cKWUjMTbf%2FSKq1kQb%2F8e5AVY97oBRe2Sc3%2B8H%2FteCjEsnpSigk8JUOUBmz0MVT1oiEU6udxtxfiKIzciM6LDgSuFJMdfc%2BxSLLD06uxGSv0CX6PKoFew7Mcyvi5sIORKsBNG\"}]}",
+          "cf-ray": "a6076d2f5ba965dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "268196",
+          "date": "Thu, 26 Nov 2026 08:12:09 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:57 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.335",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253232.703463,
+      "response": null
+    },
+    {
+      "requestId": "20540.338",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253232.703803,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4a98f-1a11567ce58\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=yZTuiGFdq0bqqfKSxV9d8L8GUoiie5zZjt7jcn3tz949OQ3hktPhlKya%2BXG4Ea%2FWrd4f5zLreQoGEyNuYr2v4KZRQ7WuiaA5qPIc0tD79a3hnjj5qvpvQVL%2FcRfsUMzrXRxt\"}]}",
+          "cf-ray": "a6076d2fbbd065dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "305551",
+          "date": "Thu, 26 Nov 2026 08:12:09 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:07 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.454",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.129513,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GHqssbblh3%2FF7TuZx4y3w8PJLr6lNh%2FbgBSuqiiAwdCrMZgs3P%2By9NKD%2F1kdQjNj%2BR1jLz2EPTe86G7GCZrkU4nuRv8jHygKZuarAirC8c%2Fuk1yGvzIEuXxgBHrXq7FQ7r4j\"}]}",
+          "cf-ray": "a6076d32af36f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:10 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.455",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.130745,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bK3YLY67wVMpasY0N9clZx5rKBGuS3VS4SU%2Fd1bX1oRXkR23NHHgMyWFEXYEjmsYwIUMBo9K7n5IBn37Fv5MG42QWfIG0wFklGrR0Qe6w7PM49L8hqAWfGYbQLvy0KgOwfPG\"}]}",
+          "cf-ray": "a6076d32bf4bf47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:10 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.456",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.601149,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"42b8b-1a115677480\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FDM0WVo%2Ba52iu1eAWFhHU5j9iczBQVkOMjUTKVPwCPqiSLXAMCBibyUnsT69kABddogTPsYimL6omUyfVzob11%2FiZPJ7fB6n6iAzWCWBLzRkOWAEi%2FO4JARZ79L7cFA4YtJJ\"}]}",
+          "cf-ray": "a6076d293e8965dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "273291",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:44 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.457",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.601471,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"36c4d-1a11567c2a0\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=L4wO9jofThkH75XMvRMBCz0kap6k3ENFokhtbjJloz9Kt8AksJHQrpqerj5bAtuccSiB971maEAFp%2F4UuiENDbMvgNcgP07OSNWlMwLloE5IiHAXR47blOzncVq3b0c4thUK\"}]}",
+          "cf-ray": "a6076d293e8d65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "224333",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:04 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.458",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.601642,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4de57-1a115679f78\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qNJD%2F3pu9AFKqe56eqPF35LtgXpbxQGMTxfFRoTCiCBVhddb2LvT6QQhwG%2BZxR0e5s9lDAgMWAH%2BNj9QWY5m3d5NTr2zhZaJ%2BMki8SzPYbCr4lCWLvc0V6khFOo72tbrQtAH\"}]}",
+          "cf-ray": "a6076d293e9165dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "319063",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:55 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.459",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.601808,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4ab53-1a11567ab30\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2tD5Biq3LH8NS%2FacUGAmQGbdB5nTYnisuOnfIjfldrFYoSxYqhtTcrmsJIkXhjiOzjMYJT5kGtWDJv2hblz9iR%2B8SrscGJ98UjQvDjf5ih2v23zN0d%2BXDYqC%2BG7iKQtxOI%2F2\"}]}",
+          "cf-ray": "a6076d293e9265dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "306003",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:58 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.460",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.601983,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"2b2f2-1a115679b90\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HXAxVb4mt8y2ItsdAqPIA57pLgheSkH%2F8sjbw%2BOwtsAYp%2F%2BWMupzLUWiMOtZ6Q6nr1ilt49B64yC4K5%2BCzHClcBOanaI4ipLsC7onYxJQKT48T45Yts2uRAfVKRFOKxpLAFU\"}]}",
+          "cf-ray": "a6076d293e9565dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "176882",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:54 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.461",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.602167,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"1e165-1a11567c688\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tTXk%2FPfhjuGjdPjj3BjgEEZD5Ba8OoVqlUqTy%2FTs5ZqVDvGZPaHAGuUEKvgAnEZcAHHMKSqdPE6h2TfDhLZU9ZtpSQ1DhwK%2Bovt7Zs5KXKlewBxZJMQ3x3Luy%2BexiyIc1SND\"}]}",
+          "cf-ray": "a6076d293e9665dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "123237",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:05 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.462",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.60238,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"53a46-1a11567b300\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PvMhegYGZGVLUBX8y972Znlrubxt8wEjabywlr7rjGkBob3GiPzGBSGRWymBqrceEqa%2F7Hh4Cs8Ym%2BCd9Lrb%2FW3x7VcJ72oMChLuguDtiZ8RyJerjzY1%2Fu8e4H8M8z8rVRuj\"}]}",
+          "cf-ray": "a6076d293e9865dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "342598",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:00 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.463",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.602551,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"2f70f-1a11567ed98\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hiqyyfSOKuXOhNtRC79cLl1xwzcfCmlpbLXT5vx8gjT%2BbYuatoRj9Q2oLm0CvdHus2WlddwMMICgK2QheX3P%2BcjKxXTfqs1CzrLZeIraUdUDLyvFkz5ZAsLrdtr2IUAl%2FyBt\"}]}",
+          "cf-ray": "a6076d293e9a65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "194319",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:15 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.474",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.758294,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"54c0b-1a11567bad0\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nZS0S%2BvsfhVtvXnK8G4YibPJnJ9hcok0ld%2FgdkXttpuc4jm%2B4l3MKST8J%2FG%2FdJBwa6M6a2%2FknKHM7vf8LNKYEIMrJFPN9VdU%2BmU9TSvJaDBPn7QwZT40fmKe9xx8Pr4EtsBS\"}]}",
+          "cf-ray": "a6076d3648ba65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "347147",
+          "date": "Thu, 26 Nov 2026 08:12:10 GMT",
+          "last-modified": "Wed, 07 Oct 2026 08:08:02 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare",
+          "content-type": "image/png"
+        }
+      }
+    },
+    {
+      "requestId": "20540.475",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253233.758618,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4a98f-1a11567ce58\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=yZTuiGFdq0bqqfKSxV9d8L8GUoiie5zZjt7jcn3tz949OQ3hktPhlKya%2BXG4Ea%2FWrd4f5zLreQoGEyNuYr2v4KZRQ7WuiaA5qPIc0tD79a3hnjj5qvpvQVL%2FcRfsUMzrXRxt\"}]}",
+          "cf-ray": "a6076d2fbbd065dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "305551",
+          "date": "Thu, 26 Nov 2026 08:12:09 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:07 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.464",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.420693,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"19a82-1a11567ddf8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ebSeo%2FP8p%2BTuczb20zNEoflirJ717Cxdx%2FVe9heWV5744HKaKWuGTapmW9KRKYPbJjkVrYswAVLF4yuICRJL%2F45G%2FrZN%2FZJ5PaN6OvSLlHYqQjCDVpTCOjH4QSPwTLWy2cyq\"}]}",
+          "cf-ray": "a6076d46ed1f65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "105090",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:11 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.465",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.421938,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"2aac1-1a11567da10\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VxEeibdecS0rQ%2BL9F4fktMk9J2v0DAPhLFrOU6fMmz6Q%2BQUELC%2BMQ%2BJ%2FFO2mZ%2BWd0MHayUTCTBx3o9WKbQazl%2Fs3sHD2uklAqrpTO%2FwgFsL162EE9yY9PqtnO1CvjKfebpbC\"}]}",
+          "cf-ray": "a6076d46ed2465dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "174785",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:10 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.466",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.422618,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"417a4-1a11567a748\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cKWUjMTbf%2FSKq1kQb%2F8e5AVY97oBRe2Sc3%2B8H%2FteCjEsnpSigk8JUOUBmz0MVT1oiEU6udxtxfiKIzciM6LDgSuFJMdfc%2BxSLLD06uxGSv0CX6PKoFew7Mcyvi5sIORKsBNG\"}]}",
+          "cf-ray": "a6076d2f5ba965dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "268196",
+          "date": "Thu, 26 Nov 2026 08:12:09 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:57 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.467",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.423132,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"3d517-1a11567d240\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KQWYkiLiHaRGcPTZLiNi0yojsqqEM3KtRKHOD3B%2BGZJ7w2j%2FQ0DYurnCawS34AnIcSDusXZyjhJp%2BBxdafJWIwB%2BJFU5Z%2Bj%2BO3bCjkMDsglmGoExsf%2F5NZCbHKV%2FjYtaUOxH\"}]}",
+          "cf-ray": "a6076d46ed2765dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "251159",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:08 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.468",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.423852,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"71883-1a1156797a8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NhjkilDGcgMpQX3cpdecTTQLfby5W3RiwxT3ZkOSPo5t%2FAcFpipElqEqv77p5VTkDVP9j0N9mLcQkmCQJWypf6WbEL33B2f%2BoDbD4ZyHi96sXbEWx%2F7055YY8YrBOvtdoAX8\"}]}",
+          "cf-ray": "a6076d46ed2b65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "465027",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:53 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.469",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.424261,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"25ecf-1a115677c50\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=yzWm38WF%2B1jYcX4rjZe0Ulxdxx3ik%2BRORIRY1Kqy5mmw%2BS2%2BtPDGAy%2BoPIg6f6PYxAzNZlcyUnjok86fM7E%2F5xvMyLaBUCKXf566APFYr%2FV%2B%2F%2BnhZ2y5zPdTBIsWjZX%2BbK4b\"}]}",
+          "cf-ray": "a6076d46fd2c65dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "155343",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:46 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.470",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.424687,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"39ba5-1a11567e5c8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3RSu1QPNYSHkx7GQRWlULpt8BtLjMk%2FI%2BglPghFzWXV7pWzER%2FriOt7JRzwPEKz9TglqTHrbPe7RIIVJJ%2FwZ70peNnew0HnHbYA1njtFk7A%2FJCSPd99yZJJUmkk9awPaCe6V\"}]}",
+          "cf-ray": "a6076d46fd3365dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "236453",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:13 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.471",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.425388,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"3a044-1a115678808\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=d4nEdju16s7E5xdg%2F7Cj0Gf1mudDZ0bwIhZqojhWDTYxEC7jPdr4S%2F6nIoejjqROp%2Fi3WmdPtf%2FaUV2DmqxOPjpgq48YAAXrGnSMdJVPH9EHNgTysN6EpCZOhgsEG00bBVA0\"}]}",
+          "cf-ray": "a6076d46fd3565dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "237636",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:49 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.472",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.426209,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"260e8-1a1156797a8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RDp1WYoRqWAv0pa5qrrk5FjUGM533K5RYfZwwRRnBUYt5aGJNSUty63Lyf%2FcdI4MTgMl3p%2Ft7U1a%2B8lv2tWra64gyZjyMEemoEtk23Txhu4GCKS7TNjos833XxGRSHURWkhL\"}]}",
+          "cf-ray": "a6076d46fd3765dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "155880",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:53 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.473",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.426636,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"2349d-1a11567ddf8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=psCqry7id4LJxpZJzvg6Zvyaw16EMQNcKOAnLHupcNBPRWBOUFZsUxZ8K%2BUBxjjGgR%2Ffq00vGCekhcLuWhojrYhsyOIISHlD0CJl1cU7MaQPNwt8AqXSgMkSAQ9Xiu9GSJFF\"}]}",
+          "cf-ray": "a6076d46fd3865dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "144541",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:11 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.559",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/category/women's%20clothing?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.503919,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"e1e-mw7W7CZ0oWuC0yD5yW7dFAxD46A\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=h17UgAg%2FYDoVA0q4sSrrJD1mtDwylht3yPH%2Bg9XcXRD4zHESpMa%2FYHbhmDYYPgLd9uLp%2B2OvsUTkeuENODEwj9VAnesMfBE2qn%2BUp7OnVuyJT1dLMPiAVondiiCkCOr%2BjPFX\"}]}",
+          "cf-ray": "a6076d47680df47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.565",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/category/women's%20clothing?limit=10&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.635304,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"e1e-mw7W7CZ0oWuC0yD5yW7dFAxD46A\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CPEJfzM3Jg19N%2BROzWmgpxbhc%2F4Z8yK5sUO70ogHPFyFRgY5YMr59ty0i7Y7EeqgDFTtUUdZyKC9Ef9%2B%2FtFiRIdell4nGKo8nAB04EVRM8zvwga5z%2FmKShgjU6p89bD%2BHQV9\"}]}",
+          "cf-ray": "a6076d48489bf47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.571",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/category/women's%20clothing?limit=10&sort=desc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253236.76879,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"e1e-Gjujs1N273o2IWJTGlprtEoorHA\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=m9bw2PhXOGShqwoIq7NJXCC68VFC%2Bp48eSdjimjclfSbvn9E517XNRN6AE6E38l5daM0ugNVf%2FjUvQnvqwdJA2LRKgPW3CFgFEk1qmC6nJMspoosgA8s4Z2IvorigQ1%2FhbMt\"}]}",
+          "cf-ray": "a6076d491933f47d-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.587",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253237.016409,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "REVALIDATED",
+          "etag": "W/\"39ba5-1a11567e5c8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3RSu1QPNYSHkx7GQRWlULpt8BtLjMk%2FI%2BglPghFzWXV7pWzER%2FriOt7JRzwPEKz9TglqTHrbPe7RIIVJJ%2FwZ70peNnew0HnHbYA1njtFk7A%2FJCSPd99yZJJUmkk9awPaCe6V\"}]}",
+          "cf-ray": "a6076d46fd3365dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "236453",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:13 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.589",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/auth/login",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "Content-Type": "application/json",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "{\"username\":\"[redacted]\",\"password\":\"[redacted]\"}",
+      "timestamp": 253237.093657,
+      "response": {
+        "status": 201,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"94-RLQtEgAdAmSuqppZ654VwM3nhDo\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RxEXTgCq5h0njkMjWF5GPFcYm4xYyKVWm37cw1LaR1C%2BHfX2wvIFejoUdO88uDzznmkjk19fsgwm%2BK1Iven5FSXcaMDHS%2FLMvCl6g8GZZ8Tkd06NZqBjph8QTskg9bjTjjdj\"}]}",
+          "cf-ray": "a6076d4c5e02dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "content-length": "148",
+          "date": "Thu, 26 Nov 2026 08:12:14 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "8FE044575324482F8D55EA8E6136F5F4",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/auth/login",
+      "method": "OPTIONS",
+      "headers": {
+        "Accept": "*/*",
+        "Access-Control-Request-Headers": "content-type",
+        "Access-Control-Request-Method": "POST",
+        "Origin": "null",
+        "Sec-Fetch-Mode": "cors",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253237.095619,
+      "response": {
+        "status": 204,
+        "statusText": "",
+        "mimeType": "",
+        "headers": {
+          "access-control-allow-headers": "content-type",
+          "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+          "access-control-allow-origin": "*",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a6076d4b1ac2f47d-FRA",
+          "date": "Thu, 26 Nov 2026 08:12:13 GMT",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FK6ODZYzL3g9ZXl963HRGBQK7DeNWr3n2TYP%2FQ8Qbv1iIXch6iKjN9w3qi3oaNpQdoVVS9loLHEYKIX12N463ZHEbArCE2OW28Qfd%2Fk2GRdNNiGTqZO89CMME%2B62dZkmNqLD\"}]}",
+          "server": "cloudflare",
+          "vary": "Access-Control-Request-Headers",
+          "x-powered-by": "Express"
+        }
+      }
+    },
+    {
+      "requestId": "20540.590",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/users",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253237.560086,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"bae-Vi0JNVg0EAD6LcGk4v18ASK0bgA\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ImoAphcOTDgfa9ZAcXMFrneuni8GQuDlM7tR8zgjAE1xlkK8TCtO0ByPA7tpiImpu9OPFC5VHYOoB4uOY8HgzS79L91wh%2BB9PBpNQLtRqp4Q40j7HGBW%2BGgBcp11CunjJYr%2B\"}]}",
+          "cf-ray": "a6076d4e0a90dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:14 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.631",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/users",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253238.481185,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"bae-Vi0JNVg0EAD6LcGk4v18ASK0bgA\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uxsmn3P%2BVFCr%2BsRPZDygOzQYybMkAEoC1TLinyiCc5ksE3sWZvQN2TVnXVaEiSidWvpVFpQ23HBmH25d6a0TNKNA0lrhgz0oUODnbrKMglge8JJIrPhDPt%2FdYXw0%2FmGgwHRk\"}]}",
+          "cf-ray": "a6076d53ccf6dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:15 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.632",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253238.481611,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qiB92pwKt1IzNImMzEN6AZP2RS5yeAe30L2GWKOvQmFKMOP6urwZAb1ignJv8f8yOrsDI0PJm78dmUQYXo14S8riEUQHIsAEIaXNJnMqGol1RRAMOFD5o15%2BtNXrFRA9HkOX\"}]}",
+          "cf-ray": "a6076d53cd00dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:15 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.633",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/category/women's%20clothing?limit=10&sort=desc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253238.482354,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"e1e-Gjujs1N273o2IWJTGlprtEoorHA\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KpxHk5%2F4xXlgopyuEILe7aLFahGVMdfZk9WgXvLLadge5nznTyz6kQ99OmAWwgwClZhiIM5ICACwmZluQMb9iLKGKk12lbYLioVUM8aDdiVdC%2FuDSvIBI2FKslX1n5xMFp1D\"}]}",
+          "cf-ray": "a6076d53cd03dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:15 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.634",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253238.585222,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"39ba5-1a11567e5c8\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Dv4E0EzG4BqOkQw8A7CMufQC16054ptF95dhDSMOA38C56gTpy784jkvBoQsevxazav97%2Bv5I9%2BKJyYtCS4Vqw98x%2BhJshEqQYLqiEWqhJU%2F%2BuaztO3rsYOF%2FZ3c4DHETIgL\"}]}",
+          "cf-ray": "a6076d553b3cd00a-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "236453",
+          "date": "Thu, 26 Nov 2026 08:12:15 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:13 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "20540.635",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/auth/login",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "Content-Type": "application/json",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "{\"username\":\"[redacted]\",\"password\":\"[redacted]\"}",
+      "timestamp": 253240.65658,
+      "response": {
+        "status": 201,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"94-z140gjeL6P2V2e5ZNN+o52Aw6u4\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=j1kvzbVl3rGD57mB3CqtLEMDdWbHzgEEzQ7v2fNlDqA%2FqmVqnF45saVssDEfwdbUuJavFj1qLrDCOKiYLVqN%2FMtaAze%2BZacxfOsciJf4XG4ECpJp4SllAi99RQVUV%2FLYSbdQ\"}]}",
+          "cf-ray": "a6076d61fff7dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "content-length": "148",
+          "date": "Thu, 26 Nov 2026 08:12:17 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "702DD6A60DBA325CB52F32E8537060C2",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/auth/login",
+      "method": "OPTIONS",
+      "headers": {
+        "Accept": "*/*",
+        "Access-Control-Request-Headers": "content-type",
+        "Access-Control-Request-Method": "POST",
+        "Origin": "null",
+        "Sec-Fetch-Mode": "cors",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253240.669564,
+      "response": {
+        "status": 204,
+        "statusText": "",
+        "mimeType": "",
+        "headers": {
+          "access-control-allow-headers": "content-type",
+          "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+          "access-control-allow-origin": "*",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a6076d617e53dc8c-FRA",
+          "date": "Thu, 26 Nov 2026 08:12:17 GMT",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7xoTIUaCxJS5Xh%2FMyKwdUjvrJEhKqq2qJRDL4nQEl28p1CLv3pIL%2FbG7rJicU8HyhaUikFa8isixyhIk5Y8Uk3WKE%2FvmAsIzUVgzpe3mTL2CPR75totULtf%2BzX7B4dNlcSMJ\"}]}",
+          "server": "cloudflare",
+          "vary": "Access-Control-Request-Headers",
+          "x-powered-by": "Express"
+        }
+      }
+    },
+    {
+      "requestId": "27520.41",
+      "tab": "independent-tab",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253239.888982,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=906A4Jf%2F7M993j%2FwRnn4h%2BHdC5mQyCgbO4AfXZhOkSDLZlgZ7QNngDUGY5zAQq%2Fz5yISDLoIkxhD81cjcTK3Ez%2F0ad3to8Ifs%2FTm3CRcDbeWtpDhpw4RCWrFiHxaGluoIn3T\"}]}",
+          "cf-ray": "a6076d5c9f40dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:16 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "27520.42",
+      "tab": "independent-tab",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253239.889746,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tDSP5HCf7nOzwKBzM5oj8bP%2F0S%2FT3T%2FMdEfuiR%2FLkdKKnGDOAagisjRCm6%2BedYT9lWUkNlPq0PF4ZWeUsynojCTnKft61Y7u3jo%2FfLGFS44oT9kb4Nq1%2BkqWbMclUWRMcEc%2B\"}]}",
+          "cf-ray": "a6076d5c9f45dc8c-FRA",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:16 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "27520.43",
+      "tab": "independent-tab",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253240.030969,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"42b8b-1a115677480\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2FDM0WVo%2Ba52iu1eAWFhHU5j9iczBQVkOMjUTKVPwCPqiSLXAMCBibyUnsT69kABddogTPsYimL6omUyfVzob11%2FiZPJ7fB6n6iAzWCWBLzRkOWAEi%2FO4JARZ79L7cFA4YtJJ\"}]}",
+          "cf-ray": "a6076d293e8965dd-FRA",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "273291",
+          "date": "Thu, 26 Nov 2026 08:12:08 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:44 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.83",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products/categories",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.176546,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"3e-cdq81BKoKIRIQmboBVN84Vj+vkM\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=EYUUUACniC8H41JRm4UmRk%2B1Bfo%2BQqVZHyGLCduCxdahso13lfIq5bLJLfrkINoO4g4nsliCt0ZySNk6nehG04uXMgK7rFnXWcKJ5T8WInk3TGS7TTosT2ogmWOGhboKlB8Y\"}]}",
+          "cf-ray": "a6076d6abdd66599-AMM",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.84",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products?limit=20&sort=asc",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.176942,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "content-encoding": "zstd",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"2990-lZ2o94A2EDKiYW3/6/3oI74HHkw\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1BaV5DsGu9%2BnhzUwnBnSZ5vMAILV2AVXQaMFPyLDO0t7ZFpPV89pNRpN8TcltgUaVm1sVNVi8oJYnu%2FEakFIsOTVPliulSRB64FkGkEc%2BRlr9tEy6YciGshwYDuStqT2Et0h\"}]}",
+          "cf-ray": "a6076d6abdd86599-AMM",
+          "access-control-allow-origin": "*",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.85",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.366597,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"42b8b-1a115677480\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=q9NaURU2eVibSWaLoKGCFMnjx31vHei8j2DVxys4MhksKCdHjeTFds%2FTMffoUKMh%2Ftf%2B%2BM6JgVqoqS3eW8S74%2BH2sTQu0rZCCUhv8W%2F4hWnIS%2FAo44VDJo2B9I5jryl67NSR\"}]}",
+          "cf-ray": "a6076d6c1c385409-AMM",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "273291",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:44 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.86",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.366687,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"36c4d-1a11567c2a0\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=N%2BAuW3i%2BEP4g6rPOWTCoI%2FP8y47WpLi6tLxOCRwCHy5wJG%2Ft8ChIISHiVAGTC9VbYLebva7DUKPc5lbaC3wlMTPa54tCNwEwxVgFuPmnCe6Kg3k%2F5KsQ%2FEAib0q1p5NlK0XU\"}]}",
+          "cf-ray": "a6076d6c1c3c5409-AMM",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "224333",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:08:04 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.87",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.366726,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4de57-1a115679f78\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0o94vs6ms2Q5Y4Xi2hgZlAM%2FDpveF1CEybjmFuQXHNDvShYkUZVRd6Gf8Mo%2Fm43%2Fwj7qN3jAjcaUwB3DD%2FTUrz%2FmlEkx9T4thdOBlCHpxmrkGbFnqlOc4rIVanktBJQS8m8K\"}]}",
+          "cf-ray": "a6076d6c1c3b5409-AMM",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "319063",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:55 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.88",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.36677,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"4ab53-1a11567ab30\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PrnaErHkxsLT6t%2BCxR8GMgIHyT8ggDm7vtXePVsWT8IfmXw92KblCO105%2FwMV%2BDfwVRNPYCBN9iwoIZdz4KxViSVIiLcIl88yGcSjB4VmrZyAz9IK58Lt9pvUHWDGwd%2FxWO6\"}]}",
+          "cf-ray": "a6076d6c1c3f5409-AMM",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "306003",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:58 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.89",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.366824,
+      "response": {
+        "status": 200,
+        "statusText": "",
+        "mimeType": "image/png",
+        "headers": {
+          "cache-control": "public, max-age=14400",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "EXPIRED",
+          "etag": "W/\"2b2f2-1a115679b90\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=yuIxKbEItHyQG%2BmFN7Gr%2FCQl8V4VluW%2BnUWIgTRV3ZmlGdJnAv7bY0x0lPZxc%2FEnhljFm4pK%2B3Nz19PoShdIUUp7AhkC22z0oed6jniYCmvtuoiz13jHcIJxmEZExZEOsyyR\"}]}",
+          "cf-ray": "a6076d6c1c3e5409-AMM",
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "content-length": "176882",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "image/png",
+          "last-modified": "Wed, 07 Oct 2026 08:07:54 GMT",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "17484.95",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "Content-Type": "application/json",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "{\"title\":\"M9 draft cleared after success\",\"price\":18.25,\"description\":\"This draft must be removed after the API accepts the post\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\"category\":\"electronics\"}",
+      "timestamp": 253242.590145,
+      "response": {
+        "status": 201,
+        "statusText": "",
+        "mimeType": "application/json",
+        "headers": {
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "cf-cache-status": "DYNAMIC",
+          "etag": "W/\"e6-OseOZEohtXNrWEOyqXMo/8B6AKc\"",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nB3KIXZnY5NtIX1E6iSnobdr9NIaqFGkaL2Wx4dIp06yuyXTFc%2Fhi6lkljvYtr%2BRYal2pO4w4HP3jmOkAlVL%2FgCJ5C%2BvAVuIghyB5e0SbqX7E1QaFoS%2F4Ug5ROrV%2F9bxDHJZ\"}]}",
+          "cf-ray": "a6076d6e68d35409-AMM",
+          "access-control-allow-origin": "*",
+          "content-length": "230",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "x-powered-by": "Express",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "requestId": "48F7DB316B54F2FDEDBCB989B02043FD",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/products",
+      "method": "OPTIONS",
+      "headers": {
+        "Accept": "*/*",
+        "Access-Control-Request-Headers": "content-type",
+        "Access-Control-Request-Method": "POST",
+        "Origin": "null",
+        "Sec-Fetch-Mode": "cors",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.591042,
+      "response": {
+        "status": 204,
+        "statusText": "",
+        "mimeType": "",
+        "headers": {
+          "access-control-allow-headers": "content-type",
+          "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+          "access-control-allow-origin": "*",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a6076d6d5ec75409-AMM",
+          "date": "Thu, 26 Nov 2026 08:12:19 GMT",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aqg4Jqy3%2B4T3DInsMnKVkpYDt6SbcKjMyKYcfYarJ811VFmzy8M5gpNel8rzOBGUZuphDl01pFeRxDRMJnH%2B99qT97AFhYp5VkHf9NIHqIOLNAGYNFjb8sKhU8TK7X2fX%2FFL\"}]}",
+          "server": "cloudflare",
+          "vary": "Access-Control-Request-Headers",
+          "x-powered-by": "Express"
+        }
+      }
+    },
+    {
+      "requestId": "17484.100",
+      "tab": "main",
+      "url": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "bearerSent": false,
+      "postData": "",
+      "timestamp": 253242.889966,
+      "response": null
+    }
+  ]
+}

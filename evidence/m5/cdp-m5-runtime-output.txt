@@ -1,0 +1,12 @@
+﻿PASS  5.5 details fetched from GET /products/{id}  {"detailUrls":["https://fakestoreapi.com/products/1"],"detailInfo":{"open":true,"title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops","price":"$109.95","busy":false},"independent":{"status":200,"title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops","price":109.95},"networkStatus":200}
+PASS  5.4 path + query params in Network  {"categoryUrl":"https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc","path":"/products/category/electronics","query":{"limit":"20","sort":"asc"}}
+PASS  5.3 Slow 3G grid loading then cleanup  {"slowGridLoading":{"busy":"true","skeletons":8,"cards":0},"slowGridDone":{"busy":false,"cards":20,"stateHidden":true}}
+PASS  5.3 + 5.5 Slow 3G detail loading then cleanup  {"slowDetailLoading":{"busy":"true","skeletons":2},"slowDetailDone":{"busy":false,"title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"},"detailUrls":["https://fakestoreapi.com/products/1"]}
+PASS  5.3 network interruption + retry  {"failedState":{"title":"Could not load products.╪¬╪╣╪░┘æ╪▒ ╪¬╪¡┘à┘è┘ä ╪º┘ä┘à┘å╪¬╪¼╪º╪¬.","retryVisible":true,"busy":false,"cards":0},"retriedState":{"busy":false,"cards":20,"stateHidden":true},"retryUrl":"https://fakestoreapi.com/products?limit=20&sort=asc"}
+PASS  5.5 detail error + retry  {"detailFailed":{"text":"Could not load details╪¬╪╣╪░┘æ╪▒ ╪¬╪¡┘à┘è┘ä ╪º┘ä╪¬┘ü╪º╪╡┘è┘äCheck your connection and try again.╪¬╪¡┘é┘é ┘à┘å ╪º╪¬╪╡╪º┘ä┘â ╪½┘à ╪ú╪╣╪» ╪º┘ä┘à╪¡╪º┘ê┘ä╪⌐.Retry╪Ñ╪╣╪º╪»╪⌐ ╪º┘ä┘à╪¡╪º┘ê┘ä╪⌐","retry":true,"busy":false},"detailRetried":{"title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops","busy":false}}
+PASS  5.5 missing id / empty response  {"emptyDetail":{"text":"No product for this id┘ä╪º ┘è┘ê╪¼╪» ┘à┘å╪¬╪¼ ╪¿┘ç╪░╪º ╪º┘ä┘à╪╣╪▒┘æ┘üThe API returned an empty response.╪ú╪╣╪º╪» ╪º┘ä┘Ç API ╪º╪│╪¬╪¼╪º╪¿╪⌐ ┘ü╪º╪▒╪║╪⌐.Retry╪Ñ╪╣╪º╪»╪⌐ ╪º┘ä┘à╪¡╪º┘ê┘ä╪⌐","busy":false}}
+PASS  5.3 empty list state  {"emptyGrid":{"title":"Nothing here┘ä╪º ┘è┘ê╪¼╪» ╪┤┘è╪í ┘ç┘å╪º","cards":0,"busy":false}}
+PASS  Console clean  {"consoleErrors":[],"exceptions":[]}
+
+9/9 PASS; saved C:\projects\firstProjectJS-toAsem\evidence\m5\runtime-tests.json
+

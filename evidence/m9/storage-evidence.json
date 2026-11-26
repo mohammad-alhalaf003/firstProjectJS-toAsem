@@ -1,0 +1,951 @@
+{
+  "note": "Shapes, key names and selected redacted state only; no credential values.",
+  "snapshots": [
+    {
+      "tab": "main",
+      "label": "legacy-cleanup-and-invalid-json",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "string",
+            "length": 12
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          },
+          "storepulse_product_draft": {
+            "kind": "string",
+            "length": 8
+          }
+        }
+      },
+      "selected": {
+        "theme": "dark",
+        "favoriteIds": null,
+        "cartIds": null,
+        "cartQuantities": null,
+        "recentCount": 0,
+        "recentTerms": null,
+        "view": null,
+        "pageSize": null,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": true,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–20 of 20عرض 1–20 من 20"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "recent-search-limit-and-reuse",
+      "keys": {
+        "localStorage": [],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters"
+        ]
+      },
+      "shape": {
+        "localStorage": {},
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 76
+          }
+        }
+      },
+      "selected": {
+        "theme": "dark",
+        "favoriteIds": null,
+        "cartIds": null,
+        "cartQuantities": null,
+        "recentCount": 0,
+        "recentTerms": null,
+        "view": null,
+        "pageSize": null,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": "hat"
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "hat",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–3 of 3عرض 1–3 من 3"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "complete-mapped-state",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 90
+          },
+          "storepulse_product_draft": {
+            "kind": "object",
+            "length": 187
+          },
+          "storepulse_token": {
+            "kind": "string",
+            "length": 138
+          },
+          "storepulse_username": {
+            "kind": "string",
+            "length": 7
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "after-reload",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 90
+          },
+          "storepulse_product_draft": {
+            "kind": "object",
+            "length": 187
+          },
+          "storepulse_token": {
+            "kind": "string",
+            "length": 138
+          },
+          "storepulse_username": {
+            "kind": "string",
+            "length": 7
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "tab": "independent-tab",
+      "label": "independent-new-tab",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 20عرض 1–5 من 20"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "after-independent-tab-closed",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 90
+          },
+          "storepulse_product_draft": {
+            "kind": "object",
+            "length": 187
+          },
+          "storepulse_token": {
+            "kind": "string",
+            "length": 138
+          },
+          "storepulse_username": {
+            "kind": "string",
+            "length": 7
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "after-logout",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 90
+          },
+          "storepulse_product_draft": {
+            "kind": "object",
+            "length": 187
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "before-browser-close",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 90
+          },
+          "storepulse_product_draft": {
+            "kind": "object",
+            "length": 187
+          },
+          "storepulse_token": {
+            "kind": "string",
+            "length": 138
+          },
+          "storepulse_username": {
+            "kind": "string",
+            "length": 7
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "after-browser-reopen",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 20عرض 1–5 من 20"
+      }
+    },
+    {
+      "tab": "main",
+      "label": "after-draft-clear-rules",
+      "keys": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters"
+        ]
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_cart": {
+            "kind": "array(1)",
+            "length": 30
+          },
+          "storepulse_favorites": {
+            "kind": "array(1)",
+            "length": 3
+          },
+          "storepulse_page_size": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_recent_searches": {
+            "kind": "array(5)",
+            "length": 34
+          },
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          },
+          "storepulse_view_mode": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          }
+        }
+      },
+      "selected": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 21عرض 1–5 من 21"
+      }
+    },
+    {
+      "tab": "api-page",
+      "label": "api-language-no-storage",
+      "keys": {
+        "localStorage": [
+          "storepulse_theme"
+        ],
+        "sessionStorage": []
+      },
+      "shape": {
+        "localStorage": {
+          "storepulse_theme": {
+            "kind": "string",
+            "length": 7
+          }
+        },
+        "sessionStorage": {}
+      },
+      "selected": {
+        "theme": "dark",
+        "favoriteIds": null,
+        "cartIds": null,
+        "cartQuantities": null,
+        "recentCount": 0,
+        "recentTerms": null,
+        "view": null,
+        "pageSize": null,
+        "filters": null,
+        "currentPage": null,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "",
+        "pageStatus": ""
+      }
+    }
+  ]
+}

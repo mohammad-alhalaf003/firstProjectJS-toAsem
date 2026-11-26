@@ -1,0 +1,1156 @@
+{
+  "generatedAt": "2026-11-26T08:12:03.660Z",
+  "source": "PDF pages 16–17, M8.1–M8.5",
+  "tool": "Google Chrome headless via CDP; real fetch to FakeStoreAPI + explicitly labelled mocked cases",
+  "viewportWidths": [
+    320,
+    768,
+    1280
+  ],
+  "totals": {
+    "pass": 120,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "W320 previous catalogue baseline kept",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "chips": 5
+      }
+    },
+    {
+      "name": "W320 invalid saved quantities removed",
+      "status": "PASS",
+      "detail": {
+        "sanitizedCart": [
+          {
+            "productId": 5,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "W320 add dialog + semantic fields",
+      "status": "PASS",
+      "detail": {
+        "dialog": true
+      }
+    },
+    {
+      "name": "W320 empty form blocked before network",
+      "status": "PASS",
+      "detail": {
+        "validationVisible": true,
+        "categoryHasDefault": true,
+        "posts": 0
+      }
+    },
+    {
+      "name": "W320 invalid price blocked",
+      "status": "PASS",
+      "detail": {
+        "posts": 0
+      }
+    },
+    {
+      "name": "W320 double submit sent one POST",
+      "status": "PASS",
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "W320 POST payload + content-type",
+      "status": "PASS",
+      "detail": {
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "Referer": "",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+          "Content-Type": "application/json",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "postData": "{\"title\":\"M8 probe 320\",\"price\":12.5,\"description\":\"M8 validation description\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\"category\":\"electronics\"}"
+      }
+    },
+    {
+      "name": "W320 POST 201 + returned id shown",
+      "status": "PASS",
+      "detail": {
+        "status": 201,
+        "resultText": "Created (201) — API id: 21. Session-only copy: FakeStoreAPI does not persist writes; reload restores API data.\nأُنشئ (201) — معرّف الـ API: 21. نسخة مؤقتة: FakeStoreAPI لا يحفظ عمليات الكتابة؛ إعادة التحميل تستعيد بيانات الـ API."
+      }
+    },
+    {
+      "name": "W320 session-only product rendered",
+      "status": "PASS",
+      "detail": {
+        "addedVisible": true,
+        "cards": 20,
+        "firstTitles": [
+          "M8 probe 320",
+          "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "Mens Casual Premium Slim Fit T-Shirts "
+        ],
+        "resultText": "Created (201) — API id: 21. Session-only copy: FakeStoreAPI does not persist writes; reload restores API data.\nأُنشئ (201) — معرّف الـ API: 21. نسخة مؤقتة: FakeStoreAPI لا يحفظ عمليات الكتابة؛ إعادة التحميل تستعيد بيانات الـ API.",
+        "resultCount": "21 products21 منتج"
+      }
+    },
+    {
+      "name": "W320 edit form prefilled from product",
+      "status": "PASS",
+      "detail": {
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": "109.95",
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+        "category": "men's clothing",
+        "mode": "edit",
+        "id": "1"
+      }
+    },
+    {
+      "name": "W320 edit cancel sends no PUT",
+      "status": "PASS",
+      "detail": {
+        "confirmOpened": true,
+        "requests": 0
+      }
+    },
+    {
+      "name": "W320 PUT id extracted + status 200",
+      "status": "PASS",
+      "detail": {
+        "url": "https://fakestoreapi.com/products/1",
+        "status": 200
+      }
+    },
+    {
+      "name": "W320 PUT payload validated",
+      "status": "PASS",
+      "detail": {
+        "postData": "{\"title\":\"M8 edited 320\",\"price\":109.95,\"description\":\"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png\",\"category\":\"men's clothing\"}"
+      }
+    },
+    {
+      "name": "W320 edited copy marked session-only",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 delete cancel sends no DELETE",
+      "status": "PASS",
+      "detail": {
+        "requests": 0
+      }
+    },
+    {
+      "name": "W320 DELETE 200 + local removal only",
+      "status": "PASS",
+      "detail": {
+        "url": "https://fakestoreapi.com/products/2",
+        "status": 200
+      }
+    },
+    {
+      "name": "W320 wrong login 401 handled",
+      "status": "PASS",
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "W320 button re-enabled after 401",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 login 201 + token/username in sessionStorage",
+      "status": "PASS",
+      "detail": {
+        "status": 201,
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          },
+          "storepulse_token": "[redacted]",
+          "storepulse_username": "[redacted]"
+        }
+      }
+    },
+    {
+      "name": "W320 auth UI updated",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 Authorization: Bearer sent to API",
+      "status": "PASS",
+      "detail": {
+        "header": "Bearer [redacted]",
+        "url": "https://fakestoreapi.com/products/1"
+      }
+    },
+    {
+      "name": "W320 no token printed in console",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 external origin blocked before token send",
+      "status": "PASS",
+      "detail": {
+        "blocked": true,
+        "status": 0
+      }
+    },
+    {
+      "name": "W320 reload restores login in same tab",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 logout clears session auth",
+      "status": "PASS",
+      "detail": {
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          }
+        }
+      }
+    },
+    {
+      "name": "W320 add + quantity + total(reduce)",
+      "status": "PASS",
+      "detail": {
+        "count": "2",
+        "total": "$0.00",
+        "stored": [
+          {
+            "productId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "W320 quantity change keeps valid value",
+      "status": "PASS",
+      "detail": {
+        "count": "1",
+        "total": "$55.99",
+        "stored": [
+          {
+            "productId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "W320 remove product from cart",
+      "status": "PASS",
+      "detail": {
+        "removeButtons": 2,
+        "afterRemove": {
+          "count": "1",
+          "stored": [
+            {
+              "productId": 3,
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "W320 POST /carts body matches API docs",
+      "status": "PASS",
+      "detail": {
+        "body": {
+          "userId": 1,
+          "date": "2026-11-26",
+          "products": [
+            {
+              "productId": 3,
+              "quantity": 1
+            }
+          ]
+        },
+        "expectedUserIdFromUsers": 1
+      }
+    },
+    {
+      "name": "W320 checkout success keeps/clears cart correctly",
+      "status": "PASS",
+      "detail": {
+        "status": 201
+      }
+    },
+    {
+      "name": "W320 wrong URL 404 message",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "empty": false,
+        "message": [
+          "Not found — wrong URL or missing product id.",
+          "غير موجود — رابط خاطئ أو معرّف منتج غير موجود."
+        ]
+      }
+    },
+    {
+      "name": "W320 empty response body message",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "empty": true,
+        "message": [
+          "The API returned an empty response body.",
+          "أعاد الـ API استجابة بجسم فارغ."
+        ]
+      }
+    },
+    {
+      "name": "W320 invalid JSON message through real apiRequest",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "invalidJson": true,
+        "message": [
+          "Non-JSON text response — could not read the data.",
+          "استجابة نصية غير JSON — تعذّرت قراءة البيانات."
+        ]
+      }
+    },
+    {
+      "name": "W320 invalid JSON rendered in real form error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 mocked 400/500 messages",
+      "status": "PASS",
+      "detail": {
+        "mocked400": [
+          "Bad request — check the JSON body.",
+          "طلب غير صالح — تحقق من جسم JSON."
+        ],
+        "mocked500": [
+          "Server error (500). Try again later.",
+          "خطأ في السيرفر (500). حاول مرة أخرى لاحقاً."
+        ]
+      }
+    },
+    {
+      "name": "W320 200/201 are not errors",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 mocked 400 rendered in real form error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 mocked 500 rendered in real login error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W320 offline message",
+      "status": "PASS",
+      "detail": {
+        "status": 0,
+        "kind": "offline",
+        "message": [
+          "You appear offline. Check your connection.",
+          "يبدو أنك غير متصل. تحقق من اتصالك."
+        ]
+      }
+    },
+    {
+      "name": "W320 no unhandled console errors",
+      "status": "PASS",
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "W768 previous catalogue baseline kept",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "chips": 5
+      }
+    },
+    {
+      "name": "W768 invalid saved quantities removed",
+      "status": "PASS",
+      "detail": {
+        "sanitizedCart": [
+          {
+            "productId": 5,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "W768 add dialog + semantic fields",
+      "status": "PASS",
+      "detail": {
+        "dialog": true
+      }
+    },
+    {
+      "name": "W768 empty form blocked before network",
+      "status": "PASS",
+      "detail": {
+        "validationVisible": true,
+        "categoryHasDefault": true,
+        "posts": 0
+      }
+    },
+    {
+      "name": "W768 invalid price blocked",
+      "status": "PASS",
+      "detail": {
+        "posts": 0
+      }
+    },
+    {
+      "name": "W768 double submit sent one POST",
+      "status": "PASS",
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "W768 POST payload + content-type",
+      "status": "PASS",
+      "detail": {
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "Referer": "",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+          "Content-Type": "application/json",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "postData": "{\"title\":\"M8 probe 768\",\"price\":12.5,\"description\":\"M8 validation description\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\"category\":\"electronics\"}"
+      }
+    },
+    {
+      "name": "W768 POST 201 + returned id shown",
+      "status": "PASS",
+      "detail": {
+        "status": 201,
+        "resultText": "Created (201) — API id: 21. Session-only copy: FakeStoreAPI does not persist writes; reload restores API data.\nأُنشئ (201) — معرّف الـ API: 21. نسخة مؤقتة: FakeStoreAPI لا يحفظ عمليات الكتابة؛ إعادة التحميل تستعيد بيانات الـ API."
+      }
+    },
+    {
+      "name": "W768 session-only product rendered",
+      "status": "PASS",
+      "detail": {
+        "addedVisible": true,
+        "cards": 20,
+        "firstTitles": [
+          "M8 probe 768",
+          "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "Mens Casual Premium Slim Fit T-Shirts "
+        ],
+        "resultText": "Created (201) — API id: 21. Session-only copy: FakeStoreAPI does not persist writes; reload restores API data.\nأُنشئ (201) — معرّف الـ API: 21. نسخة مؤقتة: FakeStoreAPI لا يحفظ عمليات الكتابة؛ إعادة التحميل تستعيد بيانات الـ API.",
+        "resultCount": "21 products21 منتج"
+      }
+    },
+    {
+      "name": "W768 edit form prefilled from product",
+      "status": "PASS",
+      "detail": {
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": "109.95",
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+        "category": "men's clothing",
+        "mode": "edit",
+        "id": "1"
+      }
+    },
+    {
+      "name": "W768 edit cancel sends no PUT",
+      "status": "PASS",
+      "detail": {
+        "confirmOpened": true,
+        "requests": 0
+      }
+    },
+    {
+      "name": "W768 PUT id extracted + status 200",
+      "status": "PASS",
+      "detail": {
+        "url": "https://fakestoreapi.com/products/1",
+        "status": 200
+      }
+    },
+    {
+      "name": "W768 PUT payload validated",
+      "status": "PASS",
+      "detail": {
+        "postData": "{\"title\":\"M8 edited 768\",\"price\":109.95,\"description\":\"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png\",\"category\":\"men's clothing\"}"
+      }
+    },
+    {
+      "name": "W768 edited copy marked session-only",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 delete cancel sends no DELETE",
+      "status": "PASS",
+      "detail": {
+        "requests": 0
+      }
+    },
+    {
+      "name": "W768 DELETE 200 + local removal only",
+      "status": "PASS",
+      "detail": {
+        "url": "https://fakestoreapi.com/products/2",
+        "status": 200
+      }
+    },
+    {
+      "name": "W768 wrong login 401 handled",
+      "status": "PASS",
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "W768 button re-enabled after 401",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 login 201 + token/username in sessionStorage",
+      "status": "PASS",
+      "detail": {
+        "status": 201,
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          },
+          "storepulse_token": "[redacted]",
+          "storepulse_username": "[redacted]"
+        }
+      }
+    },
+    {
+      "name": "W768 auth UI updated",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 Authorization: Bearer sent to API",
+      "status": "PASS",
+      "detail": {
+        "header": "Bearer [redacted]",
+        "url": "https://fakestoreapi.com/products/1"
+      }
+    },
+    {
+      "name": "W768 no token printed in console",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 external origin blocked before token send",
+      "status": "PASS",
+      "detail": {
+        "blocked": true,
+        "status": 0
+      }
+    },
+    {
+      "name": "W768 reload restores login in same tab",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 logout clears session auth",
+      "status": "PASS",
+      "detail": {
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          }
+        }
+      }
+    },
+    {
+      "name": "W768 add + quantity + total(reduce)",
+      "status": "PASS",
+      "detail": {
+        "count": "2",
+        "total": "$0.00",
+        "stored": [
+          {
+            "productId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "W768 quantity change keeps valid value",
+      "status": "PASS",
+      "detail": {
+        "count": "1",
+        "total": "$55.99",
+        "stored": [
+          {
+            "productId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "W768 remove product from cart",
+      "status": "PASS",
+      "detail": {
+        "removeButtons": 2,
+        "afterRemove": {
+          "count": "1",
+          "stored": [
+            {
+              "productId": 3,
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "W768 POST /carts body matches API docs",
+      "status": "PASS",
+      "detail": {
+        "body": {
+          "userId": 1,
+          "date": "2026-11-26",
+          "products": [
+            {
+              "productId": 3,
+              "quantity": 1
+            }
+          ]
+        },
+        "expectedUserIdFromUsers": 1
+      }
+    },
+    {
+      "name": "W768 checkout success keeps/clears cart correctly",
+      "status": "PASS",
+      "detail": {
+        "status": 201
+      }
+    },
+    {
+      "name": "W768 wrong URL 404 message",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "empty": false,
+        "message": [
+          "Not found — wrong URL or missing product id.",
+          "غير موجود — رابط خاطئ أو معرّف منتج غير موجود."
+        ]
+      }
+    },
+    {
+      "name": "W768 empty response body message",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "empty": true,
+        "message": [
+          "The API returned an empty response body.",
+          "أعاد الـ API استجابة بجسم فارغ."
+        ]
+      }
+    },
+    {
+      "name": "W768 invalid JSON message through real apiRequest",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "invalidJson": true,
+        "message": [
+          "Non-JSON text response — could not read the data.",
+          "استجابة نصية غير JSON — تعذّرت قراءة البيانات."
+        ]
+      }
+    },
+    {
+      "name": "W768 invalid JSON rendered in real form error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 mocked 400/500 messages",
+      "status": "PASS",
+      "detail": {
+        "mocked400": [
+          "Bad request — check the JSON body.",
+          "طلب غير صالح — تحقق من جسم JSON."
+        ],
+        "mocked500": [
+          "Server error (500). Try again later.",
+          "خطأ في السيرفر (500). حاول مرة أخرى لاحقاً."
+        ]
+      }
+    },
+    {
+      "name": "W768 200/201 are not errors",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 mocked 400 rendered in real form error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 mocked 500 rendered in real login error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W768 offline message",
+      "status": "PASS",
+      "detail": {
+        "status": 0,
+        "kind": "offline",
+        "message": [
+          "You appear offline. Check your connection.",
+          "يبدو أنك غير متصل. تحقق من اتصالك."
+        ]
+      }
+    },
+    {
+      "name": "W768 no unhandled console errors",
+      "status": "PASS",
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "W1280 previous catalogue baseline kept",
+      "status": "PASS",
+      "detail": {
+        "cards": 20,
+        "chips": 5
+      }
+    },
+    {
+      "name": "W1280 invalid saved quantities removed",
+      "status": "PASS",
+      "detail": {
+        "sanitizedCart": [
+          {
+            "productId": 5,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "W1280 add dialog + semantic fields",
+      "status": "PASS",
+      "detail": {
+        "dialog": true
+      }
+    },
+    {
+      "name": "W1280 empty form blocked before network",
+      "status": "PASS",
+      "detail": {
+        "validationVisible": true,
+        "categoryHasDefault": true,
+        "posts": 0
+      }
+    },
+    {
+      "name": "W1280 invalid price blocked",
+      "status": "PASS",
+      "detail": {
+        "posts": 0
+      }
+    },
+    {
+      "name": "W1280 double submit sent one POST",
+      "status": "PASS",
+      "detail": {
+        "count": 1
+      }
+    },
+    {
+      "name": "W1280 POST payload + content-type",
+      "status": "PASS",
+      "detail": {
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "Referer": "",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Chromium\";v=\"158\", \"Not.A/Brand\";v=\"24\", \"Google Chrome\";v=\"158\"",
+          "Content-Type": "application/json",
+          "sec-ch-ua-mobile": "?0"
+        },
+        "postData": "{\"title\":\"M8 probe 1280\",\"price\":12.5,\"description\":\"M8 validation description\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\"category\":\"electronics\"}"
+      }
+    },
+    {
+      "name": "W1280 POST 201 + returned id shown",
+      "status": "PASS",
+      "detail": {
+        "status": 201,
+        "resultText": "Created (201) — API id: 21. Session-only copy: FakeStoreAPI does not persist writes; reload restores API data.\nأُنشئ (201) — معرّف الـ API: 21. نسخة مؤقتة: FakeStoreAPI لا يحفظ عمليات الكتابة؛ إعادة التحميل تستعيد بيانات الـ API."
+      }
+    },
+    {
+      "name": "W1280 session-only product rendered",
+      "status": "PASS",
+      "detail": {
+        "addedVisible": true,
+        "cards": 20,
+        "firstTitles": [
+          "M8 probe 1280",
+          "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "Mens Casual Premium Slim Fit T-Shirts "
+        ],
+        "resultText": "Created (201) — API id: 21. Session-only copy: FakeStoreAPI does not persist writes; reload restores API data.\nأُنشئ (201) — معرّف الـ API: 21. نسخة مؤقتة: FakeStoreAPI لا يحفظ عمليات الكتابة؛ إعادة التحميل تستعيد بيانات الـ API.",
+        "resultCount": "21 products21 منتج"
+      }
+    },
+    {
+      "name": "W1280 edit form prefilled from product",
+      "status": "PASS",
+      "detail": {
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": "109.95",
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+        "category": "men's clothing",
+        "mode": "edit",
+        "id": "1"
+      }
+    },
+    {
+      "name": "W1280 edit cancel sends no PUT",
+      "status": "PASS",
+      "detail": {
+        "confirmOpened": true,
+        "requests": 0
+      }
+    },
+    {
+      "name": "W1280 PUT id extracted + status 200",
+      "status": "PASS",
+      "detail": {
+        "url": "https://fakestoreapi.com/products/1",
+        "status": 200
+      }
+    },
+    {
+      "name": "W1280 PUT payload validated",
+      "status": "PASS",
+      "detail": {
+        "postData": "{\"title\":\"M8 edited 1280\",\"price\":109.95,\"description\":\"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\"image\":\"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png\",\"category\":\"men's clothing\"}"
+      }
+    },
+    {
+      "name": "W1280 edited copy marked session-only",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 delete cancel sends no DELETE",
+      "status": "PASS",
+      "detail": {
+        "requests": 0
+      }
+    },
+    {
+      "name": "W1280 DELETE 200 + local removal only",
+      "status": "PASS",
+      "detail": {
+        "url": "https://fakestoreapi.com/products/2",
+        "status": 200
+      }
+    },
+    {
+      "name": "W1280 wrong login 401 handled",
+      "status": "PASS",
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "W1280 button re-enabled after 401",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 login 201 + token/username in sessionStorage",
+      "status": "PASS",
+      "detail": {
+        "status": 201,
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          },
+          "storepulse_token": "[redacted]",
+          "storepulse_username": "[redacted]"
+        }
+      }
+    },
+    {
+      "name": "W1280 auth UI updated",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 Authorization: Bearer sent to API",
+      "status": "PASS",
+      "detail": {
+        "header": "Bearer [redacted]",
+        "url": "https://fakestoreapi.com/products/1"
+      }
+    },
+    {
+      "name": "W1280 no token printed in console",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 external origin blocked before token send",
+      "status": "PASS",
+      "detail": {
+        "blocked": true,
+        "status": 0
+      }
+    },
+    {
+      "name": "W1280 reload restores login in same tab",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 logout clears session auth",
+      "status": "PASS",
+      "detail": {
+        "sessionStorage": {
+          "storepulse_current_page": {
+            "kind": "number",
+            "length": 1
+          },
+          "storepulse_filters": {
+            "kind": "object",
+            "length": 73
+          }
+        }
+      }
+    },
+    {
+      "name": "W1280 add + quantity + total(reduce)",
+      "status": "PASS",
+      "detail": {
+        "count": "2",
+        "total": "$0.00",
+        "stored": [
+          {
+            "productId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "W1280 quantity change keeps valid value",
+      "status": "PASS",
+      "detail": {
+        "count": "1",
+        "total": "$55.99",
+        "stored": [
+          {
+            "productId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "W1280 remove product from cart",
+      "status": "PASS",
+      "detail": {
+        "removeButtons": 2,
+        "afterRemove": {
+          "count": "1",
+          "stored": [
+            {
+              "productId": 3,
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "W1280 POST /carts body matches API docs",
+      "status": "PASS",
+      "detail": {
+        "body": {
+          "userId": 1,
+          "date": "2026-11-26",
+          "products": [
+            {
+              "productId": 3,
+              "quantity": 1
+            }
+          ]
+        },
+        "expectedUserIdFromUsers": 1
+      }
+    },
+    {
+      "name": "W1280 checkout success keeps/clears cart correctly",
+      "status": "PASS",
+      "detail": {
+        "status": 201
+      }
+    },
+    {
+      "name": "W1280 wrong URL 404 message",
+      "status": "PASS",
+      "detail": {
+        "status": 404,
+        "empty": false,
+        "message": [
+          "Not found — wrong URL or missing product id.",
+          "غير موجود — رابط خاطئ أو معرّف منتج غير موجود."
+        ]
+      }
+    },
+    {
+      "name": "W1280 empty response body message",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "empty": true,
+        "message": [
+          "The API returned an empty response body.",
+          "أعاد الـ API استجابة بجسم فارغ."
+        ]
+      }
+    },
+    {
+      "name": "W1280 invalid JSON message through real apiRequest",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "invalidJson": true,
+        "message": [
+          "Non-JSON text response — could not read the data.",
+          "استجابة نصية غير JSON — تعذّرت قراءة البيانات."
+        ]
+      }
+    },
+    {
+      "name": "W1280 invalid JSON rendered in real form error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 mocked 400/500 messages",
+      "status": "PASS",
+      "detail": {
+        "mocked400": [
+          "Bad request — check the JSON body.",
+          "طلب غير صالح — تحقق من جسم JSON."
+        ],
+        "mocked500": [
+          "Server error (500). Try again later.",
+          "خطأ في السيرفر (500). حاول مرة أخرى لاحقاً."
+        ]
+      }
+    },
+    {
+      "name": "W1280 200/201 are not errors",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 mocked 400 rendered in real form error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 mocked 500 rendered in real login error box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "W1280 offline message",
+      "status": "PASS",
+      "detail": {
+        "status": 0,
+        "kind": "offline",
+        "message": [
+          "You appear offline. Check your connection.",
+          "يبدو أنك غير متصل. تحقق من اتصالك."
+        ]
+      }
+    },
+    {
+      "name": "W1280 no unhandled console errors",
+      "status": "PASS",
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ]
+}

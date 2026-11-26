@@ -1,0 +1,37 @@
+﻿{
+  "definedTotal": 181,
+  "definedUnique": 129,
+  "usedUnique": 129,
+  "undefined": [],
+  "duplicatesInSameScope": [],
+  "themeOverrides": 26,
+  "themeOverrideNames": [
+    "--bg-page",
+    "--bg-surface",
+    "--bg-subtle",
+    "--bg-muted",
+    "--border-subtle",
+    "--border-strong",
+    "--border-focus",
+    "--text-primary",
+    "--text-secondary",
+    "--text-muted",
+    "--color-primary",
+    "--color-primary-hover",
+    "--color-primary-subtle",
+    "--color-primary-text",
+    "--color-success-subtle",
+    "--color-success-text",
+    "--color-danger-subtle",
+    "--color-danger-text",
+    "--color-warning-subtle",
+    "--color-warning-text",
+    "--color-info-subtle",
+    "--shadow-xs",
+    "--shadow-sm",
+    "--shadow-md",
+    "--shadow-lg",
+    "--shadow-xl"
+  ]
+}
+

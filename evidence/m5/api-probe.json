@@ -1,0 +1,707 @@
+{
+  "generatedAt": "2026-11-26T08:09:00.488Z",
+  "tool": "Google Chrome headless via CDP; requests issued with fetch() in Runtime.evaluate (browser Console equivalent)",
+  "note": "Credentials and tokens are redacted. Postman/Apidog were not installed on this machine.",
+  "probes": [
+    {
+      "label": "GET /products?limit=5&sort=desc",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 85,
+        "preview": {
+          "arrayLength": 5,
+          "firstItemKeys": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating"
+          ]
+        },
+        "resourceTiming": {
+          "startTime": 1589,
+          "responseEnd": 1673,
+          "duration": 83,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/products?limit=5&sort=desc",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "date": "Thu, 26 Nov 2026 08:08:58 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/products",
+          "query": {
+            "limit": "5",
+            "sort": "desc"
+          },
+          "body": null
+        },
+        "preview": {
+          "arrayLength": 5,
+          "firstItemKeys": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating"
+          ]
+        },
+        "timing": {
+          "wallMs": 85,
+          "resourceTiming": {
+            "startTime": 1589,
+            "responseEnd": 1673,
+            "duration": 83,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "GET /products/1",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 88,
+        "preview": {
+          "objectKeys": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating"
+          ],
+          "sampleTitle": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "sampleCategory": "men's clothing",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          }
+        },
+        "resourceTiming": {
+          "startTime": 1941,
+          "responseEnd": 2028,
+          "duration": 87,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/products/1",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "date": "Thu, 26 Nov 2026 08:08:58 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/products/1",
+          "query": {},
+          "body": null
+        },
+        "preview": {
+          "objectKeys": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating"
+          ],
+          "sampleTitle": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "sampleCategory": "men's clothing",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          }
+        },
+        "timing": {
+          "wallMs": 88,
+          "resourceTiming": {
+            "startTime": 1941,
+            "responseEnd": 2028,
+            "duration": 87,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "GET /products/9999 (missing id)",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 86,
+        "preview": {
+          "textLength": 0
+        },
+        "resourceTiming": {
+          "startTime": 2291,
+          "responseEnd": 2375,
+          "duration": 84,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/products/9999",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "content-length": "0",
+            "date": "Thu, 26 Nov 2026 08:08:59 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/products/9999",
+          "query": {},
+          "body": null
+        },
+        "preview": {
+          "textLength": 0
+        },
+        "timing": {
+          "wallMs": 86,
+          "resourceTiming": {
+            "startTime": 2291,
+            "responseEnd": 2375,
+            "duration": 84,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "GET /products/categories",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 86,
+        "preview": {
+          "arrayLength": 4,
+          "firstItemKeys": []
+        },
+        "resourceTiming": {
+          "startTime": 2643,
+          "responseEnd": 2727,
+          "duration": 84,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/products/categories",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "date": "Thu, 26 Nov 2026 08:08:59 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/products/categories",
+          "query": {},
+          "body": null
+        },
+        "preview": {
+          "arrayLength": 4,
+          "firstItemKeys": []
+        },
+        "timing": {
+          "wallMs": 86,
+          "resourceTiming": {
+            "startTime": 2643,
+            "responseEnd": 2727,
+            "duration": 84,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "GET /products/category/jewelery?limit=3&sort=asc",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 104,
+        "preview": {
+          "arrayLength": 3,
+          "firstItemKeys": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating"
+          ]
+        },
+        "resourceTiming": {
+          "startTime": 2986,
+          "responseEnd": 3087,
+          "duration": 102,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/products/category/jewelery?limit=3&sort=asc",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "date": "Thu, 26 Nov 2026 08:08:59 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/products/category/jewelery",
+          "query": {
+            "limit": "3",
+            "sort": "asc"
+          },
+          "body": null
+        },
+        "preview": {
+          "arrayLength": 3,
+          "firstItemKeys": [
+            "id",
+            "title",
+            "price",
+            "description",
+            "category",
+            "image",
+            "rating"
+          ]
+        },
+        "timing": {
+          "wallMs": 104,
+          "resourceTiming": {
+            "startTime": 2986,
+            "responseEnd": 3087,
+            "duration": 102,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "GET /products/category/unknown (empty)",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 105,
+        "preview": {
+          "arrayLength": 0,
+          "firstItemKeys": []
+        },
+        "resourceTiming": {
+          "startTime": 3349,
+          "responseEnd": 3449,
+          "duration": 100,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/products/category/unknown",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "content-length": "2",
+            "date": "Thu, 26 Nov 2026 08:09:00 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/products/category/unknown",
+          "query": {},
+          "body": null
+        },
+        "preview": {
+          "arrayLength": 0,
+          "firstItemKeys": []
+        },
+        "timing": {
+          "wallMs": 105,
+          "resourceTiming": {
+            "startTime": 3349,
+            "responseEnd": 3449,
+            "duration": 100,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "GET /users?limit=2",
+      "consoleFetch": {
+        "status": 200,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 200,
+        "preview": {
+          "arrayLength": 2,
+          "firstItemKeys": [
+            "address",
+            "id",
+            "email",
+            "username",
+            "password",
+            "name",
+            "phone",
+            "__v"
+          ]
+        },
+        "resourceTiming": {
+          "startTime": 3710,
+          "responseEnd": 3907,
+          "duration": 197,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "GET",
+          "url": "https://fakestoreapi.com/users?limit=2",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "date": "Thu, 26 Nov 2026 08:09:00 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/users",
+          "query": {
+            "limit": "2"
+          },
+          "body": null
+        },
+        "preview": {
+          "arrayLength": 2,
+          "firstItemKeys": [
+            "address",
+            "id",
+            "email",
+            "username",
+            "password",
+            "name",
+            "phone",
+            "__v"
+          ]
+        },
+        "timing": {
+          "wallMs": 200,
+          "resourceTiming": {
+            "startTime": 3710,
+            "responseEnd": 3907,
+            "duration": 197,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "POST /auth/login (invalid credentials)",
+      "consoleFetch": {
+        "status": 401,
+        "ok": false,
+        "contentType": "text/html; charset=utf-8",
+        "cors": null,
+        "ms": 346,
+        "preview": {
+          "textLength": 33
+        },
+        "resourceTiming": {
+          "startTime": 4171,
+          "responseEnd": 4508,
+          "duration": 336,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "POST",
+          "url": "https://fakestoreapi.com/auth/login",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+            "Content-Type": "application/json"
+          }
+        },
+        "response": {
+          "status": 401,
+          "statusText": "",
+          "mimeType": "text/html",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "content-length": "33",
+            "date": "Thu, 26 Nov 2026 08:09:01 GMT",
+            "content-type": "text/html; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/auth/login",
+          "query": {},
+          "body": "{\"username\":\"invalid-user-for-probe\",\"password\":\"invalid-password-for-probe\"}"
+        },
+        "preview": {
+          "textLength": 33
+        },
+        "timing": {
+          "wallMs": 346,
+          "resourceTiming": {
+            "startTime": 4171,
+            "responseEnd": 4508,
+            "duration": 336,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "POST /auth/login (valid credentials, redacted)",
+      "consoleFetch": {
+        "status": 201,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 360,
+        "preview": {
+          "objectKeys": [
+            "token"
+          ],
+          "sampleTitle": null,
+          "sampleCategory": null,
+          "rating": null
+        },
+        "resourceTiming": {
+          "startTime": 4772,
+          "responseEnd": 5128,
+          "duration": 356,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "POST",
+          "url": "https://fakestoreapi.com/auth/login",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+            "Content-Type": "application/json"
+          }
+        },
+        "response": {
+          "status": 201,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "[redacted]",
+            "content-length": "[redacted]",
+            "date": "[redacted]",
+            "content-type": "[redacted]",
+            "server": "[redacted]"
+          }
+        },
+        "payload": {
+          "path": "/auth/login",
+          "query": {},
+          "body": "[redacted]"
+        },
+        "preview": {
+          "objectKeys": [
+            "token"
+          ],
+          "sampleTitle": null,
+          "sampleCategory": null,
+          "rating": null
+        },
+        "timing": {
+          "wallMs": 360,
+          "resourceTiming": {
+            "startTime": 4772,
+            "responseEnd": 5128,
+            "duration": 356,
+            "transferSize": 0
+          }
+        }
+      }
+    },
+    {
+      "label": "POST /carts",
+      "consoleFetch": {
+        "status": 201,
+        "ok": true,
+        "contentType": "application/json; charset=utf-8",
+        "cors": null,
+        "ms": 181,
+        "preview": {
+          "objectKeys": [
+            "id",
+            "userId",
+            "date",
+            "products"
+          ],
+          "sampleTitle": null,
+          "sampleCategory": null,
+          "rating": null
+        },
+        "resourceTiming": {
+          "startTime": 5404,
+          "responseEnd": 5579,
+          "duration": 175,
+          "transferSize": 0
+        }
+      },
+      "network": {
+        "request": {
+          "method": "POST",
+          "url": "https://fakestoreapi.com/carts",
+          "headers": {
+            "Referer": "",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+            "Content-Type": "application/json"
+          }
+        },
+        "response": {
+          "status": 201,
+          "statusText": "",
+          "mimeType": "application/json",
+          "headers": {
+            "access-control-allow-origin": "*",
+            "content-length": "82",
+            "date": "Thu, 26 Nov 2026 08:09:02 GMT",
+            "content-type": "application/json; charset=utf-8",
+            "server": "cloudflare"
+          }
+        },
+        "payload": {
+          "path": "/carts",
+          "query": {},
+          "body": "{\"userId\":1,\"date\":\"2026-11-25\",\"products\":[{\"productId\":1,\"quantity\":1}]}"
+        },
+        "preview": {
+          "objectKeys": [
+            "id",
+            "userId",
+            "date",
+            "products"
+          ],
+          "sampleTitle": null,
+          "sampleCategory": null,
+          "rating": null
+        },
+        "timing": {
+          "wallMs": 181,
+          "resourceTiming": {
+            "startTime": 5404,
+            "responseEnd": 5579,
+            "duration": 175,
+            "transferSize": 0
+          }
+        }
+      }
+    }
+  ]
+}

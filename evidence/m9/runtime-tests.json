@@ -1,0 +1,652 @@
+{
+  "generatedAt": "2026-11-26T08:12:18.937Z",
+  "source": "PDF pages 10-11 and 17, M9.1-M9.3",
+  "tool": "Google Chrome headless via CDP; real Chrome Storage API and real tab/browser lifecycles",
+  "redaction": "No password, token, username value or Authorization header value is stored in evidence.",
+  "totals": {
+    "pass": 38,
+    "fail": 0
+  },
+  "results": [
+    {
+      "name": "legacy language and orders keys removed from both boxes",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "other_site_data",
+          "storepulse_cart"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft"
+        ]
+      }
+    },
+    {
+      "name": "unrelated site data not deleted",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "other_site_data",
+          "storepulse_cart"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft"
+        ]
+      }
+    },
+    {
+      "name": "invalid JSON falls back to safe defaults without crashing",
+      "status": "PASS",
+      "detail": {
+        "ready": true,
+        "search": "",
+        "sort": "default",
+        "limit": "20",
+        "idSort": "asc",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "unavailable Storage does not crash the app",
+      "status": "PASS",
+      "detail": {
+        "ready": true,
+        "theme": "dark",
+        "search": "",
+        "sort": "default"
+      }
+    },
+    {
+      "name": "typing does not save recent searches",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 6
+      }
+    },
+    {
+      "name": "empty search is not saved",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "only last five searches are kept, newest first",
+      "status": "PASS",
+      "detail": {
+        "capped": [
+          "shirt",
+          "hat",
+          "jeans",
+          "ring",
+          "watch"
+        ]
+      }
+    },
+    {
+      "name": "duplicate search moves to top without growing the list",
+      "status": "PASS",
+      "detail": {
+        "deduped": [
+          "bag",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ]
+      }
+    },
+    {
+      "name": "recent searches are displayed clearly as reusable buttons",
+      "status": "PASS",
+      "detail": {
+        "recentButtons": [
+          {
+            "text": "bag",
+            "label": "Search again: bag • إعادة البحث: bag"
+          },
+          {
+            "text": "shirt",
+            "label": "Search again: shirt • إعادة البحث: shirt"
+          },
+          {
+            "text": "hat",
+            "label": "Search again: hat • إعادة البحث: hat"
+          },
+          {
+            "text": "jeans",
+            "label": "Search again: jeans • إعادة البحث: jeans"
+          },
+          {
+            "text": "ring",
+            "label": "Search again: ring • إعادة البحث: ring"
+          }
+        ]
+      }
+    },
+    {
+      "name": "clicking a recent search reuses it",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Clear removes recent searches and hides the box",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "exact localStorage map is used",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      }
+    },
+    {
+      "name": "exact sessionStorage map is used",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      }
+    },
+    {
+      "name": "never-stored keys are absent",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters",
+          "storepulse_product_draft",
+          "storepulse_token",
+          "storepulse_username"
+        ]
+      }
+    },
+    {
+      "name": "reload restores localStorage choices",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "name": "reload restores filters, page, auth and draft in the same tab",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "name": "reload restores visible controls and page 2",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "unsent add-product draft is restored on reopen after reload",
+      "status": "PASS",
+      "detail": {
+        "title": "M9 unsent draft",
+        "price": "15.75",
+        "description": "Draft text that must survive reload",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "category": "electronics"
+      }
+    },
+    {
+      "name": "independent new tab sees localStorage choices",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 20عرض 1–5 من 20"
+      }
+    },
+    {
+      "name": "independent new tab does not inherit sessionStorage",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 20عرض 1–5 من 20"
+      }
+    },
+    {
+      "name": "closing the independent tab leaves localStorage and the original tab intact",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": true,
+        "usernamePresent": true,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "name": "logout removes token and username but keeps mapped session data",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "women's clothing",
+          "sort": "price-asc",
+          "idSort": "desc",
+          "limit": 10,
+          "search": "e"
+        },
+        "currentPage": 2,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": true,
+        "searchInput": "e",
+        "currentUrl": "GET /products/category/women's%20clothing?limit=10&sort=desc",
+        "pageStatus": "Showing 6–6 of 6عرض 6–6 من 6"
+      }
+    },
+    {
+      "name": "logout updates the header without printing credentials",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "browser close/reopen keeps every localStorage item",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 20عرض 1–5 من 20"
+      }
+    },
+    {
+      "name": "browser close/reopen clears sessionStorage",
+      "status": "PASS",
+      "detail": {
+        "theme": "ocean",
+        "favoriteIds": [
+          1
+        ],
+        "cartIds": [
+          3
+        ],
+        "cartQuantities": [
+          2
+        ],
+        "recentCount": 5,
+        "recentTerms": [
+          "e",
+          "shirt",
+          "hat",
+          "jeans",
+          "ring"
+        ],
+        "view": "table",
+        "pageSize": 5,
+        "filters": {
+          "category": "all",
+          "sort": "default",
+          "idSort": "asc",
+          "limit": 20,
+          "search": ""
+        },
+        "currentPage": 1,
+        "tokenPresent": false,
+        "usernamePresent": false,
+        "draftPresent": false,
+        "searchInput": "",
+        "currentUrl": "GET /products?limit=20&sort=asc",
+        "pageStatus": "Showing 1–5 of 20عرض 1–5 من 20"
+      }
+    },
+    {
+      "name": "reopened tab renders saved table view and page size",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "draft is cleared after a successful add",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "discard button is available in add mode",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "explicit discard clears and resets the add form",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "edit mode never writes the add-product draft",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "final storage contains only mapped keys",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "storepulse_cart",
+          "storepulse_favorites",
+          "storepulse_page_size",
+          "storepulse_recent_searches",
+          "storepulse_theme",
+          "storepulse_view_mode"
+        ],
+        "sessionStorage": [
+          "storepulse_current_page",
+          "storepulse_filters"
+        ]
+      }
+    },
+    {
+      "name": "recent-search UI fits 320px without page overflow",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 305,
+        "innerWidth": 320,
+        "recentVisible": true,
+        "recentButtons": 5
+      }
+    },
+    {
+      "name": "draft controls are reachable at 320px",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "dialogOpen": true,
+        "discardVisible": true,
+        "noteVisible": true
+      }
+    },
+    {
+      "name": "recent-search UI fits 768px without page overflow",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 753,
+        "innerWidth": 768,
+        "recentVisible": true,
+        "recentButtons": 5
+      }
+    },
+    {
+      "name": "draft controls are reachable at 768px",
+      "status": "PASS",
+      "detail": {
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "dialogOpen": true,
+        "discardVisible": true,
+        "noteVisible": true
+      }
+    },
+    {
+      "name": "api.html deletes the legacy language key and starts bilingual",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "api.html language switch writes no language key",
+      "status": "PASS",
+      "detail": {
+        "localStorage": [
+          "storepulse_theme"
+        ],
+        "sessionStorage": []
+      }
+    },
+    {
+      "name": "no unhandled page or console errors",
+      "status": "PASS",
+      "detail": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ]
+}

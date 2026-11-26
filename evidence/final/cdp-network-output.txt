@@ -1,0 +1,19 @@
+﻿{
+  "endpoints": 13,
+  "statuses": [
+    "GET products with query: 200",
+    "GET product by id: 200",
+    "GET categories: 200",
+    "GET category with path + query: 200",
+    "GET users (shape only, no PII): 200",
+    "POST products: 201",
+    "PUT products/1: 200",
+    "DELETE products/2: 200",
+    "POST auth/login valid: 201",
+    "POST auth/login invalid: 401",
+    "POST carts: 201",
+    "GET unknown id (empty body): 200",
+    "GET wrong URL (404): 404"
+  ]
+}
+

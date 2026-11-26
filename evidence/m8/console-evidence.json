@@ -1,0 +1,230 @@
+[
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680691021.358
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Removed invalid items from saved cart."
+    ],
+    "timestamp": 1795680691929.035
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680691934.949
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Authorization header sent to FakeStoreAPI (value hidden)"
+    ],
+    "timestamp": 1795680694873.302
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Blocked request to another origin:",
+      "https://fakestoreapi.comhttps://example.com/products"
+    ],
+    "timestamp": 1795680694968.861
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680695120.89
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Restored demo session for this tab"
+    ],
+    "timestamp": 1795680695406.413
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Demo session cleared"
+    ],
+    "timestamp": 1795680695417.597
+  },
+  {
+    "type": "log",
+    "args": [
+      "[StorePulse] Demo order created with API id",
+      11
+    ],
+    "timestamp": 1795680699923.068
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Request failed:",
+      "Failed to fetch"
+    ],
+    "timestamp": 1795680700232.762
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680700481.435
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Removed invalid items from saved cart."
+    ],
+    "timestamp": 1795680701079.472
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680701100.679
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Authorization header sent to FakeStoreAPI (value hidden)"
+    ],
+    "timestamp": 1795680706560.044
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Blocked request to another origin:",
+      "https://fakestoreapi.comhttps://example.com/products"
+    ],
+    "timestamp": 1795680706634.558
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680707021.727
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Restored demo session for this tab"
+    ],
+    "timestamp": 1795680707435.151
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Demo session cleared"
+    ],
+    "timestamp": 1795680707480.965
+  },
+  {
+    "type": "log",
+    "args": [
+      "[StorePulse] Demo order created with API id",
+      11
+    ],
+    "timestamp": 1795680712376.026
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Request failed:",
+      "Failed to fetch"
+    ],
+    "timestamp": 1795680712659.702
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680712882.634
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Removed invalid items from saved cart."
+    ],
+    "timestamp": 1795680713627.818
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680713655.24
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Authorization header sent to FakeStoreAPI (value hidden)"
+    ],
+    "timestamp": 1795680717992.729
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Blocked request to another origin:",
+      "https://fakestoreapi.comhttps://example.com/products"
+    ],
+    "timestamp": 1795680718084.163
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680718251.05
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Restored demo session for this tab"
+    ],
+    "timestamp": 1795680718443.705
+  },
+  {
+    "type": "info",
+    "args": [
+      "[StorePulse] Demo session cleared"
+    ],
+    "timestamp": 1795680718576.925
+  },
+  {
+    "type": "log",
+    "args": [
+      "[StorePulse] Demo order created with API id",
+      11
+    ],
+    "timestamp": 1795680722886.697
+  },
+  {
+    "type": "warning",
+    "args": [
+      "[StorePulse] Request failed:",
+      "Failed to fetch"
+    ],
+    "timestamp": 1795680723212.783
+  }
+]

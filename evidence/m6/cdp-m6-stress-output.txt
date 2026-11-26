@@ -1,0 +1,52 @@
+﻿{
+  "generated": {
+    "count": 5000,
+    "firstId": 100000,
+    "lastId": 104999
+  },
+  "all": {
+    "jsMs": 214.9,
+    "visualMs": 13523.9,
+    "rendered": {
+      "requested": 5000,
+      "rendered": 5000
+    },
+    "cards": 5000,
+    "pageCount": 1,
+    "status": "Showing 1ΓÇô5000 of 5000╪╣╪▒╪╢ 1ΓÇô5000 ┘à┘å 5000",
+    "current": "1"
+  },
+  "page": {
+    "jsMs": 13.6,
+    "visualMs": 422,
+    "rendered": {
+      "requested": 5000,
+      "rendered": 20
+    },
+    "cards": 20,
+    "pageCount": 4,
+    "status": "Showing 1ΓÇô20 of 5000╪╣╪▒╪╢ 1ΓÇô20 ┘à┘å 5000",
+    "current": "1"
+  },
+  "comparison": {
+    "jsTimesFaster": 15.8,
+    "visualTimesFaster": 32.05
+  },
+  "checks": {
+    "all5000Rendered": true,
+    "page20Rendered": true,
+    "noFakeDataLeft": true,
+    "consoleClean": true
+  },
+  "timings": [
+    {
+      "label": "m6-render-all-5000",
+      "raw": "m6-render-all-5000: 214.694091796875 ms"
+    },
+    {
+      "label": "m6-render-page-20",
+      "raw": "m6-render-page-20: 13.06201171875 ms"
+    }
+  ]
+}
+

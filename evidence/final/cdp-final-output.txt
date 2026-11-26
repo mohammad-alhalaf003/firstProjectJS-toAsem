@@ -1,0 +1,8 @@
+﻿{
+  "totals": {
+    "pass": 76,
+    "fail": 0
+  },
+  "failures": []
+}
+

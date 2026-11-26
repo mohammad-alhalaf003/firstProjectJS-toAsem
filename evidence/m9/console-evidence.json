@@ -1,0 +1,388 @@
+[
+  {
+    "tab": "independent-tab",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "ocean"
+    ],
+    "timestamp": 1795680734508.636
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680724589.303
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_cart\".",
+      "SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)\n    at JSON.parse (<anonymous>)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:121:19)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:254:36\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725176.369
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_filters\".",
+      "SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)\n    at JSON.parse (<anonymous>)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:121:19)\n    at readSavedFilters (file:///C:/projects/firstProjectJS-toAsem/script.js:230:17)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:259:24\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725176.808
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680725188.384
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_favorites\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:253:38\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725534.249
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_cart\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:254:36\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725534.465
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_recent_searches\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:258:54\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725534.612
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_filters\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at readSavedFilters (file:///C:/projects/firstProjectJS-toAsem/script.js:230:17)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:259:24\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725534.761
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_page_size\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:260:33\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725534.927
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_view_mode\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:262:22\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725535.047
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_current_page\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:264:29\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725535.169
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_theme\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at setupLanguageAndTheme (file:///C:/projects/firstProjectJS-toAsem/script.js:334:24)\n    at init (file:///C:/projects/firstProjectJS-toAsem/script.js:2349:5)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2369:5\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725535.676
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not save \"storepulse_filters\".",
+      "Error: storage blocked\n    at Storage.setItem (<anonymous>:1:280)\n    at writeStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:132:15)\n    at writeFilters (file:///C:/projects/firstProjectJS-toAsem/script.js:592:5)\n    at setupRestoredControls (file:///C:/projects/firstProjectJS-toAsem/script.js:2253:5)\n    at setupControls (file:///C:/projects/firstProjectJS-toAsem/script.js:2259:5)\n    at init (file:///C:/projects/firstProjectJS-toAsem/script.js:2354:5)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2369:5\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725536.317
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not save \"storepulse_current_page\".",
+      "Error: storage blocked\n    at Storage.setItem (<anonymous>:1:280)\n    at writeStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:132:15)\n    at writeCurrentPage (file:///C:/projects/firstProjectJS-toAsem/script.js:587:5)\n    at setupRestoredControls (file:///C:/projects/firstProjectJS-toAsem/script.js:2254:5)\n    at setupControls (file:///C:/projects/firstProjectJS-toAsem/script.js:2259:5)\n    at init (file:///C:/projects/firstProjectJS-toAsem/script.js:2354:5)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2369:5\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725536.509
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_token\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at restoreSession (file:///C:/projects/firstProjectJS-toAsem/script.js:1806:19)\n    at init (file:///C:/projects/firstProjectJS-toAsem/script.js:2360:5)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2369:5\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725543.067
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_username\".",
+      "Error: storage blocked\n    at Storage.getItem (<anonymous>:1:207)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:119:27)\n    at restoreSession (file:///C:/projects/firstProjectJS-toAsem/script.js:1807:22)\n    at init (file:///C:/projects/firstProjectJS-toAsem/script.js:2360:5)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2369:5\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725543.222
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680725543.885
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not save \"storepulse_current_page\".",
+      "Error: storage blocked\n    at Storage.setItem (<anonymous>:1:280)\n    at writeStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:132:15)\n    at writeCurrentPage (file:///C:/projects/firstProjectJS-toAsem/script.js:587:5)\n    at renderProducts (file:///C:/projects/firstProjectJS-toAsem/script.js:755:5)\n    at renderApp (file:///C:/projects/firstProjectJS-toAsem/script.js:798:5)\n    at loadProducts (file:///C:/projects/firstProjectJS-toAsem/script.js:986:5)"
+    ],
+    "timestamp": 1795680725659.805
+  },
+  {
+    "tab": "main",
+    "type": "warning",
+    "args": [
+      "[StorePulse] Could not read \"storepulse_cart\".",
+      "SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)\n    at JSON.parse (<anonymous>)\n    at readStorage (file:///C:/projects/firstProjectJS-toAsem/script.js:121:19)\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:254:36\n    at file:///C:/projects/firstProjectJS-toAsem/script.js:2371:3"
+    ],
+    "timestamp": 1795680725850.841
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680725863.366
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680726151.91
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (debounce) — input events: 6, filter runs: 1"
+    ],
+    "timestamp": 1795680726912.624
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 7, filter runs: 2"
+    ],
+    "timestamp": 1795680727158.476
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 8, filter runs: 3"
+    ],
+    "timestamp": 1795680727244.058
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 9, filter runs: 4"
+    ],
+    "timestamp": 1795680727274.758
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 10, filter runs: 5"
+    ],
+    "timestamp": 1795680727292.766
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 11, filter runs: 6"
+    ],
+    "timestamp": 1795680727330.283
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 12, filter runs: 7"
+    ],
+    "timestamp": 1795680727349.981
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 13, filter runs: 8"
+    ],
+    "timestamp": 1795680727357.524
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 14, filter runs: 9"
+    ],
+    "timestamp": 1795680727387.332
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (recent) — input events: 14, filter runs: 10"
+    ],
+    "timestamp": 1795680727416.699
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "dark"
+    ],
+    "timestamp": 1795680727749.789
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 1, filter runs: 1"
+    ],
+    "timestamp": 1795680728290.38
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 2, filter runs: 2"
+    ],
+    "timestamp": 1795680728347.269
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 3"
+    ],
+    "timestamp": 1795680728388.23
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 4, filter runs: 4"
+    ],
+    "timestamp": 1795680728414.804
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 5, filter runs: 5"
+    ],
+    "timestamp": 1795680728422.358
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 6, filter runs: 6"
+    ],
+    "timestamp": 1795680728453.747
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Search stats (Enter) — input events: 7, filter runs: 7"
+    ],
+    "timestamp": 1795680731544.197
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "ocean"
+    ],
+    "timestamp": 1795680733101.317
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Restored demo session for this tab"
+    ],
+    "timestamp": 1795680733407.19
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Demo session cleared"
+    ],
+    "timestamp": 1795680735168.677
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "ocean"
+    ],
+    "timestamp": 1795680736594.879
+  },
+  {
+    "tab": "main",
+    "type": "info",
+    "args": [
+      "[StorePulse] Ready with theme",
+      "ocean"
+    ],
+    "timestamp": 1795680736795.862
+  }
+]

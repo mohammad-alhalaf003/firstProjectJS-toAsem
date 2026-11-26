@@ -1,0 +1,23 @@
+﻿{
+  "h1": 1,
+  "nav": 3,
+  "aside": 1,
+  "section": 3,
+  "articleInTemplate": true,
+  "dialogs": 6,
+  "templates": 1,
+  "categoryUl": true,
+  "footerUl": true,
+  "duplicateIds": [],
+  "htmlImages": 1,
+  "htmlImageIssues": [],
+  "buttonsNoType": [],
+  "labelsNoFor": [],
+  "jsUsesTemplate": true,
+  "jsImgCalls": [],
+  "cssBraceCounts": [
+    436,
+    436
+  ]
+}
+

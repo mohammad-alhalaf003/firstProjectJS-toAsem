@@ -1,0 +1,843 @@
+{
+  "generatedAt": "2026-11-26T08:11:29.937Z",
+  "source": "PDF page 16, M7.1–M7.3",
+  "tool": "Google Chrome headless via CDP; DOM input/keydown events dispatched with Runtime.evaluate",
+  "constantMs": 350,
+  "results": [
+    {
+      "name": "W320 fast typing debounced",
+      "status": "PASS",
+      "detail": {
+        "fastStats": {
+          "inputEvents": 8,
+          "filterRuns": 1
+        },
+        "fastLogs": [
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1"
+        ]
+      }
+    },
+    {
+      "name": "W320 fast typing made no API request",
+      "status": "PASS",
+      "detail": [
+        "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=5&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc"
+      ]
+    },
+    {
+      "name": "W320 title search + result count",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 case-insensitive title search",
+      "status": "PASS",
+      "detail": {
+        "fast": 1,
+        "upper": 1
+      }
+    },
+    {
+      "name": "W320 existing Arabic keyword still works",
+      "status": "PASS",
+      "detail": {
+        "arabic": 1,
+        "english": 1
+      }
+    },
+    {
+      "name": "W320 category search finds all electronics",
+      "status": "PASS",
+      "detail": {
+        "result": "6 products6 منتج",
+        "status": "Showing 1–6 of 6عرض 1–6 من 6",
+        "cards": 6,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 empty state + zero results",
+      "status": "PASS",
+      "detail": {
+        "result": "0 products0 منتج",
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "cards": 0,
+        "rows": 0,
+        "current": null,
+        "stateHidden": false,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 clearing search restores baseline",
+      "status": "PASS",
+      "detail": {
+        "baseline": {
+          "result": "20 products20 منتج",
+          "status": "Showing 1–20 of 20عرض 1–20 من 20",
+          "cards": 20,
+          "rows": 0,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "",
+          "errs": []
+        },
+        "clearedView": {
+          "result": "20 products20 منتج",
+          "status": "Showing 1–20 of 20عرض 1–20 من 20",
+          "cards": 20,
+          "rows": 0,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "No matchesلا توجد نتائج",
+          "errs": []
+        }
+      }
+    },
+    {
+      "name": "W320 slow typing runs filter per pause",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 3,
+        "filterRuns": 3
+      }
+    },
+    {
+      "name": "W320 Enter cancels pending debounce",
+      "status": "PASS",
+      "detail": {
+        "enterStats": {
+          "inputEvents": 3,
+          "filterRuns": 1
+        },
+        "enterLogs": [
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 1"
+        ]
+      }
+    },
+    {
+      "name": "W320 Enter search stays local",
+      "status": "PASS",
+      "detail": [
+        "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=5&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc"
+      ]
+    },
+    {
+      "name": "W320 no stale results after Enter + clear",
+      "status": "PASS",
+      "detail": {
+        "result": "20 products20 منتج",
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "cards": 20,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 search resets pagination to page 1",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 category + search share result count",
+      "status": "PASS",
+      "detail": {
+        "result": "6 in this category6 منتج في هذه الفئة",
+        "status": "Showing 1–6 of 6عرض 1–6 من 6",
+        "cards": 6,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 search + local sort stays ordered",
+      "status": "PASS",
+      "detail": [
+        109.95
+      ]
+    },
+    {
+      "name": "W320 search respects API limit",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 search cannot find item outside API limit",
+      "status": "PASS",
+      "detail": {
+        "result": "0 products0 منتج",
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "cards": 0,
+        "rows": 0,
+        "current": null,
+        "stateHidden": false,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W320 search works in Table view",
+      "status": "PASS",
+      "detail": {
+        "gridMatches": 1,
+        "tableView": {
+          "result": "1 products1 منتج",
+          "status": "Showing 1–1 of 1عرض 1–1 من 1",
+          "cards": 0,
+          "rows": 1,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "No matchesلا توجد نتائج",
+          "errs": []
+        }
+      }
+    },
+    {
+      "name": "W320 Console could print final counters",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 59,
+        "filterRuns": 12
+      }
+    },
+    {
+      "name": "W320 console clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "W768 fast typing debounced",
+      "status": "PASS",
+      "detail": {
+        "fastStats": {
+          "inputEvents": 8,
+          "filterRuns": 1
+        },
+        "fastLogs": [
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 1, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 9, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 10, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 15, filter runs: 4",
+          "[StorePulse] Search stats (debounce) — input events: 16, filter runs: 5",
+          "[StorePulse] Search stats (debounce) — input events: 27, filter runs: 6",
+          "[StorePulse] Search stats (debounce) — input events: 28, filter runs: 7",
+          "[StorePulse] Search stats (debounce) — input events: 29, filter runs: 8",
+          "[StorePulse] Search stats (debounce) — input events: 1, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 2, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 3, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 4, filter runs: 4",
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 4, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 9, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 20, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 21, filter runs: 4",
+          "[StorePulse] Search stats (debounce) — input events: 29, filter runs: 5",
+          "[StorePulse] Search stats (debounce) — input events: 30, filter runs: 6",
+          "[StorePulse] Search stats (debounce) — input events: 38, filter runs: 7",
+          "[StorePulse] Search stats (debounce) — input events: 39, filter runs: 8",
+          "[StorePulse] Search stats (debounce) — input events: 49, filter runs: 9",
+          "[StorePulse] Search stats (debounce) — input events: 50, filter runs: 10",
+          "[StorePulse] Search stats (debounce) — input events: 58, filter runs: 11",
+          "[StorePulse] Search stats (debounce) — input events: 59, filter runs: 12",
+          "[StorePulse] Search stats (console) — input events: 59, filter runs: 12",
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1"
+        ]
+      }
+    },
+    {
+      "name": "W768 fast typing made no API request",
+      "status": "PASS",
+      "detail": [
+        "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=5&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc"
+      ]
+    },
+    {
+      "name": "W768 title search + result count",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 case-insensitive title search",
+      "status": "PASS",
+      "detail": {
+        "fast": 1,
+        "upper": 1
+      }
+    },
+    {
+      "name": "W768 existing Arabic keyword still works",
+      "status": "PASS",
+      "detail": {
+        "arabic": 1,
+        "english": 1
+      }
+    },
+    {
+      "name": "W768 category search finds all electronics",
+      "status": "PASS",
+      "detail": {
+        "result": "6 products6 منتج",
+        "status": "Showing 1–6 of 6عرض 1–6 من 6",
+        "cards": 6,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 empty state + zero results",
+      "status": "PASS",
+      "detail": {
+        "result": "0 products0 منتج",
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "cards": 0,
+        "rows": 0,
+        "current": null,
+        "stateHidden": false,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 clearing search restores baseline",
+      "status": "PASS",
+      "detail": {
+        "baseline": {
+          "result": "20 products20 منتج",
+          "status": "Showing 1–20 of 20عرض 1–20 من 20",
+          "cards": 20,
+          "rows": 0,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "",
+          "errs": []
+        },
+        "clearedView": {
+          "result": "20 products20 منتج",
+          "status": "Showing 1–20 of 20عرض 1–20 من 20",
+          "cards": 20,
+          "rows": 0,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "No matchesلا توجد نتائج",
+          "errs": []
+        }
+      }
+    },
+    {
+      "name": "W768 slow typing runs filter per pause",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 3,
+        "filterRuns": 3
+      }
+    },
+    {
+      "name": "W768 Enter cancels pending debounce",
+      "status": "PASS",
+      "detail": {
+        "enterStats": {
+          "inputEvents": 3,
+          "filterRuns": 1
+        },
+        "enterLogs": [
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 1"
+        ]
+      }
+    },
+    {
+      "name": "W768 Enter search stays local",
+      "status": "PASS",
+      "detail": [
+        "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=5&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc"
+      ]
+    },
+    {
+      "name": "W768 no stale results after Enter + clear",
+      "status": "PASS",
+      "detail": {
+        "result": "20 products20 منتج",
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "cards": 20,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 search resets pagination to page 1",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 category + search share result count",
+      "status": "PASS",
+      "detail": {
+        "result": "6 in this category6 منتج في هذه الفئة",
+        "status": "Showing 1–6 of 6عرض 1–6 من 6",
+        "cards": 6,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 search + local sort stays ordered",
+      "status": "PASS",
+      "detail": [
+        109.95
+      ]
+    },
+    {
+      "name": "W768 search respects API limit",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 search cannot find item outside API limit",
+      "status": "PASS",
+      "detail": {
+        "result": "0 products0 منتج",
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "cards": 0,
+        "rows": 0,
+        "current": null,
+        "stateHidden": false,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W768 search works in Table view",
+      "status": "PASS",
+      "detail": {
+        "gridMatches": 1,
+        "tableView": {
+          "result": "1 products1 منتج",
+          "status": "Showing 1–1 of 1عرض 1–1 من 1",
+          "cards": 0,
+          "rows": 1,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "No matchesلا توجد نتائج",
+          "errs": []
+        }
+      }
+    },
+    {
+      "name": "W768 Console could print final counters",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 59,
+        "filterRuns": 12
+      }
+    },
+    {
+      "name": "W768 console clean",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "W1280 fast typing debounced",
+      "status": "PASS",
+      "detail": {
+        "fastStats": {
+          "inputEvents": 8,
+          "filterRuns": 1
+        },
+        "fastLogs": [
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 1, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 9, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 10, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 15, filter runs: 4",
+          "[StorePulse] Search stats (debounce) — input events: 16, filter runs: 5",
+          "[StorePulse] Search stats (debounce) — input events: 27, filter runs: 6",
+          "[StorePulse] Search stats (debounce) — input events: 28, filter runs: 7",
+          "[StorePulse] Search stats (debounce) — input events: 29, filter runs: 8",
+          "[StorePulse] Search stats (debounce) — input events: 1, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 2, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 3, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 4, filter runs: 4",
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 4, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 9, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 20, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 21, filter runs: 4",
+          "[StorePulse] Search stats (debounce) — input events: 29, filter runs: 5",
+          "[StorePulse] Search stats (debounce) — input events: 30, filter runs: 6",
+          "[StorePulse] Search stats (debounce) — input events: 38, filter runs: 7",
+          "[StorePulse] Search stats (debounce) — input events: 39, filter runs: 8",
+          "[StorePulse] Search stats (debounce) — input events: 49, filter runs: 9",
+          "[StorePulse] Search stats (debounce) — input events: 50, filter runs: 10",
+          "[StorePulse] Search stats (debounce) — input events: 58, filter runs: 11",
+          "[StorePulse] Search stats (debounce) — input events: 59, filter runs: 12",
+          "[StorePulse] Search stats (console) — input events: 59, filter runs: 12",
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 1, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 9, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 10, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 15, filter runs: 4",
+          "[StorePulse] Search stats (debounce) — input events: 16, filter runs: 5",
+          "[StorePulse] Search stats (debounce) — input events: 27, filter runs: 6",
+          "[StorePulse] Search stats (debounce) — input events: 28, filter runs: 7",
+          "[StorePulse] Search stats (debounce) — input events: 29, filter runs: 8",
+          "[StorePulse] Search stats (debounce) — input events: 1, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 2, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 3, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 4, filter runs: 4",
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 4, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1",
+          "[StorePulse] Search stats (debounce) — input events: 9, filter runs: 2",
+          "[StorePulse] Search stats (debounce) — input events: 20, filter runs: 3",
+          "[StorePulse] Search stats (debounce) — input events: 21, filter runs: 4",
+          "[StorePulse] Search stats (debounce) — input events: 29, filter runs: 5",
+          "[StorePulse] Search stats (debounce) — input events: 30, filter runs: 6",
+          "[StorePulse] Search stats (debounce) — input events: 38, filter runs: 7",
+          "[StorePulse] Search stats (debounce) — input events: 39, filter runs: 8",
+          "[StorePulse] Search stats (debounce) — input events: 49, filter runs: 9",
+          "[StorePulse] Search stats (debounce) — input events: 50, filter runs: 10",
+          "[StorePulse] Search stats (debounce) — input events: 58, filter runs: 11",
+          "[StorePulse] Search stats (debounce) — input events: 59, filter runs: 12",
+          "[StorePulse] Search stats (console) — input events: 59, filter runs: 12",
+          "[StorePulse] Search stats (debounce) — input events: 8, filter runs: 1"
+        ]
+      }
+    },
+    {
+      "name": "W1280 fast typing made no API request",
+      "status": "PASS",
+      "detail": [
+        "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=5&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc"
+      ]
+    },
+    {
+      "name": "W1280 title search + result count",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 case-insensitive title search",
+      "status": "PASS",
+      "detail": {
+        "fast": 1,
+        "upper": 1
+      }
+    },
+    {
+      "name": "W1280 existing Arabic keyword still works",
+      "status": "PASS",
+      "detail": {
+        "arabic": 1,
+        "english": 1
+      }
+    },
+    {
+      "name": "W1280 category search finds all electronics",
+      "status": "PASS",
+      "detail": {
+        "result": "6 products6 منتج",
+        "status": "Showing 1–6 of 6عرض 1–6 من 6",
+        "cards": 6,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 empty state + zero results",
+      "status": "PASS",
+      "detail": {
+        "result": "0 products0 منتج",
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "cards": 0,
+        "rows": 0,
+        "current": null,
+        "stateHidden": false,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 clearing search restores baseline",
+      "status": "PASS",
+      "detail": {
+        "baseline": {
+          "result": "20 products20 منتج",
+          "status": "Showing 1–20 of 20عرض 1–20 من 20",
+          "cards": 20,
+          "rows": 0,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "",
+          "errs": []
+        },
+        "clearedView": {
+          "result": "20 products20 منتج",
+          "status": "Showing 1–20 of 20عرض 1–20 من 20",
+          "cards": 20,
+          "rows": 0,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "No matchesلا توجد نتائج",
+          "errs": []
+        }
+      }
+    },
+    {
+      "name": "W1280 slow typing runs filter per pause",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 3,
+        "filterRuns": 3
+      }
+    },
+    {
+      "name": "W1280 Enter cancels pending debounce",
+      "status": "PASS",
+      "detail": {
+        "enterStats": {
+          "inputEvents": 3,
+          "filterRuns": 1
+        },
+        "enterLogs": [
+          "[StorePulse] Search stats (Enter) — input events: 3, filter runs: 1"
+        ]
+      }
+    },
+    {
+      "name": "W1280 Enter search stays local",
+      "status": "PASS",
+      "detail": [
+        "https://fakestoreapi.com/products/category/electronics?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc",
+        "https://fakestoreapi.com/products?limit=5&sort=asc",
+        "https://fakestoreapi.com/products?limit=20&sort=asc"
+      ]
+    },
+    {
+      "name": "W1280 no stale results after Enter + clear",
+      "status": "PASS",
+      "detail": {
+        "result": "20 products20 منتج",
+        "status": "Showing 1–20 of 20عرض 1–20 من 20",
+        "cards": 20,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 search resets pagination to page 1",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 category + search share result count",
+      "status": "PASS",
+      "detail": {
+        "result": "6 in this category6 منتج في هذه الفئة",
+        "status": "Showing 1–6 of 6عرض 1–6 من 6",
+        "cards": 6,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 search + local sort stays ordered",
+      "status": "PASS",
+      "detail": [
+        109.95
+      ]
+    },
+    {
+      "name": "W1280 search respects API limit",
+      "status": "PASS",
+      "detail": {
+        "result": "1 products1 منتج",
+        "status": "Showing 1–1 of 1عرض 1–1 من 1",
+        "cards": 1,
+        "rows": 0,
+        "current": "1",
+        "stateHidden": true,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 search cannot find item outside API limit",
+      "status": "PASS",
+      "detail": {
+        "result": "0 products0 منتج",
+        "status": "Showing 0–0 of 0عرض 0–0 من 0",
+        "cards": 0,
+        "rows": 0,
+        "current": null,
+        "stateHidden": false,
+        "stateTitle": "No matchesلا توجد نتائج",
+        "errs": []
+      }
+    },
+    {
+      "name": "W1280 search works in Table view",
+      "status": "PASS",
+      "detail": {
+        "gridMatches": 1,
+        "tableView": {
+          "result": "1 products1 منتج",
+          "status": "Showing 1–1 of 1عرض 1–1 من 1",
+          "cards": 0,
+          "rows": 1,
+          "current": "1",
+          "stateHidden": true,
+          "stateTitle": "No matchesلا توجد نتائج",
+          "errs": []
+        }
+      }
+    },
+    {
+      "name": "W1280 Console could print final counters",
+      "status": "PASS",
+      "detail": {
+        "inputEvents": 59,
+        "filterRuns": 12
+      }
+    },
+    {
+      "name": "W1280 console clean",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "summary": {
+    "pass": 60,
+    "fail": 0
+  },
+  "consoleErrors": [],
+  "screenshots": [
+    "search-fast-320.png",
+    "search-fast-768.png",
+    "search-fast-1280.png",
+    "search-empty-320.png",
+    "search-empty-768.png",
+    "search-empty-1280.png",
+    "search-table-320.png",
+    "search-table-768.png",
+    "search-table-1280.png"
+  ]
+}

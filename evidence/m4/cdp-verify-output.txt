@@ -1,0 +1,240 @@
+﻿{
+  "320": {
+    "load": {
+      "cards": 20,
+      "chips": 5,
+      "errs": []
+    },
+    "hit": {
+      "checked": 122,
+      "bad": []
+    },
+    "search": {
+      "value": "backpack",
+      "cards": 1,
+      "focused": "search-input"
+    },
+    "sortFocus": "sort-select",
+    "sort": {
+      "before": [
+        109.95,
+        22.3,
+        55.99,
+        15.99,
+        695
+      ],
+      "after": [
+        999.99,
+        695,
+        599,
+        168,
+        114
+      ],
+      "descending": true
+    },
+    "limitFocus": "limit-select",
+    "limit": {
+      "url": "GET /products?limit=5&sort=asc",
+      "cards": 5
+    },
+    "idSortFocus": "id-sort-select",
+    "idSort": "GET /products?limit=5&sort=desc",
+    "chip": {
+      "active": "electronics",
+      "url": "GET /products/category/electronics?limit=20&sort=asc",
+      "cards": 6
+    },
+    "detail": true,
+    "fav": {
+      "pressed": "true",
+      "count": "1"
+    },
+    "cart": {
+      "count": "1",
+      "label": "Added╪¬┘à╪¬ ╪º┘ä╪Ñ╪╢╪º┘ü╪⌐"
+    },
+    "menu": {
+      "expanded": "true",
+      "panel": "flex"
+    },
+    "theme": {
+      "before": "dark",
+      "after": "light",
+      "target": "light",
+      "point": {
+        "x": 58.03125,
+        "y": 205.375
+      },
+      "hit": "SPAN.bi-ar",
+      "expanded": "true"
+    },
+    "loginDialog": true,
+    "cartDialog": true,
+    "skipFirst": "btn btn-primary btn-lg",
+    "skipHash": "#products",
+    "overflow": {
+      "scrollWidth": 305,
+      "innerWidth": 320
+    },
+    "finalErrs": []
+  },
+  "768": {
+    "load": {
+      "cards": 20,
+      "chips": 5,
+      "errs": []
+    },
+    "hit": {
+      "checked": 123,
+      "bad": []
+    },
+    "search": {
+      "value": "backpack",
+      "cards": 1,
+      "focused": "search-input"
+    },
+    "sortFocus": "sort-select",
+    "sort": {
+      "before": [
+        109.95,
+        22.3,
+        55.99,
+        15.99,
+        695
+      ],
+      "after": [
+        999.99,
+        695,
+        599,
+        168,
+        114
+      ],
+      "descending": true
+    },
+    "limitFocus": "limit-select",
+    "limit": {
+      "url": "GET /products?limit=5&sort=asc",
+      "cards": 5
+    },
+    "idSortFocus": "id-sort-select",
+    "idSort": "GET /products?limit=5&sort=desc",
+    "chip": {
+      "active": "electronics",
+      "url": "GET /products/category/electronics?limit=20&sort=asc",
+      "cards": 6
+    },
+    "detail": true,
+    "fav": {
+      "pressed": "false",
+      "count": "0"
+    },
+    "cart": {
+      "count": "2",
+      "label": "Added╪¬┘à╪¬ ╪º┘ä╪Ñ╪╢╪º┘ü╪⌐"
+    },
+    "menu": {
+      "expanded": "true",
+      "panel": "flex"
+    },
+    "theme": {
+      "before": "light",
+      "after": "dark",
+      "target": "dark",
+      "point": {
+        "x": 368.40625,
+        "y": 209.375
+      },
+      "hit": "SPAN.bi-en",
+      "expanded": "true"
+    },
+    "loginDialog": true,
+    "cartDialog": true,
+    "skipFirst": "btn btn-primary btn-lg",
+    "skipHash": "#products",
+    "overflow": {
+      "scrollWidth": 753,
+      "innerWidth": 768
+    },
+    "finalErrs": []
+  },
+  "1280": {
+    "load": {
+      "cards": 20,
+      "chips": 5,
+      "errs": []
+    },
+    "hit": {
+      "checked": 124,
+      "bad": []
+    },
+    "search": {
+      "value": "backpack",
+      "cards": 1,
+      "focused": "search-input"
+    },
+    "sortFocus": "sort-select",
+    "sort": {
+      "before": [
+        109.95,
+        22.3,
+        55.99,
+        15.99,
+        695
+      ],
+      "after": [
+        999.99,
+        695,
+        599,
+        168,
+        114
+      ],
+      "descending": true
+    },
+    "limitFocus": "limit-select",
+    "limit": {
+      "url": "GET /products?limit=5&sort=asc",
+      "cards": 5
+    },
+    "idSortFocus": "id-sort-select",
+    "idSort": "GET /products?limit=5&sort=desc",
+    "chip": {
+      "active": "electronics",
+      "url": "GET /products/category/electronics?limit=20&sort=asc",
+      "cards": 6
+    },
+    "detail": true,
+    "fav": {
+      "pressed": "true",
+      "count": "1"
+    },
+    "cart": {
+      "count": "3",
+      "label": "Added╪¬┘à╪¬ ╪º┘ä╪Ñ╪╢╪º┘ü╪⌐"
+    },
+    "menu": {
+      "expanded": "false",
+      "panel": "flex"
+    },
+    "theme": {
+      "before": "dark",
+      "after": "light",
+      "target": "light",
+      "point": {
+        "x": 643.90625,
+        "y": 36.5
+      },
+      "hit": "SPAN.bi-en",
+      "expanded": "false"
+    },
+    "loginDialog": true,
+    "cartDialog": true,
+    "skipFirst": "btn btn-primary btn-lg",
+    "skipHash": "#products",
+    "overflow": {
+      "scrollWidth": 1265,
+      "innerWidth": 1280
+    },
+    "finalErrs": []
+  }
+}
+
